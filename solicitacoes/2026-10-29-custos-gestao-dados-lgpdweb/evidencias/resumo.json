@@ -1,0 +1,42 @@
+{
+  "tipo": "evidencias_historicas_consolidadas",
+  "sanitizado_em": "2026-10-29T23:00:47.966153-03:00",
+  "origem": "Respostas HTTP coletadas nesta solicitação; arquivos brutos removidos a pedido do usuário. Não é nova consulta GCP.",
+  "projeto": "lgpdweb",
+  "dataset": "finops_billing",
+  "localizacao": "US",
+  "ausencia_inicial": {
+    "instante_utc": "2026-10-30T01:47:09.033007+00:00",
+    "metodo": "GET",
+    "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets/finops_billing",
+    "http_status": 404
+  },
+  "criacao": {
+    "instante_utc": "2026-10-30T01:47:42.753459+00:00",
+    "metodo": "POST",
+    "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets",
+    "http_status": 200
+  },
+  "verificacao_dataset": {
+    "instante_utc": "2026-10-30T01:51:16.301766+00:00",
+    "metodo": "GET",
+    "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets/finops_billing",
+    "http_status": 200
+  },
+  "verificacao_tabelas": {
+    "instante_utc": "2026-10-30T01:51:16.786449+00:00",
+    "metodo": "GET",
+    "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets/finops_billing/tables?maxResults=1000",
+    "http_status": 200,
+    "quantidade": 0
+  },
+  "expiracao_automatica_tabelas": false,
+  "expiracao_automatica_particoes": false,
+  "acl_direta": "OWNER na conta criadora; sem acesso público direto configurado",
+  "acesso_herdado": "cookies-api e conta Compute padrão têm papéis BigQuery no projeto. IAM existente não foi alterado.",
+  "exportacao_na_etapa": "Desativada segundo usuário; ativação posterior registrada na próxima solicitação.",
+  "sql_executado": false,
+  "dry_run_executado": false,
+  "mudanca_gcp": "Somente criação do dataset.",
+  "limite": "Resumo seletivo; payloads completos e backups não foram preservados."
+}

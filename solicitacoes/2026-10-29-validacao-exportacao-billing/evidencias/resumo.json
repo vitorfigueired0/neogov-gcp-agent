@@ -1,0 +1,26 @@
+{
+  "tipo": "evidencias_historicas_consolidadas",
+  "sanitizado_em": "2026-10-29T23:00:47.966153-03:00",
+  "origem": "Respostas HTTP coletadas nesta solicitação; arquivos brutos removidos a pedido do usuário. Não é nova consulta GCP.",
+  "projeto": "lgpdweb",
+  "dataset": "finops_billing",
+  "localizacao": "US",
+  "ativacao_exportacao": "Informada pelo usuário; configuração do console não foi inspecionada pelo agente.",
+  "verificacao_dataset": {
+    "instante_utc": "2026-10-30T01:54:44.811062+00:00",
+    "metodo": "GET",
+    "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets/finops_billing",
+    "http_status": 200
+  },
+  "verificacao_tabelas": {
+    "instante_utc": "2026-10-30T01:54:45.558168+00:00",
+    "metodo": "GET",
+    "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets/finops_billing/tables?maxResults=1000",
+    "http_status": 200,
+    "quantidade": 0
+  },
+  "resultado": "Dataset existente, sem tabelas naquele instante. Primeira carga ainda não comprovada.",
+  "mudanca_gcp": false,
+  "sql_executado": false,
+  "dry_run_executado": false
+}

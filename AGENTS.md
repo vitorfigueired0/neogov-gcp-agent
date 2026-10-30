@@ -45,6 +45,13 @@ os projetos conhecidos, observando a data e os limites do levantamento.
   pedido, incluindo planos, instruções de execução, scripts, comandos
   salvos, evidências, resultados, backups e relatórios. Essa organização
   também se aplica aos documentos gerados por skills.
+- Exceção para levantamentos e catalogação de ativos: mantenha a documentação
+  consolidada em `ativos/<identificador-do-ativo>/`, conforme a skill
+  `gcp-catalogar-ativos`, acessada pela skill principal. Esse consolidado pode
+  ser criado ou atualizado no escopo do pedido; mantenha evidências, backups
+  dos arquivos alterados, diffs e relatório na pasta da solicitação, preservando
+  os registros anteriores. Consultar referências não autoriza modificar os
+  recursos GCP descritos nem recatalogar itens fora do escopo.
 - Arquivos preexistentes que sejam o alvo autorizado da solicitação podem
   ser alterados no local original. Registre as alterações no relatório;
   mantenha os artefatos auxiliares dentro da pasta da solicitação.

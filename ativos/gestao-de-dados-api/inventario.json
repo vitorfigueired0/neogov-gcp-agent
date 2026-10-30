@@ -9419,5 +9419,33 @@
     "Configuração e estado Ready não comprovam funcionamento de login, dados, uploads ou conectividade.",
     "Metadados atuais não reconstituem todos os recursos excluídos ou configurações históricas dos últimos 30 dias.",
     "Valores de segredos, documentos Firestore, conteúdo de objetos e linhas de faturamento não foram lidos."
-  ]
+  ],
+  "cost_reporting": {
+    "updated_at": "2026-10-29T22:55:26.463931-03:00",
+    "project_id": "lgpdweb",
+    "dataset_id": "finops_billing",
+    "location": "US",
+    "dataset_status": "created_and_verified",
+    "dataset_creation_time_ms": "1793324863269",
+    "dataset_direct_access": [
+      {
+        "role": "OWNER",
+        "userByEmail": "desenvolvimento.neogov@gmail.com"
+      }
+    ],
+    "default_table_expiration_ms": null,
+    "billing_account": "01017B-9A8236-AA7CA7",
+    "tables_at_verification": [],
+    "detailed_export_status": "enabled_as_reported_by_user_pending_first_table",
+    "export_configuration_changed": false,
+    "inherited_access_review": "cookies-api and default Compute retain project-level BigQuery permissions; risk persists, no IAM change performed",
+    "sql_executed": false,
+    "sql_dry_run_executed": false,
+    "monetary_totals_available": false,
+    "guide": "../../solicitacoes/2026-10-29-custos-gestao-dados-lgpdweb/ativacao-e-consultas.md",
+    "report": "../../solicitacoes/2026-10-29-validacao-exportacao-billing/relatorio.md",
+    "evidence": "../../solicitacoes/2026-10-29-validacao-exportacao-billing/evidencias/resumo.json",
+    "previous_proposal": "artefatos.finops_billing; superseded by explicit user choice of lgpdweb",
+    "activation_reported_by_user": true
+  }
 }
