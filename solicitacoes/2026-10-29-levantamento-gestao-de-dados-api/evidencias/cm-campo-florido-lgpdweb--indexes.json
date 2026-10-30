@@ -1,0 +1,112 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "indexes",
+    "composite",
+    "list",
+    "--database=gestao-de-dados",
+    "--project=cm-campo-florido-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:43.240535+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "density": "SPARSE_ALL",
+      "fields": [
+        {
+          "fieldPath": "reportedBy",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reasonCode",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "name": "projects/cm-campo-florido-lgpdweb/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgJim14AK",
+      "queryScope": "COLLECTION",
+      "state": "READY"
+    },
+    {
+      "density": "SPARSE_ALL",
+      "fields": [
+        {
+          "fieldPath": "reportedBy",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "name": "projects/cm-campo-florido-lgpdweb/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgOjXh4EK",
+      "queryScope": "COLLECTION",
+      "state": "READY"
+    },
+    {
+      "density": "SPARSE_ALL",
+      "fields": [
+        {
+          "fieldPath": "reportedBy",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "reasonCode",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "name": "projects/cm-campo-florido-lgpdweb/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgJjF9oIK",
+      "queryScope": "COLLECTION",
+      "state": "READY"
+    },
+    {
+      "density": "SPARSE_ALL",
+      "fields": [
+        {
+          "fieldPath": "reportedBy",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        },
+        {
+          "fieldPath": "__name__",
+          "order": "DESCENDING"
+        }
+      ],
+      "name": "projects/cm-campo-florido-lgpdweb/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgJiUpoMK",
+      "queryScope": "COLLECTION",
+      "state": "READY"
+    }
+  ]
+}

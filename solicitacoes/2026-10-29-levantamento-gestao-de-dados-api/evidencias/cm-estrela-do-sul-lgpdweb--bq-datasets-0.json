@@ -1,0 +1,52 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cm-estrela-do-sul-lgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:23.064783+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "JafnKImtYiUEzkJ55odoNA==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-estrela-do-sul-lgpdweb:_0baba5f27dd6665756086ea3dddaf5c7ae0110d7",
+        "datasetReference": {
+          "datasetId": "_0baba5f27dd6665756086ea3dddaf5c7ae0110d7",
+          "projectId": "cm-estrela-do-sul-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-estrela-do-sul-lgpdweb:_7e4885e6df5b58a81d70e13c3c502b54159e9a45",
+        "datasetReference": {
+          "datasetId": "_7e4885e6df5b58a81d70e13c3c502b54159e9a45",
+          "projectId": "cm-estrela-do-sul-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-estrela-do-sul-lgpdweb:_b85fd72de47d9355030d0d58ca7a9b1dfd5e9447",
+        "datasetReference": {
+          "datasetId": "_b85fd72de47d9355030d0d58ca7a9b1dfd5e9447",
+          "projectId": "cm-estrela-do-sul-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-estrela-do-sul-lgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "cm-estrela-do-sul-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

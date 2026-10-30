@@ -1,0 +1,283 @@
+{
+  "command": [
+    "gcloud",
+    "projects",
+    "get-iam-policy",
+    "lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:44.371875+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-aiplatform.iam.gserviceaccount.com"
+        ],
+        "role": "roles/aiplatform.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:anonimizacao@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/aiplatform.user"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+        ],
+        "role": "roles/artifactregistry.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/artifactregistry.writer"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com",
+          "serviceAccount:cookies-api@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.dataEditor"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies-api@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.dataViewer"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies-api@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.jobUser"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491@cloudbuild.gserviceaccount.com"
+        ],
+        "role": "roles/cloudbuild.builds.builder"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudbuild.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudfunctions.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-cloudscheduler.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudscheduler.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/composer.environmentAndStorageObjectAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491@cloudservices.gserviceaccount.com"
+        ],
+        "role": "roles/compute.instanceGroupManagerServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@compute-system.iam.gserviceaccount.com"
+        ],
+        "role": "roles/compute.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@container-analysis.iam.gserviceaccount.com"
+        ],
+        "role": "roles/containeranalysis.ServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@containerregistry.iam.gserviceaccount.com"
+        ],
+        "role": "roles/containerregistry.ServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:backup-mensal@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.importExportAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:48220459614-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.owner"
+      },
+      {
+        "members": [
+          "serviceAccount:48220459614-compute@developer.gserviceaccount.com",
+          "serviceAccount:anonimizacao@lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:relatorios@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.user"
+      },
+      {
+        "condition": {
+          "expression": "resource.name==\"projects/lgpdweb/databases/gestao-de-dados\"",
+          "title": "gestao-de-dados-only"
+        },
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.user"
+      },
+      {
+        "members": [
+          "serviceAccount:48220459614-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.viewer"
+      },
+      {
+        "members": [
+          "serviceAccount:anonimizacao@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/documentai.apiUser"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-prod-dai-core.iam.gserviceaccount.com"
+        ],
+        "role": "roles/documentaicore.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com",
+          "serviceAccount:824046366491@cloudservices.gserviceaccount.com"
+        ],
+        "role": "roles/editor"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-firebase.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebase.managementServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebase.sdkAdminServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:relatorios@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaseauth.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-firebasemods.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebasemods.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@firebase-rules.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaserules.system"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/firebasestorage.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-firebasestorage.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebasestorage.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@gcp-sa-firestore.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firestore.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:48220459614-compute@developer.gserviceaccount.com",
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com",
+          "serviceAccount:firebase-adminsdk-fbsvc@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountUser"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/logging.logWriter"
+      },
+      {
+        "members": [
+          "serviceAccount:48220459614-compute@developer.gserviceaccount.com",
+          "user:desenvolvimento.neogov@gmail.com",
+          "user:gustavoglennyngg@gmail.com"
+        ],
+        "role": "roles/owner"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/run.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-824046366491@serverless-robot-prod.iam.gserviceaccount.com"
+        ],
+        "role": "roles/run.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com",
+          "serviceAccount:firebase-adminsdk-fbsvc@lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:824046366491-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectViewer"
+      }
+    ],
+    "etag": "BwZe6CpIOMc=",
+    "version": 3
+  }
+}

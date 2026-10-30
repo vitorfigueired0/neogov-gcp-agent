@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+    "--project=pm-tupaciguara-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:08.385440+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/pm-tupaciguara-mg-lgpdweb/serviceAccounts/gestao-de-dados-api-runtime@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+    "oauth2ClientId": "104833761047963540739",
+    "projectId": "pm-tupaciguara-mg-lgpdweb",
+    "uniqueId": "104833761047963540739"
+  }
+}

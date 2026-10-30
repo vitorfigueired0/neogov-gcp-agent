@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "url-maps",
+    "list",
+    "--project=camaraituiutabalgpdweb-a1a06",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:05.448550+00:00",
+  "exit_code": 0,
+  "data": []
+}

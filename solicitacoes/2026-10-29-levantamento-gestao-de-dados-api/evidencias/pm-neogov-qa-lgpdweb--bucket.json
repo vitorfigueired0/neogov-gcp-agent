@@ -1,0 +1,57 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "describe",
+    "gs://gestao-de-dados-qa",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:18.044069+00:00",
+  "exit_code": 0,
+  "data": {
+    "cmek_enforcement": {
+      "restrictionMode": "NotRestricted"
+    },
+    "cors_config": [
+      {
+        "maxAgeSeconds": 3600,
+        "method": [
+          "PUT",
+          "GET"
+        ],
+        "origin": [
+          "http://localhost:5173",
+          "https://qa.gestaodedados.neogov.com.br"
+        ],
+        "responseHeader": [
+          "Content-Type",
+          "x-goog-if-generation-match"
+        ]
+      }
+    ],
+    "creation_time": "2026-10-06T16:16:26+0000",
+    "csek_enforcement": {
+      "effectiveTime": "2026-10-06T16:18:26.636000+00:00",
+      "restrictionMode": "FullyRestricted"
+    },
+    "default_storage_class": "STANDARD",
+    "generation": 1791303386676745741,
+    "gmek_enforcement": {
+      "restrictionMode": "NotRestricted"
+    },
+    "location": "US-CENTRAL1",
+    "location_type": "region",
+    "metageneration": 5,
+    "name": "gestao-de-dados-qa",
+    "public_access_prevention": "enforced",
+    "soft_delete_policy": {
+      "effectiveTime": "2026-10-06T16:16:26.952000+00:00",
+      "retentionDurationSeconds": "604800"
+    },
+    "storage_url": "gs://gestao-de-dados-qa/",
+    "uniform_bucket_level_access": true,
+    "update_time": "2026-10-26T16:19:54+0000"
+  }
+}

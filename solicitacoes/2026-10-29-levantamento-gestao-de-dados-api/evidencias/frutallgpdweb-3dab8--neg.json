@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "network-endpoint-groups",
+    "list",
+    "--project=frutallgpdweb-3dab8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:23.103392+00:00",
+  "exit_code": 0,
+  "data": []
+}

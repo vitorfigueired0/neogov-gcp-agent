@@ -1,0 +1,26 @@
+{
+  "command": [
+    "gcloud",
+    "logging",
+    "sinks",
+    "list",
+    "--project=camarateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:29.342047+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "destination": "logging.googleapis.com/projects/camarateresopolislgpdweb/locations/global/buckets/_Required",
+      "filter": "LOG_ID(\"cloudaudit.googleapis.com/activity\") OR LOG_ID(\"externalaudit.googleapis.com/activity\") OR LOG_ID(\"cloudaudit.googleapis.com/system_event\") OR LOG_ID(\"externalaudit.googleapis.com/system_event\") OR LOG_ID(\"cloudaudit.googleapis.com/access_transparency\") OR LOG_ID(\"externalaudit.googleapis.com/access_transparency\")",
+      "name": "_Required",
+      "resourceName": "projects/camarateresopolislgpdweb/sinks/_Required"
+    },
+    {
+      "destination": "logging.googleapis.com/projects/camarateresopolislgpdweb/locations/global/buckets/_Default",
+      "filter": "NOT LOG_ID(\"cloudaudit.googleapis.com/activity\") AND NOT LOG_ID(\"externalaudit.googleapis.com/activity\") AND NOT LOG_ID(\"cloudaudit.googleapis.com/system_event\") AND NOT LOG_ID(\"externalaudit.googleapis.com/system_event\") AND NOT LOG_ID(\"cloudaudit.googleapis.com/access_transparency\") AND NOT LOG_ID(\"externalaudit.googleapis.com/access_transparency\")",
+      "name": "_Default",
+      "resourceName": "projects/camarateresopolislgpdweb/sinks/_Default"
+    }
+  ]
+}

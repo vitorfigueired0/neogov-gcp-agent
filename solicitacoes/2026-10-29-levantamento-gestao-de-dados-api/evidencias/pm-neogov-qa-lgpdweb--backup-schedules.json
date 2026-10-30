@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "backups",
+    "schedules",
+    "list",
+    "--database=gestao-de-dados",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:29.091619+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "createTime": "2026-10-06T15:32:24.296837Z",
+      "name": "projects/pm-neogov-qa-lgpdweb/databases/gestao-de-dados/backupSchedules/bac5d0cb-06e8-4a89-8bd6-0c45823fb98a",
+      "retention": "8467200s",
+      "updateTime": "2026-10-06T15:32:24.296837Z",
+      "weeklyRecurrence": {
+        "day": "SUNDAY"
+      }
+    }
+  ]
+}

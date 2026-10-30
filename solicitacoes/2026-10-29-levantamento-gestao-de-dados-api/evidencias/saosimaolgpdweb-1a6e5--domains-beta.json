@@ -1,0 +1,70 @@
+{
+  "command": [
+    "gcloud",
+    "beta",
+    "run",
+    "domain-mappings",
+    "list",
+    "--platform=managed",
+    "--region=us-central1",
+    "--project=saosimaolgpdweb-1a6e5",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:36.824780+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "domains.cloudrun.com/v1",
+      "kind": "DomainMapping",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/operation-id": "1033eba4-fb2e-46a0-af0a-883246a18192",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:08:57.764960Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/overrideAt": "2026-10-27T19:09:02.338Z"
+        },
+        "name": "api.pmsaosimao.gestaodedados.neogov.com.br",
+        "namespace": "986593446685",
+        "resourceVersion": "AAZe1/et13w",
+        "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/986593446685/domainmappings/api.pmsaosimao.gestaodedados.neogov.com.br",
+        "uid": "4f50bde8-cc8c-4ec8-ba3a-b787978fb66b"
+      },
+      "spec": {
+        "routeName": "gestao-de-dados-api"
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T20:05:26.608764Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T20:05:26.608764Z",
+            "status": "True",
+            "type": "CertificateProvisioned"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:09:04.798527Z",
+            "status": "True",
+            "type": "DomainRoutable"
+          }
+        ],
+        "mappedRouteName": "gestao-de-dados-api",
+        "observedGeneration": 1,
+        "resourceRecords": [
+          {
+            "name": "api.pmsaosimao.gestaodedados",
+            "rrdata": "ghs.googlehosted.com.",
+            "type": "CNAME"
+          }
+        ]
+      }
+    }
+  ]
+}

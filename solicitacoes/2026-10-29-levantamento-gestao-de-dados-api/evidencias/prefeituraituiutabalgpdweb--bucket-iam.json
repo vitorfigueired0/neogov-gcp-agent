@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "get-iam-policy",
+    "gs://gestao-de-dados-prefeituraituiutabalgpdweb",
+    "--project=prefeituraituiutabalgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:01.282485+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "projectEditor:prefeituraituiutabalgpdweb",
+          "projectOwner:prefeituraituiutabalgpdweb"
+        ],
+        "role": "roles/storage.legacyBucketOwner"
+      },
+      {
+        "members": [
+          "projectViewer:prefeituraituiutabalgpdweb"
+        ],
+        "role": "roles/storage.legacyBucketReader"
+      },
+      {
+        "members": [
+          "projectEditor:prefeituraituiutabalgpdweb",
+          "projectOwner:prefeituraituiutabalgpdweb"
+        ],
+        "role": "roles/storage.legacyObjectOwner"
+      },
+      {
+        "members": [
+          "projectViewer:prefeituraituiutabalgpdweb"
+        ],
+        "role": "roles/storage.legacyObjectReader"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectViewer"
+      }
+    ],
+    "etag": "CAQ="
+  }
+}

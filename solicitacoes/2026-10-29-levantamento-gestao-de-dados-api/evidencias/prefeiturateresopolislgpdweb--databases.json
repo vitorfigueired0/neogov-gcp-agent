@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "databases",
+    "list",
+    "--project=prefeiturateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:15.983507+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-10-27T18:59:34.901240Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:20:17.342120Z",
+      "etag": "ILrLxMrJ4JcDMIH3qOPw2pcD",
+      "freeTier": false,
+      "locationId": "us-central1",
+      "name": "projects/prefeiturateresopolislgpdweb/databases/gestao-de-dados",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "0ed417d6-3a94-410b-8413-ca5fcbb528ec",
+      "updateTime": "2026-10-27T18:59:34.901240Z",
+      "versionRetentionPeriod": "3600s"
+    },
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2025-08-18T18:10:34.645745Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:20:17.342143Z",
+      "etag": "IL/LxMrJ4JcDMNGd+PjT0ZYD",
+      "freeTier": true,
+      "locationId": "us-central1",
+      "name": "projects/prefeiturateresopolislgpdweb/databases/modules",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "bc5c8c69-2e03-40fe-b1dc-43d7bca42ac1",
+      "updateTime": "2025-08-18T18:10:34.645745Z",
+      "versionRetentionPeriod": "3600s"
+    }
+  ]
+}

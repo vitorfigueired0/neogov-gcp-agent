@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com",
+    "--project=pm-pedrinopolis-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:50.855263+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/pm-pedrinopolis-lgpdweb/serviceAccounts/gestao-de-dados-api-runtime@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com",
+    "oauth2ClientId": "106682236022998152578",
+    "projectId": "pm-pedrinopolis-lgpdweb",
+    "uniqueId": "106682236022998152578"
+  }
+}

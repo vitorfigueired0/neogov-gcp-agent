@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "databases",
+    "list",
+    "--project=cachoeiradouradamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:34.592626+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-10-27T18:43:13.577369Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:21:36.398920Z",
+      "etag": "IKGbnvDJ4JcDMIuPkpHt2pcD",
+      "freeTier": false,
+      "locationId": "us-central1",
+      "name": "projects/cachoeiradouradamglgpdweb/databases/gestao-de-dados",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "4f6a699a-3faf-4da5-821d-3fd1142c959f",
+      "updateTime": "2026-10-27T18:43:13.577369Z",
+      "versionRetentionPeriod": "3600s"
+    },
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2025-07-23T18:44:31.361213Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:21:36.398938Z",
+      "etag": "IKmbnvDJ4JcDMJiu3IfR0ZYD",
+      "freeTier": true,
+      "locationId": "us-central1",
+      "name": "projects/cachoeiradouradamglgpdweb/databases/modules",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "2f6473aa-c252-4e9b-9f68-073a096931a4",
+      "updateTime": "2025-07-23T18:44:31.361213Z",
+      "versionRetentionPeriod": "3600s"
+    }
+  ]
+}

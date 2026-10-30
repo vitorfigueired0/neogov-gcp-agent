@@ -1,0 +1,70 @@
+{
+  "command": [
+    "gcloud",
+    "beta",
+    "run",
+    "domain-mappings",
+    "list",
+    "--platform=managed",
+    "--region=us-central1",
+    "--project=cachoeiradouradamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:47.844675+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "domains.cloudrun.com/v1",
+      "kind": "DomainMapping",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/operation-id": "d24f71a5-7303-4574-93f7-ee41088945f2",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:21:58.332435Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/overrideAt": "2026-10-27T19:22:03.524Z"
+        },
+        "name": "api.cmcachoeiradouradamg.gestaodedados.neogov.com.br",
+        "namespace": "949172226134",
+        "resourceVersion": "AAZe5thEaKo",
+        "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/949172226134/domainmappings/api.cmcachoeiradouradamg.gestaodedados.neogov.com.br",
+        "uid": "7d58ef2c-cf19-4502-8083-af6b2df91b4f"
+      },
+      "spec": {
+        "routeName": "gestao-de-dados-api"
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-28T13:50:24.114858Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-28T13:50:24.114858Z",
+            "status": "True",
+            "type": "CertificateProvisioned"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:22:22.889454Z",
+            "status": "True",
+            "type": "DomainRoutable"
+          }
+        ],
+        "mappedRouteName": "gestao-de-dados-api",
+        "observedGeneration": 1,
+        "resourceRecords": [
+          {
+            "name": "api.cmcachoeiradouradamg.gestaodedados",
+            "rrdata": "ghs.googlehosted.com.",
+            "type": "CNAME"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "get-iam-policy",
+    "gs://gestao-de-dados-lgpdwebsaaeituiutaba",
+    "--project=lgpdwebsaaeituiutaba",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:18.858373+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "projectEditor:lgpdwebsaaeituiutaba",
+          "projectOwner:lgpdwebsaaeituiutaba"
+        ],
+        "role": "roles/storage.legacyBucketOwner"
+      },
+      {
+        "members": [
+          "projectViewer:lgpdwebsaaeituiutaba"
+        ],
+        "role": "roles/storage.legacyBucketReader"
+      },
+      {
+        "members": [
+          "projectEditor:lgpdwebsaaeituiutaba",
+          "projectOwner:lgpdwebsaaeituiutaba"
+        ],
+        "role": "roles/storage.legacyObjectOwner"
+      },
+      {
+        "members": [
+          "projectViewer:lgpdwebsaaeituiutaba"
+        ],
+        "role": "roles/storage.legacyObjectReader"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@lgpdwebsaaeituiutaba.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@lgpdwebsaaeituiutaba.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectViewer"
+      }
+    ],
+    "etag": "CAQ="
+  }
+}

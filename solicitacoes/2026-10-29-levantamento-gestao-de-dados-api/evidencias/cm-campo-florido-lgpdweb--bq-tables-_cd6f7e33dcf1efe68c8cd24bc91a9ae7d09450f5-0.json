@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cm-campo-florido-lgpdweb/datasets/_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:25.207280+00:00",
+  "status": 403,
+  "error": {
+    "error": {
+      "code": 403,
+      "message": "Access Denied: Dataset cm-campo-florido-lgpdweb:_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5: Permission bigquery.tables.list denied on dataset cm-campo-florido-lgpdweb:_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5 (or it may not exist).",
+      "errors": [
+        {
+          "message": "Access Denied: Dataset cm-campo-florido-lgpdweb:_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5: Permission bigquery.tables.list denied on dataset cm-campo-florido-lgpdweb:_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5 (or it may not exist).",
+          "domain": "global",
+          "reason": "accessDenied"
+        }
+      ],
+      "status": "PERMISSION_DENIED"
+    }
+  }
+}

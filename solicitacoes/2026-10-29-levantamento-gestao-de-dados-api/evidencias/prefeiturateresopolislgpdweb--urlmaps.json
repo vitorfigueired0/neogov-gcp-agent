@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "url-maps",
+    "list",
+    "--project=prefeiturateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:18.946220+00:00",
+  "exit_code": 0,
+  "data": []
+}

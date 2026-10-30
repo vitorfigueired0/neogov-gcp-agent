@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "get-iam-policy",
+    "gestao-de-dados-api-runtime@cm-campo-florido-lgpdweb.iam.gserviceaccount.com",
+    "--project=cm-campo-florido-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:42.265590+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@cm-campo-florido-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      }
+    ],
+    "etag": "BwZe1tqLQvY=",
+    "version": 1
+  }
+}

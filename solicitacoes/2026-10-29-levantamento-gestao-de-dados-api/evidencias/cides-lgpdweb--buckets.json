@@ -1,0 +1,284 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=cides-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:54.921712+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://cides.lgpdweb.neogov.com.br",
+            "https://lgpdweb-cides.vercel.app"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T16:58:53+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791219533478979687,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "cides-lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T16:58:53.738000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cides-lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T15:21:14+0000"
+    },
+    {
+      "creation_time": "2026-10-22T19:21:33+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792696892943728491,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "cides-lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T19:21:33.269000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cides-lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:21:53+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-812458273636",
+          "projectTeam": {
+            "projectNumber": "812458273636",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-812458273636",
+          "projectTeam": {
+            "projectNumber": "812458273636",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-812458273636",
+          "projectTeam": {
+            "projectNumber": "812458273636",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2026-09-10T18:53:20+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-812458273636",
+          "projectTeam": {
+            "projectNumber": "812458273636",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-812458273636",
+          "projectTeam": {
+            "projectNumber": "812458273636",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-812458273636",
+          "projectTeam": {
+            "projectNumber": "812458273636",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "STANDARD",
+      "generation": 1789066400238899582,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "cides-lgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-09-10T18:53:20.489000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cides-lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2026-09-10T18:53:20+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-09-10T19:03:08+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1789066988343738937,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-812458273636-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-09-10T19:03:08.607000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-812458273636-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-09-10T19:03:08+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-09-10T19:03:01+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1789066981318198719,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-812458273636-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-09-10T19:03:01.573000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-812458273636-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-09-10T19:03:01+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://cides.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:37:22+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:39:22.249000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793126242393135636,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-cides-lgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:37:22.608000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-cides-lgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:37:29+0000"
+    }
+  ]
+}

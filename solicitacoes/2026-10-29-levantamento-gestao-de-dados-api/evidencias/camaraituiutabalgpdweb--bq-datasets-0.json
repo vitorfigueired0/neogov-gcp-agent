@@ -1,0 +1,10 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/camaraituiutabalgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:42.847264+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "1B2M2Y8AsgTpgAmY7PhCfg=="
+  }
+}

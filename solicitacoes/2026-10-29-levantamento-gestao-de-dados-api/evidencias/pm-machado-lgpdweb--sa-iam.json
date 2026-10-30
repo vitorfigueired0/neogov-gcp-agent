@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "get-iam-policy",
+    "gestao-de-dados-api-runtime@pm-machado-lgpdweb.iam.gserviceaccount.com",
+    "--project=pm-machado-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:40.796678+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      }
+    ],
+    "etag": "BwZe1vuNybs=",
+    "version": 1
+  }
+}

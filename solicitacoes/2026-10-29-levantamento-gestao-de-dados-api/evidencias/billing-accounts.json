@@ -1,0 +1,29 @@
+{
+  "command": [
+    "gcloud",
+    "billing",
+    "accounts",
+    "list",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:30.442282+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "currencyCode": "BRL",
+      "displayName": "BR - CLOUD - NEOGOV SISTEMAS - SERVIBRASIL",
+      "masterBillingAccount": "billingAccounts/0172CF-3CA37D-BBF98F",
+      "name": "billingAccounts/01017B-9A8236-AA7CA7",
+      "open": true,
+      "parent": "billingAccounts/0172CF-3CA37D-BBF98F"
+    },
+    {
+      "currencyCode": "BRL",
+      "displayName": "LGPDrive",
+      "masterBillingAccount": "",
+      "name": "billingAccounts/01B58B-128021-9D14D4",
+      "open": false,
+      "parent": ""
+    }
+  ]
+}

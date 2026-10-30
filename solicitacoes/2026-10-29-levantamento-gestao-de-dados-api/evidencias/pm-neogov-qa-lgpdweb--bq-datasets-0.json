@@ -1,0 +1,42 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-neogov-qa-lgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:21.705467+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "Ur8eJSPYrtlMoBxQAeQ5dg==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-neogov-qa-lgpdweb:_3d8309e76b3df495afa4878c7d9df5295cbaa6cb",
+        "datasetReference": {
+          "datasetId": "_3d8309e76b3df495afa4878c7d9df5295cbaa6cb",
+          "projectId": "pm-neogov-qa-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-neogov-qa-lgpdweb:_8c6368c7826ff1bdaf363536e249e2a706074030",
+        "datasetReference": {
+          "datasetId": "_8c6368c7826ff1bdaf363536e249e2a706074030",
+          "projectId": "pm-neogov-qa-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-neogov-qa-lgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "pm-neogov-qa-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

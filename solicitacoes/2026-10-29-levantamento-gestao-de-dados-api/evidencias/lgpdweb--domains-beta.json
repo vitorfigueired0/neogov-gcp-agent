@@ -1,0 +1,71 @@
+{
+  "command": [
+    "gcloud",
+    "beta",
+    "run",
+    "domain-mappings",
+    "list",
+    "--platform=managed",
+    "--region=us-central1",
+    "--project=lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:49.222314+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "domains.cloudrun.com/v1",
+      "kind": "DomainMapping",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/operation-id": "f1807e55-878a-474d-80cc-7842ce7382c3",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T16:58:24.787513Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/overrideAt": "2026-10-27T16:58:29.293Z"
+        },
+        "name": "api.gestaodedados.neogov.com.br",
+        "namespace": "824046366491",
+        "resourceVersion": "AAZe1pBvn4o",
+        "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/824046366491/domainmappings/api.gestaodedados.neogov.com.br",
+        "uid": "d8b32530-b453-4ddd-898c-e754a92e9ce4"
+      },
+      "spec": {
+        "certificateMode": "AUTOMATIC",
+        "routeName": "gestao-de-dados-api"
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T18:24:59.510666Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T18:24:59.510666Z",
+            "status": "True",
+            "type": "CertificateProvisioned"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T16:58:30.509294Z",
+            "status": "True",
+            "type": "DomainRoutable"
+          }
+        ],
+        "mappedRouteName": "gestao-de-dados-api",
+        "observedGeneration": 1,
+        "resourceRecords": [
+          {
+            "name": "api.gestaodedados",
+            "rrdata": "ghs.googlehosted.com.",
+            "type": "CNAME"
+          }
+        ]
+      }
+    }
+  ]
+}

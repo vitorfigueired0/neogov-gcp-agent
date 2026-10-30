@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "backups",
+    "schedules",
+    "list",
+    "--database=gestao-de-dados",
+    "--project=pm-pedrinopolis-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:34.944303+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "createTime": "2026-10-27T18:57:26.128053Z",
+      "name": "projects/pm-pedrinopolis-lgpdweb/databases/gestao-de-dados/backupSchedules/f486b230-a3f7-4465-a2c1-09e912c1b397",
+      "retention": "8467200s",
+      "updateTime": "2026-10-27T18:57:26.128053Z",
+      "weeklyRecurrence": {
+        "day": "SUNDAY"
+      }
+    }
+  ]
+}

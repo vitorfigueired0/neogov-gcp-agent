@@ -1,0 +1,4239 @@
+[
+  {
+    "project": {
+      "createTime": "2026-09-10T18:39:42.298Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cides-lgpdweb",
+      "projectId": "cides-lgpdweb",
+      "projectNumber": "812458273636"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "77ccd5c9-5405-4436-9e92-a4ba2cf6c59a",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-812458273636.us-central1.run.app\",\"https://gestao-de-dados-api-rbhh4krgcq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:01:59.330495Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "812458273636",
+          "resourceVersion": "AAZe1xYk/0U",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/812458273636/services/gestao-de-dados-api",
+          "uid": "b4ed993b-e4a3-4544-9047-7f8a7d00bce1"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "uvihiggszr",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "cides-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-cides-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cides.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@cides-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-rbhh4krgcq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:02:22.766917Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:02:02.675868Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:02:22.724983Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-wqr",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-wqr",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-wqr"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-rbhh4krgcq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2026-08-26T12:20:41.083Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-tupaciguara-mg-lgpdweb",
+      "projectId": "pm-tupaciguara-mg-lgpdweb",
+      "projectNumber": "316815308630"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "014463b5-e460-4645-b735-3913cf15ac70",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-316815308630.us-central1.run.app\",\"https://gestao-de-dados-api-hwzxsfpqkq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:09:51.199754Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "316815308630",
+          "resourceVersion": "AAZe1zGQyag",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/gestao-de-dados-api",
+          "uid": "36cd9f3f-c0ee-4c63-88ef-5d26b92e130b"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "xqhkumiexq",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-tupaciguara-mg-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pm-tupaciguara-mg-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmtupaciguara.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-hwzxsfpqkq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:10:02.815912Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:09:53.507875Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:10:02.770270Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-vzz",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-vzz",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-vzz"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-hwzxsfpqkq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2026-05-29T14:06:36.614Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-neogov-qa-lgpdweb",
+      "projectId": "pm-neogov-qa-lgpdweb",
+      "projectNumber": "115635227737"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "568.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "397784bd-b9ab-48cf-85c4-fc26880d54a4",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-115635227737.us-central1.run.app\",\"https://gestao-de-dados-api-5w5qjrhcaa-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+          },
+          "creationTimestamp": "2026-10-06T22:39:04.254673Z",
+          "generation": 20,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "115635227737",
+          "resourceVersion": "AAZe1AWPc7k",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/services/gestao-de-dados-api",
+          "uid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "autoscaling.knative.dev/minScale": "0",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "568.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/sessionAffinity": "false",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ptrlyfdswg",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-neogov-qa-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth-develop.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-qa"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://qa.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:6e8f065a970cd5fa1a279701894d1f3ae740e15dfd540c36e5caf3ab3892ad5d",
+                  "name": "gestao-de-dados-api-1",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1000m",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-5w5qjrhcaa-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T15:22:59.628985Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T15:22:49.677250Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T15:22:59.560808Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00020-dpr",
+          "latestReadyRevisionName": "gestao-de-dados-api-00020-dpr",
+          "observedGeneration": 20,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00020-dpr"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-5w5qjrhcaa-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2026-02-23T15:41:37.540974Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cisalp-lgpdweb",
+      "projectId": "cisalp-lgpdweb",
+      "projectNumber": "252011168537"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "3da41862-d622-4e15-8903-44b0eaecd662",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-252011168537.us-central1.run.app\",\"https://gestao-de-dados-api-4vcdqowjoq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:12:59.799138Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "252011168537",
+          "resourceVersion": "AAZe1zzGRfI",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/252011168537/services/gestao-de-dados-api",
+          "uid": "af220a35-4bc3-4d56-b17e-3a841ffab322"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "jfgtmmjqkw",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "cisalp-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-cisalp-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cisalp.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@cisalp-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-4vcdqowjoq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:13:10.870514Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:13:03.053286Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:13:10.835444Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-gvr",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-gvr",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-gvr"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-4vcdqowjoq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2026-02-19T16:58:52.131259Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-estrela-do-sul-lgpdweb",
+      "projectId": "cm-estrela-do-sul-lgpdweb",
+      "projectNumber": "168525941025"
+    },
+    "exit_code": 0,
+    "targets": []
+  },
+  {
+    "project": {
+      "createTime": "2026-02-02T13:41:53.522553Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CamaraConceicaoAlagoasLGPDweb",
+      "projectId": "camaraconceicaoalagoaslgpdweb",
+      "projectNumber": "152048161192"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "921f9165-51dc-481c-8f2c-404ca503f616",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-152048161192.us-central1.run.app\",\"https://gestao-de-dados-api-dhm5c4clea-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:05:25.175383Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "152048161192",
+          "resourceVersion": "AAZe1yG56ZA",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/152048161192/services/gestao-de-dados-api",
+          "uid": "8890e329-0291-4030-b246-c2642e4f365a"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ffzhmtsgea",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "camaraconceicaoalagoaslgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-camaraconceicaoalagoaslgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmconceicaodasalagoas.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@camaraconceicaoalagoaslgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-dhm5c4clea-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:05:37.075600Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:05:27.452525Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:05:37.033436Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-x66",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-x66",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-x66"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-dhm5c4clea-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2026-02-02T12:25:45.835532Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-campo-florido-lgpdweb",
+      "projectId": "cm-campo-florido-lgpdweb",
+      "projectNumber": "223688126013"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "bd1be6ff-458a-43f2-b86e-d105c5bc00fb",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-223688126013.us-central1.run.app\",\"https://gestao-de-dados-api-f7dl4fhtua-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:04:41.810853Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "223688126013",
+          "resourceVersion": "AAZe1x8/PnI",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/223688126013/services/gestao-de-dados-api",
+          "uid": "270b2062-cbf9-48c8-8531-da8b0d13f879"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ycwlagqvzx",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "cm-campo-florido-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-cm-campo-florido-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmcampoflorido.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@cm-campo-florido-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-f7dl4fhtua-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:04:55.481970Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:04:45.091343Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:04:55.449790Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-xws",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-xws",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-xws"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-f7dl4fhtua-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-10-21T11:14:25.125532Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-Pedrinopolis-LGPDweb",
+      "projectId": "pm-pedrinopolis-lgpdweb",
+      "projectNumber": "374975682507"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "b1d5f200-d94e-44a4-b88a-b6007b2cd95c",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-374975682507.us-central1.run.app\",\"https://gestao-de-dados-api-wfuw4mnlfq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:07:58.344575Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "374975682507",
+          "resourceVersion": "AAZe1yrYKPo",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/374975682507/services/gestao-de-dados-api",
+          "uid": "ce83eee5-6df0-424a-a4b3-459b373f1c70"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "pdmqtfajim",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-pedrinopolis-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pm-pedrinopolis-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmpedrinopolismg.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-wfuw4mnlfq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:08:10.052858Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:08:00.519255Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:08:10.000270Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-vk7",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-vk7",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-vk7"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-wfuw4mnlfq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-10-07T14:57:39.757207Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-nova-ponte-lgpdweb",
+      "projectId": "novapontelgpdweb",
+      "projectNumber": "878878523707"
+    },
+    "exit_code": 0,
+    "targets": []
+  },
+  {
+    "project": {
+      "createTime": "2025-09-26T16:23:48.574546Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-ituiutaba-lgpdweb",
+      "projectId": "prefeituraituiutabalgpdweb",
+      "projectNumber": "637181059585"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "b263c77a-b87e-4189-869d-b34419eeaa06",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-637181059585.us-central1.run.app\",\"https://gestao-de-dados-api-4v2weswxga-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:25:43.158443Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "637181059585",
+          "resourceVersion": "AAZe12tRdQQ",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/637181059585/services/gestao-de-dados-api",
+          "uid": "ef69d2b3-13a4-4b26-9e37-52f289d5b72a"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "kiplkfjtot",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "prefeituraituiutabalgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-prefeituraituiutabalgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmituiutaba.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-4v2weswxga-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:26:11.744004Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:25:45.281648Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:25:53.075391Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-kln",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-kln",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-kln"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-4v2weswxga-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-09-04T16:36:45.311892Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sao-simao-lgpdweb",
+      "projectId": "saosimaolgpdweb-1a6e5",
+      "projectNumber": "986593446685"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "7ed3b9a5-bdfa-4a76-8a5a-78b4218580fb",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-986593446685.us-central1.run.app\",\"https://gestao-de-dados-api-rgtc43q4wa-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:08:35.444344Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "986593446685",
+          "resourceVersion": "AAZe1y0cOyo",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/986593446685/services/gestao-de-dados-api",
+          "uid": "d5cc236c-c260-4e19-aa2c-8281757c2326"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ldxcqdkmjn",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "saosimaolgpdweb-1a6e5"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-saosimaolgpdweb-1a6e5"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmsaosimao.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-rgtc43q4wa-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:08:48.068394Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:08:38.555889Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:08:48.027483Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-wc7",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-wc7",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-wc7"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-rgtc43q4wa-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-18T18:05:45.410543Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-teresopolis-lgpdweb",
+      "projectId": "prefeiturateresopolislgpdweb",
+      "projectNumber": "578760838874"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "a1b6ca90-2781-493b-8bab-f5a7f8faa6a8",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-578760838874.us-central1.run.app\",\"https://gestao-de-dados-api-k7tylpxqia-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:26:34.745567Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "578760838874",
+          "resourceVersion": "AAZe121SAL8",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/578760838874/services/gestao-de-dados-api",
+          "uid": "55197328-3885-40fa-b912-d2b6865e786f"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "qucwmdibso",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "prefeiturateresopolislgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-prefeiturateresopolislgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmteresopolis.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-k7tylpxqia-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:26:45.334207Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:26:38.126371Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:26:45.277380Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-5wt",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-5wt",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-5wt"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-k7tylpxqia-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-18T15:48:10.664928Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-teresopolis-lgpdweb",
+      "projectId": "camarateresopolislgpdweb",
+      "projectNumber": "428870652797"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "aef60cd2-3087-4627-8218-42eb9f0fa122",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-428870652797.us-central1.run.app\",\"https://gestao-de-dados-api-hymfjqwmbq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:23:10.973746Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "428870652797",
+          "resourceVersion": "AAZe12FdnGs",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/428870652797/services/gestao-de-dados-api",
+          "uid": "f93aedd8-67f7-4c7b-b6ee-ee21ff70ad40"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "yzjkfdbzlb",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "camarateresopolislgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-camarateresopolislgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmteresopolis.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@camarateresopolislgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-hymfjqwmbq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:23:24.768363Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:23:21.963996Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:23:24.715303Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-jrn",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-jrn",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-jrn"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-hymfjqwmbq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-12T15:32:13.777212Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-MACHADO-LGPDWEB",
+      "projectId": "pm-machado-lgpdweb",
+      "projectNumber": "183509511404"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "9c6f1c98-775f-45e0-997c-367256805ed1",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-183509511404.us-central1.run.app\",\"https://gestao-de-dados-api-fj3h4dbzcq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:06:42.301413Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "183509511404",
+          "resourceVersion": "AAZe1yZKqfo",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/183509511404/services/gestao-de-dados-api",
+          "uid": "8ecb45e0-1867-4343-abb0-6e06c6975780"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ibvgwgupxx",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-machado-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pm-machado-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmmachado.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-machado-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-fj3h4dbzcq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:06:53.670906Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:06:45.657255Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:06:53.632665Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-sst",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-sst",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-sst"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-fj3h4dbzcq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-12T15:31:18.259584Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CM-ARAGUARI-LGPDWEB",
+      "projectId": "cm-araguari-lgpdweb",
+      "projectNumber": "80441081297"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "f3204a33-c365-455c-8286-4588ec73ea6a",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-80441081297.us-central1.run.app\",\"https://gestao-de-dados-api-uoamgsnfya-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:13:49.990184Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "80441081297",
+          "resourceVersion": "AAZe1z/piz8",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/80441081297/services/gestao-de-dados-api",
+          "uid": "a80095ba-f95a-4180-8e6b-ece736ce771c"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "yjnsknbjkc",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "cm-araguari-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-cm-araguari-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmaraguarimg.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@cm-araguari-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-uoamgsnfya-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:14:03.513663Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:13:52.088154Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:14:03.467341Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-947",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-947",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-947"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-uoamgsnfya-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-11T17:07:47.696217Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sga-lgpdweb",
+      "projectId": "pmsgalgpdweb-32cf8",
+      "projectNumber": "947412222933"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "967cb80a-baa8-4466-9655-2eb758d7fefa",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-947412222933.us-central1.run.app\",\"https://gestao-de-dados-api-bkszdkh47a-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:09:12.535869Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "947412222933",
+          "resourceVersion": "AAZe1y9f/8U",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/947412222933/services/gestao-de-dados-api",
+          "uid": "1f665477-10af-469f-8cb9-41dbbf540578"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "tuxaxvzeyn",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pmsgalgpdweb-32cf8"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pmsgalgpdweb-32cf8"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmsaogoncalodoabaete.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pmsgalgpdweb-32cf8.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-bkszdkh47a-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:09:26.064069Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:09:14.746750Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:09:26.019551Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-nbf",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-nbf",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-nbf"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-bkszdkh47a-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-06T11:58:24.338856Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-monte-carmelo-lgpdweb",
+      "projectId": "pm-montecarmelo-mg-lgpdweb",
+      "projectNumber": "932352030577"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "ebfb1908-0941-45f6-a096-4697f592ba69",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-932352030577.us-central1.run.app\",\"https://gestao-de-dados-api-rskw24prza-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:07:19.632222Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "932352030577",
+          "resourceVersion": "AAZe1yhzh/U",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/932352030577/services/gestao-de-dados-api",
+          "uid": "742fcc53-3b06-4f4d-af83-67f70d094402"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "medzioqkfu",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-montecarmelo-mg-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pm-montecarmelo-mg-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmmontecarmelo.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-montecarmelo-mg-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-rskw24prza-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:07:29.903605Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:07:21.705079Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:07:29.861629Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-nxh",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-nxh",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-nxh"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-rskw24prza-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-08-02T20:04:11.353285Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-estrela-do-sul-lgpdweb",
+      "projectId": "pm-estreladosul-mg-lgpdweb",
+      "projectNumber": "8425592986"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "d4e8910c-a91d-4d26-9db0-5411fa8030a2",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-8425592986.us-central1.run.app\",\"https://gestao-de-dados-api-3mx3stxonq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:24:27.506541Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "8425592986",
+          "resourceVersion": "AAZe12W+TQw",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/8425592986/services/gestao-de-dados-api",
+          "uid": "df4af6a5-3c4a-4ca6-9e18-3a158f513c9c"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "upzxgjabau",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-estreladosul-mg-lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pm-estreladosul-mg-lgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmestreladosulmg.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-estreladosul-mg-lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-3mx3stxonq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:24:38.213900Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:24:29.590616Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:24:38.163539Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-k45",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-k45",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-k45"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-3mx3stxonq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-07-31T14:17:47.359420Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-delta-lgpdweb",
+      "projectId": "pmdeltamglgpdweb",
+      "projectNumber": "363128949229"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "d9c46a8a-cda5-4233-8345-b17c69898994",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-363128949229.us-central1.run.app\",\"https://gestao-de-dados-api-7xmkfxyc4a-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:23:48.305172Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "363128949229",
+          "resourceVersion": "AAZe12OaymM",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/363128949229/services/gestao-de-dados-api",
+          "uid": "e9228a02-a4d1-48c2-9260-cbacc24877b8"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "xgwjiqvooa",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pmdeltamglgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pmdeltamglgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmdelta.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pmdeltamglgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-7xmkfxyc4a-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:24:02.332259Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:24:01.005584Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:24:02.284232Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-t4d",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-t4d",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-t4d"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-7xmkfxyc4a-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-07-23T18:16:09.278225Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cachoeira-dourada-lgpdweb",
+      "projectId": "cachoeiradouradamglgpdweb",
+      "projectNumber": "949172226134"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "42cd46e9-fbe1-4172-9dd3-9bbf16e272d0",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-949172226134.us-central1.run.app\",\"https://gestao-de-dados-api-yjkt6bpjma-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:21:36.273436Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "949172226134",
+          "resourceVersion": "AAZe11uA3JY",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/949172226134/services/gestao-de-dados-api",
+          "uid": "e9f2cade-9a52-494d-b98f-7023d4241589"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "tksfermyrp",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "cachoeiradouradamglgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-cachoeiradouradamglgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmcachoeiradouradamg.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-yjkt6bpjma-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:21:46.415254Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:21:38.405530Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:21:46.363720Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-x7z",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-x7z",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-x7z"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-yjkt6bpjma-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-06-23T12:28:07.398078Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "LGPDWEB",
+      "projectId": "lgpdweb",
+      "projectNumber": "824046366491"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "3",
+            "run.googleapis.com/operation-id": "cbc3addf-93db-4236-aaf8-c0fa3c0a212a",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-824046366491.us-central1.run.app\",\"https://gestao-de-dados-api-pfuv2azpca-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T16:28:27.804680Z",
+          "generation": 4,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1",
+            "commit": "3473faf",
+            "environment": "production-test",
+            "release": "1-0-0"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "824046366491",
+          "resourceVersion": "AAZe5X377cQ",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/824046366491/services/gestao-de-dados-api",
+          "uid": "0a8ddf43-faef-4fa8-adad-81d02ddc6e60"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "commit": "3473faf",
+                "environment": "production-test",
+                "release": "1-0-0",
+                "run.googleapis.com/startupProbeType": "Default"
+              },
+              "name": "gestao-de-dados-api-rel-1-0-0"
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "NODE_ENV",
+                      "value": "production"
+                    },
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "lgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "lgpdweb-gestao-de-dados"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "5000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "1",
+                          "name": "neogov-auth-api-key"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@lgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 60
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-pfuv2azpca-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-28T12:13:34.448068Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T16:28:30.048312Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-28T12:13:34.401971Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-rel-1-0-0",
+          "latestReadyRevisionName": "gestao-de-dados-api-rel-1-0-0",
+          "observedGeneration": 4,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-rel-1-0-0"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-pfuv2azpca-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-06-18T17:54:33.150825Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-frutal-lgpdweb",
+      "projectId": "camarafrutallgpdweb",
+      "projectNumber": "253187335391"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "43483962-83cf-425d-b156-4b16fcdcf8be",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-253187335391.us-central1.run.app\",\"https://gestao-de-dados-api-tgknpbkmaq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:22:34.337377Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "253187335391",
+          "resourceVersion": "AAZe118OgA0",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/253187335391/services/gestao-de-dados-api",
+          "uid": "206b50d9-b46e-46e5-ba3a-b69e9796a6ef"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "wuwcntxdai",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "camarafrutallgpdweb"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-camarafrutallgpdweb"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmfrutal.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@camarafrutallgpdweb.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-tgknpbkmaq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:22:46.029325Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:22:36.358350Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:22:45.987253Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-c2v",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-c2v",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-c2v"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-tgknpbkmaq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-06-10T12:56:20.641931Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-ituiutaba-lgpdweb",
+      "projectId": "camaraituiutabalgpdweb-a1a06",
+      "projectNumber": "955512464223"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "7ed4fbe0-b661-4d46-87a3-705b65da2127",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-955512464223.us-central1.run.app\",\"https://gestao-de-dados-api-56bvcoj4cq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:06:04.397715Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "955512464223",
+          "resourceVersion": "AAZe1yQS9wg",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/955512464223/services/gestao-de-dados-api",
+          "uid": "9d02c4a7-ce02-4f39-8058-c686ee00dd7c"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "bfjarscftm",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "camaraituiutabalgpdweb-a1a06"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-camaraituiutabalgpdweb-a1a06"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://cmituiutaba.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-56bvcoj4cq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:06:16.466184Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:06:06.627973Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:06:16.430236Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-q7w",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-q7w",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-q7w"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-56bvcoj4cq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-06-09T19:45:43.940217Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "sae-ituiutaba-lgpdweb",
+      "projectId": "lgpdwebsaaeituiutaba",
+      "projectNumber": "917044735941"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "378dc6ad-0da2-4585-b9db-a952a0b47775",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-917044735941.us-central1.run.app\",\"https://gestao-de-dados-api-3hoozqqgrq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:27:11.756289Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "917044735941",
+          "resourceVersion": "AAZe12+YzQw",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/917044735941/services/gestao-de-dados-api",
+          "uid": "1c5ff19d-02bb-43e0-b7ec-3313171d101d"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "qxoazlcogr",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "lgpdwebsaaeituiutaba"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-lgpdwebsaaeituiutaba"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://saeituiutaba.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@lgpdwebsaaeituiutaba.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-3hoozqqgrq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:27:23.528460Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:27:13.873635Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:27:23.490077Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-7w9",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-7w9",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-7w9"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-3hoozqqgrq-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-06-09T17:54:29.371182Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-frutal-lgpdweb",
+      "projectId": "frutallgpdweb-3dab8",
+      "projectNumber": "722099604113"
+    },
+    "exit_code": 0,
+    "targets": [
+      {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "e67e5daf-110c-4cd8-9627-44df32ab937a",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-722099604113.us-central1.run.app\",\"https://gestao-de-dados-api-5uhmuxetja-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-10-27T19:25:04.818485Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "722099604113",
+          "resourceVersion": "AAZe12gxYr4",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/722099604113/services/gestao-de-dados-api",
+          "uid": "f76b9a3c-8525-41b6-8af7-2a5b31fde6ac"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0",
+                "run.googleapis.com/cpu-throttling": "true",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "jezefxvuha",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "frutallgpdweb-3dab8"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-frutallgpdweb-3dab8"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmfrutal.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "latest",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@frutallgpdweb-3dab8.iam.gserviceaccount.com",
+              "timeoutSeconds": 3600
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-5uhmuxetja-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-10-27T19:25:19.310526Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:25:07.918608Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-10-27T19:25:19.281687Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00001-tpq",
+          "latestReadyRevisionName": "gestao-de-dados-api-00001-tpq",
+          "observedGeneration": 1,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00001-tpq"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-5uhmuxetja-uc.a.run.app"
+        }
+      }
+    ]
+  },
+  {
+    "project": {
+      "createTime": "2025-06-04T14:04:43.248467Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CamaraItuiutabaOuvidoria",
+      "projectId": "camaraituiutabalgpdweb",
+      "projectNumber": "969877508692"
+    },
+    "exit_code": 0,
+    "targets": []
+  }
+]

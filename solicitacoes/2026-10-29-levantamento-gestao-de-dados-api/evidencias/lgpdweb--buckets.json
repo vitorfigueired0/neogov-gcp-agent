@@ -1,0 +1,199 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:46.026116+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://app.lgpdweb.neogov.com.br",
+            "https://dev.lgpdweb.neogov.com.br",
+            "https://lgpdweb-apresentacao.vercel.app"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T20:25:12+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791231912179723873,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T20:25:12.376000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T15:24:57+0000"
+    },
+    {
+      "creation_time": "2026-10-22T19:00:40+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792695640475071007,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T19:00:40.683000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:00:59+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 300,
+          "method": [
+            "GET",
+            "PUT"
+          ],
+          "origin": [
+            "https://gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T16:24:16+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1793118256370545863,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "lgpdweb-gestao-de-dados",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T16:24:16.456000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://lgpdweb-gestao-de-dados/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T16:26:21+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-824046366491",
+          "projectTeam": {
+            "projectNumber": "824046366491",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-824046366491",
+          "projectTeam": {
+            "projectNumber": "824046366491",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-824046366491",
+          "projectTeam": {
+            "projectNumber": "824046366491",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-06-23T12:51:13+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-824046366491",
+          "projectTeam": {
+            "projectNumber": "824046366491",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-824046366491",
+          "projectTeam": {
+            "projectNumber": "824046366491",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-824046366491",
+          "projectTeam": {
+            "projectNumber": "824046366491",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1750683073874314369,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "lgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-06-23T12:51:13.952000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-06-23T12:51:13+0000"
+    }
+  ]
+}

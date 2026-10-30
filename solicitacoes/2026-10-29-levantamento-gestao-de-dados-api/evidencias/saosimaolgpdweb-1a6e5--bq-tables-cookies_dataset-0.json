@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/saosimaolgpdweb-1a6e5/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:29.919653+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "NBltGpbJ14Ni+L/7KOh/yA==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "saosimaolgpdweb-1a6e5:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "saosimaolgpdweb-1a6e5",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1757004919325"
+      }
+    ],
+    "totalItems": 1
+  }
+}

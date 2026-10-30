@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "get-iam-policy",
+    "gs://gestao-de-dados-pm-montecarmelo-mg-lgpdweb",
+    "--project=pm-montecarmelo-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:11.322560+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "projectEditor:pm-montecarmelo-mg-lgpdweb",
+          "projectOwner:pm-montecarmelo-mg-lgpdweb"
+        ],
+        "role": "roles/storage.legacyBucketOwner"
+      },
+      {
+        "members": [
+          "projectViewer:pm-montecarmelo-mg-lgpdweb"
+        ],
+        "role": "roles/storage.legacyBucketReader"
+      },
+      {
+        "members": [
+          "projectEditor:pm-montecarmelo-mg-lgpdweb",
+          "projectOwner:pm-montecarmelo-mg-lgpdweb"
+        ],
+        "role": "roles/storage.legacyObjectOwner"
+      },
+      {
+        "members": [
+          "projectViewer:pm-montecarmelo-mg-lgpdweb"
+        ],
+        "role": "roles/storage.legacyObjectReader"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@pm-montecarmelo-mg-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@pm-montecarmelo-mg-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectViewer"
+      }
+    ],
+    "etag": "CAQ="
+  }
+}

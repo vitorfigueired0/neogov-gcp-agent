@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@cisalp-lgpdweb.iam.gserviceaccount.com",
+    "--project=cisalp-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:25.713462+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@cisalp-lgpdweb.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/cisalp-lgpdweb/serviceAccounts/gestao-de-dados-api-runtime@cisalp-lgpdweb.iam.gserviceaccount.com",
+    "oauth2ClientId": "114543430359334481068",
+    "projectId": "cisalp-lgpdweb",
+    "uniqueId": "114543430359334481068"
+  }
+}

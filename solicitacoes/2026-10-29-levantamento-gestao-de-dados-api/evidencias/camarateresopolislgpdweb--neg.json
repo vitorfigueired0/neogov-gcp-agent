@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "network-endpoint-groups",
+    "list",
+    "--project=camarateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:27.881091+00:00",
+  "exit_code": 0,
+  "data": []
+}

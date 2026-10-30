@@ -1,0 +1,370 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=camarateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:26.872388+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "creation_time": "2026-01-16T01:28:16+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1768526896276125267,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "backup-lgpdweb-f0b03edb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-01-16T01:28:16.447000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://backup-lgpdweb-f0b03edb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-01-16T01:28:16+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://camarateresopolisrj.lgpdweb.neogov.com.br",
+            "https://lgpdweb-cm-teresopolis-rj.vercel.app"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:17:52+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791220672630551334,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "camarateresopolislgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:17:52.761000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://camarateresopolislgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:57:45+0000"
+    },
+    {
+      "creation_time": "2026-10-22T18:48:36+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792694916731852516,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "camarateresopolislgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T18:48:36.811000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://camarateresopolislgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T18:49:09+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-08-18T15:56:41+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1755532600930686759,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "camarateresopolislgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-08-18T15:56:41.158000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://camarateresopolislgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-08-18T15:56:41+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-16T19:38:18+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776368298133179149,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-428870652797-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-16T19:38:18.301000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-428870652797-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-16T19:38:18+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-16T19:38:17+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776368296939289413,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-428870652797-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-16T19:38:17.116000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-428870652797-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-16T19:38:17+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://cmteresopolis.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:49:38+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:51:37.943000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793126978081885431,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-camarateresopolislgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:49:38.205000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-camarateresopolislgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:49:46+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-10-09T19:27:32+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-428870652797",
+          "projectTeam": {
+            "projectNumber": "428870652797",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1760038052378449844,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gestaodedados-cmteresopolis",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-10-09T19:27:32.590000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestaodedados-cmteresopolis/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-10-09T19:27:32+0000"
+    }
+  ]
+}

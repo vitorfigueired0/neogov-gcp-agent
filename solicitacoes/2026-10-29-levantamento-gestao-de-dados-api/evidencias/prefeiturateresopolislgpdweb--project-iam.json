@@ -1,0 +1,312 @@
+{
+  "command": [
+    "gcloud",
+    "projects",
+    "get-iam-policy",
+    "prefeiturateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:15.791681+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:anonimizacao@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/aiplatform.user"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+        ],
+        "role": "roles/artifactregistry.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/artifactregistry.writer"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies-api@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-2i3v@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-mzxz@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-export@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.dataEditor"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies-api@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.dataViewer"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies-api@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.jobUser"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.resourceAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:ext-firestore-bigquery-ex-2i3v@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-mzxz@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-export@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.user"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874@cloudbuild.gserviceaccount.com"
+        ],
+        "role": "roles/cloudbuild.builds.builder"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudbuild.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudfunctions.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcf-admin-robot.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudfunctions.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-cloudscheduler.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudscheduler.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-cloudtasks.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudtasks.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/composer.environmentAndStorageObjectAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874@cloudservices.gserviceaccount.com"
+        ],
+        "role": "roles/compute.instanceGroupManagerServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@compute-system.iam.gserviceaccount.com"
+        ],
+        "role": "roles/compute.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@container-analysis.iam.gserviceaccount.com"
+        ],
+        "role": "roles/containeranalysis.ServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@containerregistry.iam.gserviceaccount.com"
+        ],
+        "role": "roles/containerregistry.ServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:backup-mensal@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.importExportAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:999687726551-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.owner"
+      },
+      {
+        "members": [
+          "serviceAccount:999687726551-compute@developer.gserviceaccount.com",
+          "serviceAccount:anonimizacao@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-2i3v@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-mzxz@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-export@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:gestao-de-dados-api-runtime@prefeiturateresopolislgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:relatorios@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.user"
+      },
+      {
+        "members": [
+          "serviceAccount:999687726551-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.viewer"
+      },
+      {
+        "members": [
+          "serviceAccount:anonimizacao@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/documentai.apiUser"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-prod-dai-core.iam.gserviceaccount.com"
+        ],
+        "role": "roles/documentaicore.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com",
+          "serviceAccount:578760838874@cloudservices.gserviceaccount.com"
+        ],
+        "role": "roles/editor"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/eventarc.eventReceiver"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-eventarc.iam.gserviceaccount.com"
+        ],
+        "role": "roles/eventarc.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-firebase.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebase.managementServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebase.sdkAdminServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:relatorios@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaseauth.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:neogov-auth-runtime@neogov-auth-prd.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaseauth.editor"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-firebasemods.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebasemods.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@firebase-rules.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaserules.system"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-firebasestorage.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebasestorage.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-firestore.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firestore.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com",
+          "serviceAccount:firebase-adminsdk-fbsvc@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountUser"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/logging.logWriter"
+      },
+      {
+        "members": [
+          "user:desenvolvimento.neogov@gmail.com"
+        ],
+        "role": "roles/owner"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@gcp-sa-pubsub.iam.gserviceaccount.com"
+        ],
+        "role": "roles/pubsub.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/run.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-578760838874@serverless-robot-prod.iam.gserviceaccount.com"
+        ],
+        "role": "roles/run.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@prefeiturateresopolislgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/storage.bucketViewer"
+      },
+      {
+        "members": [
+          "serviceAccount:578760838874-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectCreator"
+      }
+    ],
+    "etag": "BwZe6AXUZ3w=",
+    "version": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "url-maps",
+    "list",
+    "--project=cides-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:57.470998+00:00",
+  "exit_code": 1,
+  "error": "API [compute.googleapis.com] not enabled on project [cides-lgpdweb]. Would you \nlike to enable and retry (this will take a few minutes)? (y/N)?  \nERROR: (gcloud.compute.url-maps.list) PERMISSION_DENIED: Compute Engine API has not been used in project cides-lgpdweb before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=cides-lgpdweb then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. This command is authenticated as desenvolvimento@neogov.com.br which is the active account specified by the [core/account] property.\nCompute Engine API has not been used in project cides-lgpdweb before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=cides-lgpdweb then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.\nGoogle developers console API activation\nhttps://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=cides-lgpdweb\n- '@type': type.googleapis.com/google.rpc.ErrorInfo\n  domain: googleapis.com\n  metadata:\n    activationUrl: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=cides-lgpdweb\n    consumer: projects/cides-lgpdweb\n    containerInfo: cides-lgpdweb\n    service: compute.googleapis.com\n    serviceTitle: Compute Engine API\n  reason: SERVICE_DISABLED\n"
+}

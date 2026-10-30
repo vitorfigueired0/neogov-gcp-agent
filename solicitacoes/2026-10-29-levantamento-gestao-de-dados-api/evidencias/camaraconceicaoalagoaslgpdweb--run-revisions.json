@@ -1,0 +1,178 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "revisions",
+    "list",
+    "--service=gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=camaraconceicaoalagoaslgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:33.564570+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "560.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/operation-id": "921f9165-51dc-481c-8f2c-404ca503f616",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:05:25.320615Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "ffzhmtsgea",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "1",
+          "serving.knative.dev/route": "gestao-de-dados-api",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "8890e329-0291-4030-b246-c2642e4f365a"
+        },
+        "name": "gestao-de-dados-api-00001-x66",
+        "namespace": "152048161192",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "7d40fde4-14a2-46f7-9d5e-a155f5e635e9"
+          }
+        ],
+        "resourceVersion": "AAZe1yG5Ekw",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/152048161192/revisions/gestao-de-dados-api-00001-x66",
+        "uid": "23a7afff-b14b-45dc-a151-ce2ba0ead5ae"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "camaraconceicaoalagoaslgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-camaraconceicaoalagoaslgpdweb"
+              },
+              {
+                "name": "FRONTEND_ORIGIN",
+                "value": "https://cmconceicaodasalagoas.gestaodedados.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:48f148f601f146f8eb3858d58559ae3150d5a31ed2c515e30d43d20a439761d4",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@camaraconceicaoalagoaslgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T19:05:35.690450Z",
+            "message": "Deploying revision succeeded in 10.37s.",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:05:35.840872Z",
+            "severity": "Info",
+            "status": "True",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:05:35.600836Z",
+            "message": "Containers became healthy in 6.23s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:05:27.313809Z",
+            "message": "Container image import completed in 1.21s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:05:28.942778Z",
+            "message": "Provisioning imported containers completed in 1.63s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+            "status": "True",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:48f148f601f146f8eb3858d58559ae3150d5a31ed2c515e30d43d20a439761d4",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=camaraconceicaoalagoaslgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00001-x66&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00001-x66%22",
+        "observedGeneration": 1
+      }
+    }
+  ]
+}

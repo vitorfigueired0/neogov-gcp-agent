@@ -1,0 +1,1488 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "services",
+    "list",
+    "--platform=managed",
+    "--project=pm-tupaciguara-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:17.589667+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "590.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/invoker-iam-disabled": "true",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "852086c1-8993-4532-a8eb-6f1b76e235e1",
+          "run.googleapis.com/urls": "[\"https://anonimizacao-316815308630.us-central1.run.app\",\"https://anonimizacao-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-05T16:57:18.474186Z",
+        "generation": 4,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1"
+        },
+        "name": "anonimizacao",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZe54hk3AI",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/anonimizacao",
+        "uid": "f926e363-c9fe-4458-9c05-b3f8e040d420"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "5",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "590.0.0",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "qpaxkinnfe",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 8,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "MODO",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "FIREBASE_PROJECT_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "GOOGLE_CLOUD_PROJECT",
+                    "value": "pm-tupaciguara-mg-lgpdweb"
+                  },
+                  {
+                    "name": "FIRESTORE_DATABASE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "BUCKET_NAME",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DOCUMENT_AI_PROCESSOR_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DOCUMENT_AI_LOCATION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "ALLOWED_ORIGINS",
+                    "value": "[SEGREDO OMITIDO]"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/cloud-run-source-deploy/anonimizacao@sha256:d2998b9ada4e9024b7b3745b975f26cd50298332865101871b158852a6ab7c68",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "2",
+                    "memory": "4Gi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "anonimizacao@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+            "timeoutSeconds": 600
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://anonimizacao-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-28T14:39:39.031554Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-28T14:39:02.523447Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-28T14:39:38.992064Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "anonimizacao-00004-rvd",
+        "latestReadyRevisionName": "anonimizacao-00004-rvd",
+        "observedGeneration": 4,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "anonimizacao-00004-rvd"
+          }
+        ],
+        "url": "https://anonimizacao-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "585.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/invoker-iam-disabled": "true",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "3eb3d1ad-98eb-4f1b-9d34-e3d732158d3e",
+          "run.googleapis.com/urls": "[\"https://cookies-api-316815308630.us-central1.run.app\",\"https://cookies-api-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-08-26T14:23:57.328002Z",
+        "generation": 6,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "commit-sha": "418691e67d34127dea7d3816df817086fe0e46a8",
+          "gcb-build-id": "3869584f-4503-4585-9965-9fdbc3f5c07f",
+          "gcb-trigger-id": "5d7e383b-220e-4c1d-bc41-2eb329c56329",
+          "gcb-trigger-region": "global",
+          "managed-by": "gcp-cloud-build-deploy-cloud-run"
+        },
+        "name": "cookies-api",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZdHaxAw8I",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/cookies-api",
+        "uid": "30ce0ded-8389-4056-90d2-c3886d616cf3"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "585.0.0",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "bqgpolcnle",
+              "commit-sha": "418691e67d34127dea7d3816df817086fe0e46a8",
+              "gcb-build-id": "3869584f-4503-4585-9965-9fdbc3f5c07f",
+              "gcb-trigger-id": "5d7e383b-220e-4c1d-bc41-2eb329c56329",
+              "gcb-trigger-region": "global",
+              "managed-by": "gcp-cloud-build-deploy-cloud-run",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 80,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "BIGQUERY_TABLE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "CORS_ORIGINS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "ALLOWED_ORIGINS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "TRUSTED_PROXY_HOPS",
+                    "value": "[SEGREDO OMITIDO]"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/cloud-run-source-deploy/cookies-api/cookies-api:418691e67d34127dea7d3816df817086fe0e46a8",
+                "name": "placeholder-1",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1000m",
+                    "memory": "2Gi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "cookies-api@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+            "timeoutSeconds": 180
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://cookies-api-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-05T20:24:45.624258Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-05T20:24:38.495593Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-05T20:24:45.597340Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "cookies-api-00006-g7m",
+        "latestReadyRevisionName": "cookies-api-00006-g7m",
+        "observedGeneration": 6,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "cookies-api-00006-g7m"
+          }
+        ],
+        "url": "https://cookies-api-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "587.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "e0a95b91-1363-4617-af0d-68f4757c77ae",
+          "run.googleapis.com/urls": "[\"https://cookies-api-git-316815308630.us-central1.run.app\",\"https://cookies-api-git-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "316815308630-compute@developer.gserviceaccount.com",
+          "serving.knative.dev/lastModifier": "316815308630-compute@developer.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-05T20:19:59.937938Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "commit-sha": "418691e67d34127dea7d3816df817086fe0e46a8",
+          "gcb-build-id": "8c8864b2-9ad8-463b-afe0-7d458b72561f",
+          "gcb-trigger-id": "d7d40897-7b55-4574-80ea-27d4b28da448",
+          "gcb-trigger-region": "europe-west1",
+          "managed-by": "gcp-cloud-build-deploy-cloud-run"
+        },
+        "name": "cookies-api-git",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZdHZwkpB0",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/cookies-api-git",
+        "uid": "c2f3a1f4-8110-49dc-a3ed-8a0e26c367d2"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "587.0.0"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "wywdyslbus",
+              "commit-sha": "418691e67d34127dea7d3816df817086fe0e46a8",
+              "gcb-build-id": "8c8864b2-9ad8-463b-afe0-7d458b72561f",
+              "gcb-trigger-id": "d7d40897-7b55-4574-80ea-27d4b28da448",
+              "gcb-trigger-region": "europe-west1",
+              "managed-by": "gcp-cloud-build-deploy-cloud-run",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 80,
+            "containers": [
+              {
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/cloud-run-source-deploy/neogovbr-cookies-api/cookies-api-git:418691e67d34127dea7d3816df817086fe0e46a8",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1000m",
+                    "memory": "512Mi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "316815308630-compute@developer.gserviceaccount.com",
+            "timeoutSeconds": 300
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://cookies-api-git-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-05T20:20:15.345693Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-05T20:20:06.756079Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-05T20:20:15.311820Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "cookies-api-git-00001-jvl",
+        "latestReadyRevisionName": "cookies-api-git-00001-jvl",
+        "observedGeneration": 1,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "cookies-api-git-00001-jvl"
+          }
+        ],
+        "url": "https://cookies-api-git-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "582.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/invoker-iam-disabled": "true",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "52e26157-c32c-4246-8870-ac66546cc0d0",
+          "run.googleapis.com/urls": "[\"https://crypto-gestao-316815308630.us-central1.run.app\",\"https://crypto-gestao-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "316815308630-compute@developer.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-08-26T15:02:08.034091Z",
+        "generation": 3,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "commit-sha": "ee6278c5a505eed482c88a8b0077a4af763a0f6a",
+          "gcb-build-id": "a14cb7cc-785e-4564-bf58-5c2c6e343645",
+          "gcb-trigger-id": "a5f2000a-7df8-4603-af61-a03aec1d5cbd",
+          "gcb-trigger-region": "global",
+          "managed-by": "gcp-cloud-build-deploy-cloud-run"
+        },
+        "name": "crypto-gestao",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZZ9IVRW/Y",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/crypto-gestao",
+        "uid": "b30f3dc4-6703-4606-ab66-9e7c6b2e3916"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "582.0.0",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "rijsmrvemu",
+              "commit-sha": "ee6278c5a505eed482c88a8b0077a4af763a0f6a",
+              "gcb-build-id": "a14cb7cc-785e-4564-bf58-5c2c6e343645",
+              "gcb-trigger-id": "a5f2000a-7df8-4603-af61-a03aec1d5cbd",
+              "gcb-trigger-region": "global",
+              "managed-by": "gcp-cloud-build-deploy-cloud-run",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 80,
+            "containers": [
+              {
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/cloud-run-source-deploy/crypto-gestao/crypto-gestao:ee6278c5a505eed482c88a8b0077a4af763a0f6a",
+                "name": "placeholder-1",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1000m",
+                    "memory": "4Gi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "316815308630-compute@developer.gserviceaccount.com",
+            "timeoutSeconds": 300
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://crypto-gestao-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-08-26T15:03:23.857910Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T15:03:19.387319Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T15:03:23.822386Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "crypto-gestao-00003-47q",
+        "latestReadyRevisionName": "crypto-gestao-00003-47q",
+        "observedGeneration": 3,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "crypto-gestao-00003-47q"
+          }
+        ],
+        "url": "https://crypto-gestao-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "cloudfunctions.googleapis.com/function-id": "ext-firestore-bigquery-export-audit-logs-fsexportbigquery",
+          "run.googleapis.com/build-base-image": "us-central1-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/nodejs22",
+          "run.googleapis.com/build-enable-automatic-updates": "false",
+          "run.googleapis.com/build-function-target": "fsexportbigquery",
+          "run.googleapis.com/build-image-uri": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/gcf-artifacts/pm--tupaciguara--mg--lgpdweb__us--central1__ext--firestore--bigquery--export--audit--logs--fsexportbigquery:version_1",
+          "run.googleapis.com/build-name": "projects/316815308630/locations/us-central1/builds/ff41a86a-9d19-4fcb-81d5-a5e17e197e8d",
+          "run.googleapis.com/build-service-account": "projects/pm-tupaciguara-mg-lgpdweb/serviceAccounts/316815308630-compute@developer.gserviceaccount.com",
+          "run.googleapis.com/build-source-location": "gs://gcf-v2-sources-316815308630-us-central1/ext-firestore-bigquery-export-audit-logs-fsexportbigquery/function-source.zip#1787767042503111",
+          "run.googleapis.com/client-name": "firebase-extensions",
+          "run.googleapis.com/custom-audiences": "[\"https://us-central1-pm-tupaciguara-mg-lgpdweb.cloudfunctions.net/ext-firestore-bigquery-export-audit-logs-fsexportbigquery\"]",
+          "run.googleapis.com/ingress": "internal",
+          "run.googleapis.com/ingress-status": "internal",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "1e703f79-7956-4e59-8bf7-97fe2452af56",
+          "run.googleapis.com/urls": "[\"https://us-central1-pm-tupaciguara-mg-lgpdweb.cloudfunctions.net/ext-firestore-bigquery-export-audit-logs-fsexportbigquery\",\"https://ext-firestore-bigquery-export-audit-logs-fsexport-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "service-316815308630@gcf-admin-robot.iam.gserviceaccount.com",
+          "serving.knative.dev/lastModifier": "service-316815308630@gcf-admin-robot.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-08-26T17:56:44.210870Z",
+        "generation": 2,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "goog-cloudfunctions-runtime": "nodejs22",
+          "goog-dm": "firebase-ext-firestore-bigquery-export-audit-logs",
+          "goog-drz-cloudfunctions-id": "ext-firestore-bigquery-export-audit-logs-fsexportbigquery",
+          "goog-drz-cloudfunctions-location": "us-central1",
+          "goog-firebase-ext": "firestore-bigquery-export",
+          "goog-firebase-ext-iid": "firestore-bigquery-export-audit-logs",
+          "goog-managed-by": "cloudfunctions"
+        },
+        "name": "ext-firestore-bigquery-export-audit-logs-fsexportbigquery",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZZ9vgbrj0",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/ext-firestore-bigquery-export-audit-logs-fsexportbigquery",
+        "uid": "d1a1eaf2-faff-4c64-80cf-3f0f991585c5"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "cloudfunctions.googleapis.com/trigger-type": "google.cloud.firestore.document.v1.written",
+              "run.googleapis.com/client-name": "firebase-extensions",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "goog-dm": "firebase-ext-firestore-bigquery-export-audit-logs",
+              "goog-drz-cloudfunctions-id": "ext-firestore-bigquery-export-audit-logs-fsexportbigquery",
+              "goog-drz-cloudfunctions-location": "us-central1",
+              "goog-firebase-ext": "firestore-bigquery-export",
+              "goog-firebase-ext-iid": "firestore-bigquery-export-audit-logs",
+              "run.googleapis.com/startupProbeType": "Default"
+            },
+            "name": "ext-firestore-bigquery-export-audit-logs-fsexportbigq-00002-pup"
+          },
+          "spec": {
+            "containerConcurrency": 1,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "BIGQUERY_PROJECT_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "COLLECTION_PATH",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATABASE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATABASE_INSTANCE"
+                  },
+                  {
+                    "name": "DATABASE_REGION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATABASE_URL"
+                  },
+                  {
+                    "name": "DATASET_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATASET_LOCATION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "EXCLUDE_OLD_DATA",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "EXT_INSTANCE_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "FIREBASE_CONFIG",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "FUNCTION_SIGNATURE_TYPE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "GCLOUD_PROJECT",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "LOCATION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "LOG_LEVEL",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "MAX_DISPATCHES_PER_SECOND",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "MAX_ENQUEUE_ATTEMPTS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "PROJECT_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "STORAGE_BUCKET",
+                    "value": "pm-tupaciguara-mg-lgpdweb.firebasestorage.app"
+                  },
+                  {
+                    "name": "TABLE_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "TABLE_PARTITIONING",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "TIME_PARTITIONING_FIELD_TYPE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "USE_NEW_SNAPSHOT_QUERY_SYNTAX",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "VIEW_TYPE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "WILDCARD_IDS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "LOG_EXECUTION_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/gcf-artifacts/pm--tupaciguara--mg--lgpdweb__us--central1__ext--firestore--bigquery--export--audit--logs--fsexportbigquery:version_1",
+                "name": "worker",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "0.1666",
+                    "memory": "256Mi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "ext-firestore-bigquery-ex-ypfc@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+            "timeoutSeconds": 60
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://ext-firestore-bigquery-export-audit-logs-fsexport-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-08-26T17:58:39.654461Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T17:58:33.288585Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T17:58:39.597729Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "ext-firestore-bigquery-export-audit-logs-fsexportbigq-00002-pup",
+        "latestReadyRevisionName": "ext-firestore-bigquery-export-audit-logs-fsexportbigq-00002-pup",
+        "observedGeneration": 2,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "ext-firestore-bigquery-export-audit-logs-fsexportbigq-00002-pup"
+          }
+        ],
+        "url": "https://ext-firestore-bigquery-export-audit-logs-fsexport-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "cloudfunctions.googleapis.com/function-id": "ext-firestore-bigquery-export-registros-fsexportbigquery",
+          "run.googleapis.com/build-base-image": "us-central1-docker.pkg.dev/serverless-runtimes/google-22-full/runtimes/nodejs22",
+          "run.googleapis.com/build-enable-automatic-updates": "false",
+          "run.googleapis.com/build-function-target": "fsexportbigquery",
+          "run.googleapis.com/build-image-uri": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/gcf-artifacts/pm--tupaciguara--mg--lgpdweb__us--central1__ext--firestore--bigquery--export--registros--fsexportbigquery:version_1",
+          "run.googleapis.com/build-name": "projects/316815308630/locations/us-central1/builds/3a6da084-4e4e-4727-a1ed-f611fc00293c",
+          "run.googleapis.com/build-service-account": "projects/pm-tupaciguara-mg-lgpdweb/serviceAccounts/316815308630-compute@developer.gserviceaccount.com",
+          "run.googleapis.com/build-source-location": "gs://gcf-v2-sources-316815308630-us-central1/ext-firestore-bigquery-export-registros-fsexportbigquery/function-source.zip#1787767114862829",
+          "run.googleapis.com/client-name": "firebase-extensions",
+          "run.googleapis.com/custom-audiences": "[\"https://us-central1-pm-tupaciguara-mg-lgpdweb.cloudfunctions.net/ext-firestore-bigquery-export-registros-fsexportbigquery\"]",
+          "run.googleapis.com/ingress": "internal",
+          "run.googleapis.com/ingress-status": "internal",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "13de1ca8-802a-46aa-b97e-bf79cf2d15ef",
+          "run.googleapis.com/urls": "[\"https://us-central1-pm-tupaciguara-mg-lgpdweb.cloudfunctions.net/ext-firestore-bigquery-export-registros-fsexportbigquery\",\"https://ext-firestore-bigquery-export-registros-fsexportb-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "service-316815308630@gcf-admin-robot.iam.gserviceaccount.com",
+          "serving.knative.dev/lastModifier": "service-316815308630@gcf-admin-robot.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-08-26T17:58:03.516865Z",
+        "generation": 2,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "goog-cloudfunctions-runtime": "nodejs22",
+          "goog-dm": "firebase-ext-firestore-bigquery-export-registros",
+          "goog-drz-cloudfunctions-id": "ext-firestore-bigquery-export-registros-fsexportbigquery",
+          "goog-drz-cloudfunctions-location": "us-central1",
+          "goog-firebase-ext": "firestore-bigquery-export",
+          "goog-firebase-ext-iid": "firestore-bigquery-export-registros",
+          "goog-managed-by": "cloudfunctions"
+        },
+        "name": "ext-firestore-bigquery-export-registros-fsexportbigquery",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZZ9v3yvsI",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/ext-firestore-bigquery-export-registros-fsexportbigquery",
+        "uid": "3b27f96d-00d1-45b8-bb2a-116cef1ec4ba"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "cloudfunctions.googleapis.com/trigger-type": "google.cloud.firestore.document.v1.written",
+              "run.googleapis.com/client-name": "firebase-extensions",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "goog-dm": "firebase-ext-firestore-bigquery-export-registros",
+              "goog-drz-cloudfunctions-id": "ext-firestore-bigquery-export-registros-fsexportbigquery",
+              "goog-drz-cloudfunctions-location": "us-central1",
+              "goog-firebase-ext": "firestore-bigquery-export",
+              "goog-firebase-ext-iid": "firestore-bigquery-export-registros",
+              "run.googleapis.com/startupProbeType": "Default"
+            },
+            "name": "ext-firestore-bigquery-export-registros-fsexportbigqu-00002-rat"
+          },
+          "spec": {
+            "containerConcurrency": 1,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "BIGQUERY_PROJECT_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "COLLECTION_PATH",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATABASE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATABASE_INSTANCE"
+                  },
+                  {
+                    "name": "DATABASE_REGION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATABASE_URL"
+                  },
+                  {
+                    "name": "DATASET_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "DATASET_LOCATION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "EXCLUDE_OLD_DATA",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "EXT_INSTANCE_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "FIREBASE_CONFIG",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "FUNCTION_SIGNATURE_TYPE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "GCLOUD_PROJECT",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "LOCATION",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "LOG_LEVEL",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "MAX_DISPATCHES_PER_SECOND",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "MAX_ENQUEUE_ATTEMPTS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "PROJECT_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "STORAGE_BUCKET",
+                    "value": "pm-tupaciguara-mg-lgpdweb.firebasestorage.app"
+                  },
+                  {
+                    "name": "TABLE_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "TABLE_PARTITIONING",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "TIME_PARTITIONING_FIELD_TYPE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "USE_NEW_SNAPSHOT_QUERY_SYNTAX",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "VIEW_TYPE",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "WILDCARD_IDS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "LOG_EXECUTION_ID",
+                    "value": "[SEGREDO OMITIDO]"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/gcf-artifacts/pm--tupaciguara--mg--lgpdweb__us--central1__ext--firestore--bigquery--export--registros--fsexportbigquery:version_1",
+                "name": "worker",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "0.1666",
+                    "memory": "256Mi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "ext-firestore-bigquery-ex-rt9l@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+            "timeoutSeconds": 60
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://ext-firestore-bigquery-export-registros-fsexportb-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-08-26T18:00:17.635010Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T17:59:42.069585Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T18:00:17.565847Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "ext-firestore-bigquery-export-registros-fsexportbigqu-00002-rat",
+        "latestReadyRevisionName": "ext-firestore-bigquery-export-registros-fsexportbigqu-00002-rat",
+        "observedGeneration": 2,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "ext-firestore-bigquery-export-registros-fsexportbigqu-00002-rat"
+          }
+        ],
+        "url": "https://ext-firestore-bigquery-export-registros-fsexportb-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "560.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/invoker-iam-disabled": "true",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "014463b5-e460-4645-b735-3913cf15ac70",
+          "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-316815308630.us-central1.run.app\",\"https://gestao-de-dados-api-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:09:51.199754Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1"
+        },
+        "name": "gestao-de-dados-api",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZe1zGQyag",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/gestao-de-dados-api",
+        "uid": "36cd9f3f-c0ee-4c63-88ef-5d26b92e130b"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "560.0.0",
+              "run.googleapis.com/cpu-throttling": "true",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "xqhkumiexq",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 80,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "GOOGLE_CLOUD_PROJECT",
+                    "value": "pm-tupaciguara-mg-lgpdweb"
+                  },
+                  {
+                    "name": "FIRESTORE_DATABASE_ID",
+                    "value": "gestao-de-dados"
+                  },
+                  {
+                    "name": "STORAGE_BUCKET",
+                    "value": "gestao-de-dados-pm-tupaciguara-mg-lgpdweb"
+                  },
+                  {
+                    "name": "FRONTEND_ORIGIN",
+                    "value": "https://pmtupaciguara.gestaodedados.neogov.com.br"
+                  },
+                  {
+                    "name": "NEOGOV_AUTH_BASE_URL",
+                    "value": "https://api.auth.neogov.com.br"
+                  },
+                  {
+                    "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                    "value": "20000"
+                  },
+                  {
+                    "name": "AUTH_COOKIE_SECURE",
+                    "value": "true"
+                  },
+                  {
+                    "name": "AUTH_COOKIE_SAME_SITE",
+                    "value": "lax"
+                  },
+                  {
+                    "name": "NEOGOV_AUTH_API_KEY",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "latest",
+                        "name": "NEOGOV_AUTH_API_KEY"
+                      }
+                    }
+                  },
+                  {
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                    "valueFrom": {
+                      "secretKeyRef": {
+                        "key": "latest",
+                        "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                      }
+                    }
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1",
+                    "memory": "1Gi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "gestao-de-dados-api-runtime@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+            "timeoutSeconds": 3600
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://gestao-de-dados-api-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T19:10:02.815912Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:09:53.507875Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:10:02.770270Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "gestao-de-dados-api-00001-vzz",
+        "latestReadyRevisionName": "gestao-de-dados-api-00001-vzz",
+        "observedGeneration": 1,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "gestao-de-dados-api-00001-vzz"
+          }
+        ],
+        "url": "https://gestao-de-dados-api-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "582.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/invoker-iam-disabled": "true",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "af3819ee-1227-4ce7-be6d-beec81827abd",
+          "run.googleapis.com/urls": "[\"https://pdf-inventario-316815308630.us-central1.run.app\",\"https://pdf-inventario-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "316815308630-compute@developer.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-08-26T15:07:41.908720Z",
+        "generation": 3,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "commit-sha": "1cbddbebb85ac02b3c4f6eb6f264c59d4c5b07f1",
+          "gcb-build-id": "e23aeb12-e97a-4d65-91fb-ddb8559ad822",
+          "gcb-trigger-id": "c59c009a-d0b7-4322-9377-96b51953f6e8",
+          "gcb-trigger-region": "global",
+          "managed-by": "gcp-cloud-build-deploy-cloud-run"
+        },
+        "name": "pdf-inventario",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZZ9KC0fu4",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/pdf-inventario",
+        "uid": "946ad4db-8f71-4509-88ed-b7f18f66cdc1"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "582.0.0",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "qaozcfaeze",
+              "commit-sha": "1cbddbebb85ac02b3c4f6eb6f264c59d4c5b07f1",
+              "gcb-build-id": "e23aeb12-e97a-4d65-91fb-ddb8559ad822",
+              "gcb-trigger-id": "c59c009a-d0b7-4322-9377-96b51953f6e8",
+              "gcb-trigger-region": "global",
+              "managed-by": "gcp-cloud-build-deploy-cloud-run",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 80,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "LOGO_URL",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "NOME_ENCARREGADO",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "NOME_ENT",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "ZEPTOMAIL_API_KEY",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "EMAIL_FROM_ADDRESS",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "EMAIL_FROM_NAME",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "FRONTEND_URL",
+                    "value": "[SEGREDO OMITIDO]"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/cloud-run-source-deploy/pdf-inventario/pdf-inventario:1cbddbebb85ac02b3c4f6eb6f264c59d4c5b07f1",
+                "name": "placeholder-1",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1000m",
+                    "memory": "2Gi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "316815308630-compute@developer.gserviceaccount.com",
+            "timeoutSeconds": 180
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://pdf-inventario-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-08-26T15:11:03.339758Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T15:10:44.540183Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-08-26T15:11:03.293649Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "pdf-inventario-00003-p5p",
+        "latestReadyRevisionName": "pdf-inventario-00003-p5p",
+        "observedGeneration": 3,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "pdf-inventario-00003-p5p"
+          }
+        ],
+        "url": "https://pdf-inventario-hwzxsfpqkq-uc.a.run.app"
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "590.0.1",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/maxScale": "100",
+          "run.googleapis.com/operation-id": "498c198c-7aff-4826-b041-a98e18be90f6",
+          "run.googleapis.com/urls": "[\"https://relatorios-316815308630.us-central1.run.app\",\"https://relatorios-hwzxsfpqkq-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "github-cd-relatorios@artefatos.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-27T15:24:07.372633Z",
+        "generation": 4,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1"
+        },
+        "name": "relatorios",
+        "namespace": "316815308630",
+        "resourceVersion": "AAZe+6hlO88",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/316815308630/services/relatorios",
+        "uid": "0de25b22-373e-47f0-91a0-0c7de0d1a879"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "3",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "590.0.1",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "aqxedmzuyn",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 20,
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "GOOGLE_CLOUD_PROJECT",
+                    "value": "pm-tupaciguara-mg-lgpdweb"
+                  },
+                  {
+                    "name": "FIRESTORE_DB",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "CHAMADORES",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "AUDIENCIA",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "URL_LGPDWEB",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "URL_AVISO",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "URL_BANNER",
+                    "value": "[SEGREDO OMITIDO]"
+                  },
+                  {
+                    "name": "COOKIES_API",
+                    "value": "[SEGREDO OMITIDO]"
+                  }
+                ],
+                "image": "us-central1-docker.pkg.dev/pm-tupaciguara-mg-lgpdweb/cloud-run-source-deploy/relatorios@sha256:26f377c8694ea70a36b0d6510620afcb30c318eea615b40d2c29f4c820540169",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1",
+                    "memory": "512Mi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "relatorios@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com",
+            "timeoutSeconds": 120
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://relatorios-hwzxsfpqkq-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-29T14:40:15.272911Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-29T14:40:11.136907Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-29T14:40:12.456562Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "relatorios-00004-z4j",
+        "latestReadyRevisionName": "relatorios-00004-z4j",
+        "observedGeneration": 4,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "relatorios-00004-z4j"
+          }
+        ],
+        "url": "https://relatorios-hwzxsfpqkq-uc.a.run.app"
+      }
+    }
+  ]
+}

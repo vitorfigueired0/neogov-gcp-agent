@@ -1,0 +1,50 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "describe",
+    "gs://gestao-de-dados-pm-machado-lgpdweb",
+    "--project=pm-machado-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:42.668967+00:00",
+  "exit_code": 0,
+  "data": {
+    "cors_config": [
+      {
+        "maxAgeSeconds": 3600,
+        "method": [
+          "PUT",
+          "GET"
+        ],
+        "origin": [
+          "https://pmmachado.gestaodedados.neogov.com.br"
+        ],
+        "responseHeader": [
+          "Content-Type",
+          "x-goog-if-generation-match"
+        ]
+      }
+    ],
+    "creation_time": "2026-10-27T18:54:44+0000",
+    "csek_enforcement": {
+      "effectiveTime": "2026-10-27T18:56:43.836000+00:00",
+      "restrictionMode": "FullyRestricted"
+    },
+    "default_storage_class": "STANDARD",
+    "generation": 1793127283979148285,
+    "location": "US-CENTRAL1",
+    "location_type": "region",
+    "metageneration": 4,
+    "name": "gestao-de-dados-pm-machado-lgpdweb",
+    "public_access_prevention": "enforced",
+    "soft_delete_policy": {
+      "effectiveTime": "2026-10-27T18:54:44.173000+00:00",
+      "retentionDurationSeconds": "604800"
+    },
+    "storage_url": "gs://gestao-de-dados-pm-machado-lgpdweb/",
+    "uniform_bucket_level_access": true,
+    "update_time": "2026-10-27T18:54:53+0000"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "gcloud",
+    "billing",
+    "projects",
+    "describe",
+    "pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:12.255456+00:00",
+  "exit_code": 0,
+  "data": {
+    "billingAccountName": "billingAccounts/01017B-9A8236-AA7CA7",
+    "billingEnabled": true,
+    "name": "projects/pm-neogov-qa-lgpdweb/billingInfo",
+    "projectId": "pm-neogov-qa-lgpdweb"
+  }
+}

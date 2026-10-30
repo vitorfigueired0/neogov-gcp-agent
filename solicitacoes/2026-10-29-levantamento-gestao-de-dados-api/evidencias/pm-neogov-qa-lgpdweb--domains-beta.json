@@ -1,0 +1,71 @@
+{
+  "command": [
+    "gcloud",
+    "beta",
+    "run",
+    "domain-mappings",
+    "list",
+    "--platform=managed",
+    "--region=us-central1",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:29.054071+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "domains.cloudrun.com/v1",
+      "kind": "DomainMapping",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/operation-id": "a3f113dd-c249-40ca-a7ea-48bbd5046e20",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-08T13:01:19.906527Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/overrideAt": "2026-10-08T13:01:25.847Z"
+        },
+        "name": "api.qa.gestaodedados.neogov.com.br",
+        "namespace": "115635227737",
+        "resourceVersion": "AAZdVEQKURo",
+        "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/115635227737/domainmappings/api.qa.gestaodedados.neogov.com.br",
+        "uid": "e7170a6f-c576-4566-8226-b7c4ce4eddec"
+      },
+      "spec": {
+        "certificateMode": "AUTOMATIC",
+        "routeName": "gestao-de-dados-api"
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-08T13:32:40.426778Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-08T13:32:40.426778Z",
+            "status": "True",
+            "type": "CertificateProvisioned"
+          },
+          {
+            "lastTransitionTime": "2026-10-08T13:01:27.114456Z",
+            "status": "True",
+            "type": "DomainRoutable"
+          }
+        ],
+        "mappedRouteName": "gestao-de-dados-api",
+        "observedGeneration": 1,
+        "resourceRecords": [
+          {
+            "name": "api.qa.gestaodedados",
+            "rrdata": "ghs.googlehosted.com.",
+            "type": "CNAME"
+          }
+        ]
+      }
+    }
+  ]
+}

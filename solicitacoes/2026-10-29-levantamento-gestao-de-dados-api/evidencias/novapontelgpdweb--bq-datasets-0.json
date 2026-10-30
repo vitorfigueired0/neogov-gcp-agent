@@ -1,0 +1,32 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/novapontelgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:26.153262+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "nGJWOAzpg94OiQh3IqfXfg==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "novapontelgpdweb:_f231998047429c5d154e1341bcf1ea241f174d26",
+        "datasetReference": {
+          "datasetId": "_f231998047429c5d154e1341bcf1ea241f174d26",
+          "projectId": "novapontelgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "novapontelgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "novapontelgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

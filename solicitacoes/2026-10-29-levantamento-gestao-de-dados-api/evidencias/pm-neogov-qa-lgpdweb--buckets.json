@@ -1,0 +1,210 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:13.450073+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "cmek_enforcement": {
+        "restrictionMode": "NotRestricted"
+      },
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "http://localhost:5173",
+            "https://qa.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-06T16:16:26+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-06T16:18:26.636000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1791303386676745741,
+      "gmek_enforcement": {
+        "restrictionMode": "NotRestricted"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 5,
+      "name": "gestao-de-dados-qa",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-06T16:16:26.952000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-qa/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-26T16:19:54+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://qa.lgpdweb.neogov.com.br",
+            "https://lgpdweb-vite-qa.vercel.app",
+            "http://localhost:5173"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-01T14:40:28+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1790865627804649873,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 16,
+      "name": "pm-neogov-qa-lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-01T14:40:28.079000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-neogov-qa-lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T15:23:31+0000"
+    },
+    {
+      "creation_time": "2026-10-22T18:41:22+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792694481847733050,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "pm-neogov-qa-lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T18:41:22.101000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-neogov-qa-lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T18:41:41+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-115635227737",
+          "projectTeam": {
+            "projectNumber": "115635227737",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-115635227737",
+          "projectTeam": {
+            "projectNumber": "115635227737",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-115635227737",
+          "projectTeam": {
+            "projectNumber": "115635227737",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2026-05-29T14:24:06+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-115635227737",
+          "projectTeam": {
+            "projectNumber": "115635227737",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-115635227737",
+          "projectTeam": {
+            "projectNumber": "115635227737",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-115635227737",
+          "projectTeam": {
+            "projectNumber": "115635227737",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1780064646030411160,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 2,
+      "name": "pm-neogov-qa-lgpdweb.firebasestorage.app",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-05-29T14:24:06.241000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-neogov-qa-lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2026-10-26T12:47:21+0000"
+    }
+  ]
+}

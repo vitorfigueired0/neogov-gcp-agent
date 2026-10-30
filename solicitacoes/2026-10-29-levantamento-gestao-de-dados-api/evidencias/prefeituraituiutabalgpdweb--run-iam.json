@@ -1,0 +1,17 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "services",
+    "get-iam-policy",
+    "gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=prefeituraituiutabalgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:58.822704+00:00",
+  "exit_code": 0,
+  "data": {
+    "etag": "ACAB"
+  }
+}

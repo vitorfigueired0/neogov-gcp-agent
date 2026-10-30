@@ -1,0 +1,2939 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "revisions",
+    "list",
+    "--service=gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:16.331241+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "397784bd-b9ab-48cf-85c4-fc26880d54a4",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-27T15:22:46.510807Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "ptrlyfdswg",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "20",
+          "serving.knative.dev/route": "gestao-de-dados-api",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00020-dpr",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZe1AWN6a4",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00020-dpr",
+        "uid": "08c4821f-50cb-4bdf-9ab6-33429726e01a"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "FRONTEND_ORIGIN",
+                "value": "https://qa.gestaodedados.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:7eaa84bd2b43c7ce8fc406bf5d5d9b38a3a286546f439b89e5d256a63dfaa665",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T15:22:58.238775Z",
+            "message": "Deploying revision succeeded in 11.73s.",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T15:22:58.382211Z",
+            "severity": "Info",
+            "status": "True",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T15:22:58.160998Z",
+            "message": "Containers became healthy in 6.26s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T15:22:49.557356Z",
+            "message": "Container image import completed in 2.43s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T15:22:51.335877Z",
+            "message": "Provisioning imported containers completed in 1.78s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+            "status": "True",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:7eaa84bd2b43c7ce8fc406bf5d5d9b38a3a286546f439b89e5d256a63dfaa665",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00020-dpr&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00020-dpr%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "397784bd-b9ab-48cf-85c4-fc26880d54a4",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-27T00:49:36.071094Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "vpzwjzqdsn",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "19",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00019-tpd",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZe1AWPbzM",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00019-tpd",
+        "uid": "d1ace3e0-5dcb-46a3-9904-c8af59cf1a7f"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "FRONTEND_ORIGIN",
+                "value": "https://qa.gestaodedados.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:920b02ec989c64988bf73207a692267962ee000970a3635fed67410be16904c6",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T15:22:59.627827Z",
+            "message": "Deploying revision succeeded in 7.99s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T15:22:59.627827Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T00:49:44.006669Z",
+            "message": "Containers became healthy in 5.28s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T00:49:36.785426Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T15:22:59.627827Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:920b02ec989c64988bf73207a692267962ee000970a3635fed67410be16904c6",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00019-tpd&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00019-tpd%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "e5e42528-f305-424e-a651-f875adf5cb6f",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-26T12:28:10.000830Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "xcjcjdbpdb",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "18",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00018-5sd",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZex9KgJgA",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00018-5sd",
+        "uid": "0fa7bd17-3a4d-4340-a508-a2f73236509a"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "FRONTEND_ORIGIN",
+                "value": "https://qa.gestaodedados.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:97d01c8b9d9c941514ea175450e56a3c161376806904b7781da2a282910a3a4a",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T00:49:45.477632Z",
+            "message": "Deploying revision succeeded in 6.6s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T00:49:45.477632Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-26T12:28:16.546031Z",
+            "message": "Containers became healthy in 3.72s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-26T12:28:10.805051Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T00:49:45.477632Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:97d01c8b9d9c941514ea175450e56a3c161376806904b7781da2a282910a3a4a",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00018-5sd&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00018-5sd%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "f192724c-546f-49a2-8a4e-5146f2ad6d14",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-24T01:16:41.255753Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "xcjcjdbpdb",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "17",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00017-pn4",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZevXb4zdQ",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00017-pn4",
+        "uid": "ea2aa66e-fd8c-4984-9ef1-479012d7342c"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:97d01c8b9d9c941514ea175450e56a3c161376806904b7781da2a282910a3a4a",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-26T12:28:18.110932Z",
+            "message": "Deploying revision succeeded in 11.63s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-26T12:28:18.110932Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-24T01:16:52.829323Z",
+            "message": "Containers became healthy in 5.35s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-24T01:16:45.361831Z",
+            "message": "Container image import completed in 3.52s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-26T12:28:18.110932Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:97d01c8b9d9c941514ea175450e56a3c161376806904b7781da2a282910a3a4a",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00017-pn4&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00017-pn4%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "d43bf32e-bf90-4832-b64a-d5b4440639d6",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-22T17:10:09.694894Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "mcinalkqof",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "16",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00016-frz",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZei9ov0pc",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00016-frz",
+        "uid": "513ccd35-38df-4113-a09a-97f4a644d78a"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:4c6d14786d48da95ad95884471309c6e2e8fde2120c84a0e6cf77dae868e6eb6",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-24T01:16:54.296215Z",
+            "message": "Deploying revision succeeded in 13.61s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-24T01:16:54.296215Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:10:23.259725Z",
+            "message": "Containers became healthy in 9.22s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:10:10.851991Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-24T01:16:54.296215Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:4c6d14786d48da95ad95884471309c6e2e8fde2120c84a0e6cf77dae868e6eb6",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00016-frz&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00016-frz%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "8d31d66c-cf14-468a-a55a-5e7089c1a601",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-22T17:04:31.275648Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "zzcqenzkee",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "15",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00015-xql",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZecPCD6ZQ",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00015-xql",
+        "uid": "e26e13af-00a9-4725-ac52-a9010bd4a1d4"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:c8f3b8d60a4328ee3c043d2fe7d4a1d8e633a0b5f1a9d8368fc73e11cfc28773",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-22T17:10:24.788884Z",
+            "message": "Deploying revision succeeded in 26.08s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:10:24.788884Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:04:57.282506Z",
+            "message": "Containers became healthy in 23.04s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:04:32.028953Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:10:24.788884Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:c8f3b8d60a4328ee3c043d2fe7d4a1d8e633a0b5f1a9d8368fc73e11cfc28773",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00015-xql&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00015-xql%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "00754235-9117-4adc-a33d-49f3d025ce72",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-22T16:54:34.134129Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "zzcqenzkee",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "14",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00014-8p5",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZei9o1N3k",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00014-8p5",
+        "uid": "5d81f9a1-57bd-4a84-8505-3bfa6776cf17"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:c8f3b8d60a4328ee3c043d2fe7d4a1d8e633a0b5f1a9d8368fc73e11cfc28773",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-24T01:16:54.649721Z",
+            "message": "The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00014-8p5&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00014-8p5%22 \nFor more troubleshooting guidance, see https://docs.cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-24T01:16:54.649721Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T16:54:52.706878Z",
+            "message": "The user-provided container failed to start and listen on the port defined provided by the PORT=8080 environment variable within the allocated timeout. This can happen when the container port is misconfigured or if the timeout is too short. The health check timeout can be extended. Logs for this revision might contain more information.\n\nLogs URL: https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00014-8p5&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00014-8p5%22 \nFor more troubleshooting guidance, see https://docs.cloud.google.com/run/docs/troubleshooting#container-failed-to-start",
+            "reason": "HealthCheckContainerError",
+            "status": "False",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T16:54:37.141380Z",
+            "message": "Container image import completed in 2.4s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-24T01:16:54.649721Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:c8f3b8d60a4328ee3c043d2fe7d4a1d8e633a0b5f1a9d8368fc73e11cfc28773",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00014-8p5&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00014-8p5%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "d8d18e76-f278-4b2b-a1c5-993d1d6496e4",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-22T14:18:07.117698Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "evzsvvpehv",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "13",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00013-kvz",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZecN0U3bk",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00013-kvz",
+        "uid": "f851f1aa-a4f1-42dc-892b-1aae597bc955"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:bbc25a8a06ea87168551c58712a3b4cf04dd373212a1080c220471f06eb74bf0",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-22T17:04:58.744249Z",
+            "message": "Deploying revision succeeded in 12.67s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:04:58.744249Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T14:18:19.713030Z",
+            "message": "Containers became healthy in 7.56s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T14:18:09.973114Z",
+            "message": "Container image import completed in 2.23s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T17:04:58.744249Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:bbc25a8a06ea87168551c58712a3b4cf04dd373212a1080c220471f06eb74bf0",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00013-kvz&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00013-kvz%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "5099f6ac-894a-4d19-94b0-6ce3ecc5e11d",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-22T13:18:26.546791Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "kerwwppgug",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "12",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00012-w7p",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZebokuMJI",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00012-w7p",
+        "uid": "6467b0aa-3c06-4c3d-9001-eb5cae37b3d4"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:7cfc53c2801406678dc15598486171338d0de71f6f458449372e3d3dc771d8e7",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-22T14:18:21.183122Z",
+            "message": "Deploying revision succeeded in 13.8s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T14:18:21.183122Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:18:40.291881Z",
+            "message": "Containers became healthy in 5.81s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:18:32.071183Z",
+            "message": "Container image import completed in 4.81s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T14:18:21.183122Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:7cfc53c2801406678dc15598486171338d0de71f6f458449372e3d3dc771d8e7",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00012-w7p&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00012-w7p%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "1632ee71-9dd0-49da-92e8-a80ca80f54cc",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-22T13:06:36.344372Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "bqitnsrabh",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "11",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00011-lv9",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZebbPlMD8",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00011-lv9",
+        "uid": "f3ea9e60-bd4c-466d-952c-5b0b5963e75a"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:dd6ee8243c46195d1b2be2771be694c94e140163da48dadb574c0ab2e2b5560a",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-22T13:18:42.851903Z",
+            "message": "Deploying revision succeeded in 9.84s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:18:42.851903Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:06:46.135237Z",
+            "message": "Containers became healthy in 6.54s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:06:37.540735Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:18:42.851903Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:dd6ee8243c46195d1b2be2771be694c94e140163da48dadb574c0ab2e2b5560a",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00011-lv9&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00011-lv9%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "ea18b674-647c-45fa-9645-6597c33f18fc",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-20T19:25:44.140929Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "bqitnsrabh",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "10",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00010-kcw",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZebYlD6cY",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00010-kcw",
+        "uid": "87a26aa0-9222-4643-8ca0-d88ac59c5cd8"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:dd6ee8243c46195d1b2be2771be694c94e140163da48dadb574c0ab2e2b5560a",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-22T13:06:47.639494Z",
+            "message": "Deploying revision succeeded in 8.37s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:06:47.639494Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:25:52.455084Z",
+            "message": "Containers became healthy in 4.41s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:25:46.065153Z",
+            "message": "Container image import completed in 1.26s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-22T13:06:47.639494Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:dd6ee8243c46195d1b2be2771be694c94e140163da48dadb574c0ab2e2b5560a",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00010-kcw&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00010-kcw%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "fac176c2-f5e6-400a-8aac-cb5967b7656a",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-20T19:24:33.118980Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "qtzxvesbhf",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "9",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00009-9gl",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZeSpleErk",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00009-9gl",
+        "uid": "1f42f447-f215-4747-95f9-d632b36b5413"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-qa"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:3ce08306e6beb2fd7a3bcab0d755f3dcb19c43a3e2bac31063c257470fbeb4e4",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-20T19:25:53.934009Z",
+            "message": "Deploying revision succeeded in 7.98s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:25:53.934009Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:24:41.042795Z",
+            "message": "Containers became healthy in 4.82s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:24:34.240913Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:25:53.934009Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:3ce08306e6beb2fd7a3bcab0d755f3dcb19c43a3e2bac31063c257470fbeb4e4",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00009-9gl&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00009-9gl%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "c0a5c628-a3d5-44e4-90dc-93959b75f980",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-14T22:45:22.357163Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "qtzxvesbhf",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "8",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00008-7ch",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZeSpUdcPg",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00008-7ch",
+        "uid": "01c19ace-9c34-46b6-8b6b-ccbf11acc789"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:3ce08306e6beb2fd7a3bcab0d755f3dcb19c43a3e2bac31063c257470fbeb4e4",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-20T19:24:42.589432Z",
+            "message": "Deploying revision succeeded in 15.46s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:24:42.589432Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:37.767791Z",
+            "message": "Containers became healthy in 5.7s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:30.062282Z",
+            "message": "Container image import completed in 6.9s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-20T19:24:42.589432Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:3ce08306e6beb2fd7a3bcab0d755f3dcb19c43a3e2bac31063c257470fbeb4e4",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00008-7ch&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00008-7ch%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "afb8e18b-5e71-4b53-8ac4-4791b1b0e2e1",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-13T14:48:23.641077Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "njlltsmfdo",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "7",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00007-w6f",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZd1LDEuuU",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00007-w6f",
+        "uid": "cc47c849-fcc5-4894-96f9-c3da0d7a8c80"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:f5bb9b13e20d13e60ae113786186fbb0794197f0a63e2d20d4312e63eb6773cc",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.396773Z",
+            "message": "Deploying revision succeeded in 14.59s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.396773Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:48:38.170027Z",
+            "message": "Containers became healthy in 4.11s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:48:31.490787Z",
+            "message": "Container image import completed in 5.95s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.396773Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:f5bb9b13e20d13e60ae113786186fbb0794197f0a63e2d20d4312e63eb6773cc",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00007-w6f&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00007-w6f%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "594d7ace-8737-4812-9b7d-52d30bbb5f08",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-13T14:40:55.671789Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "f6586741-31fd-48e8-9d74-0f0067d58838",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "6",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00006-f7s",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZduekyt/A",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00006-f7s",
+        "uid": "7da8c486-12a9-40c0-aa55-ec2b25e8bf99"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-13T14:48:43.012080Z",
+            "message": "Deploying revision succeeded in 9.13s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:48:43.012080Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:41:04.673849Z",
+            "message": "Containers became healthy in 3.29s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:40:56.369920Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:48:43.012080Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00006-f7s&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00006-f7s%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "b959bbfe-905d-452f-9280-e000f4d572eb",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-13T14:39:05.135185Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "bdf96e56-ce15-43be-983a-bafc6f5b7d20",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "5",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00005-zqb",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZd1LDHrrM",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00005-zqb",
+        "uid": "ac7dcddc-55d4-4cda-8640-ce06bcdd98a8"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.590259Z",
+            "message": "spec.template.spec.containers[0].env[4].value_from.secret_key_ref.name: Permission denied on secret: projects/115635227737/secrets/NEOGOV_AUTH_API_KEY/versions/latest for Revision service account gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com. The service account used must be granted the 'Secret Manager Secret Accessor' role (roles/secretmanager.secretAccessor) at the secret, project or higher level.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.590259Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:39:07.540998Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.590259Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00005-zqb&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00005-zqb%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "22275c21-9a6d-4e18-a269-f55cf66c1e35",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-13T14:36:04.066856Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "rhliwoftjc",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "4",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00004-cln",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZd1LDHkak",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00004-cln",
+        "uid": "0eb6e7a1-b07d-4591-91c2-76045bedc1b5"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "pm-neogov-qa-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth-develop.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.582825Z",
+            "message": "spec.template.spec.containers[0].env[4].value_from.secret_key_ref.name: Permission denied on secret: projects/115635227737/secrets/NEOGOV_AUTH_API_KEY/versions/latest for Revision service account gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com. The service account used must be granted the 'Secret Manager Secret Accessor' role (roles/secretmanager.secretAccessor) at the secret, project or higher level.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.582825Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:36:05.106228Z",
+            "message": "Container image import completed.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-14T22:45:40.582825Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00004-cln&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00004-cln%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "568.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "cf5f8fbe-a861-4ac8-bf29-fdbf6a063fa3",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        },
+        "creationTimestamp": "2026-10-06T22:53:37.931064Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "rhliwoftjc",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "3",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00003-27f",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZduc34xNg",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00003-27f",
+        "uid": "a660ddc6-604c-4754-9565-df05479a10d5"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-13T14:41:06.229464Z",
+            "message": "Deploying revision succeeded in 7.91s.",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:41:06.229464Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-06T22:53:45.801743Z",
+            "message": "Containers became healthy in 1.83s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-06T22:53:41.109602Z",
+            "message": "Container image import completed in 2.44s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-13T14:41:06.229464Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00003-27f&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00003-27f%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "autoscaling.knative.dev/minScale": "0",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/operation-id": "ac2feb44-eb44-4c74-b182-69f96c9940d3",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-06T22:39:39.148132Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "2",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00002-9k9",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZdM98PNTs",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00002-9k9",
+        "uid": "81e90b46-8c32-474f-9180-4fca4be8e96c"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-06T22:53:47.295035Z",
+            "message": "Google Cloud Run Service Agent service-115635227737@serverless-robot-prod.iam.gserviceaccount.com must have permission to read the image, us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:23c5cfb865d46c51661a1d99b36d724593881ef1d0dc3b9f9af00805d121710c. Ensure that the provided container image URL is correct and that the above account has permission to access the image. If you just enabled the Cloud Run API, the permissions might take a few minutes to propagate. Note that the image is from project [artefatos], which is not the same as this project [pm-neogov-qa-lgpdweb]. Permission must be granted to the Google Cloud Run Service Agent service-115635227737@serverless-robot-prod.iam.gserviceaccount.com from this project. See https://cloud.google.com/run/docs/deploying#other-projects\n Cause: 403 Forbidden\nGET https://us-central1-docker.pkg.dev/v2/artefatos/gestao-de-dados-api/gestao-de-dados-api/manifests/sha256:23c5cfb865d46c51661a1d99b36d724593881ef1d0dc3b9f9af00805d121710c\n{\"errors\":[{\"code\":\"DENIED\",\"message\":\"Permission 'artifactregistry.repositories.downloadArtifacts' denied on resource '//artifactregistry.googleapis.com/projects/artefatos/locations/us-central1/repositories/gestao-de-dados-api' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMWExMTM1Zi01ZGZhLTc3YzMtOWQxNi1hYzliNTlhZjdkYzYSSXByb2plY3RzL2FydGVmYXRvcy9sb2NhdGlvbnMvdXMtY2VudHJhbDEvcmVwb3NpdG9yaWVzL2dlc3Rhby1kZS1kYWRvcy1hcGk%!D(MISSING) .\"}]}\n",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-06T22:53:47.295035Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-06T22:53:47.295035Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00002-9k9&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00002-9k9%22",
+        "observedGeneration": 1
+      }
+    },
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/operation-id": "e1d7abec-27b0-426c-b834-5b74d24884a5",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-06T22:39:04.377981Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "1",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "da2876de-ed1d-42dc-a350-7428a03a05a1"
+        },
+        "name": "gestao-de-dados-api-00001-zx4",
+        "namespace": "115635227737",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "2977dbe7-bf82-469f-a8e1-dfae7e018ff3"
+          }
+        ],
+        "resourceVersion": "AAZdU23mKwU",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/115635227737/revisions/gestao-de-dados-api-00001-zx4",
+        "uid": "cab6cb50-481d-46b8-85ba-c2b16a6a7826"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1000m",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "115635227737-compute@developer.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-08T12:32:47.733509Z",
+            "message": "Google Cloud Run Service Agent service-115635227737@serverless-robot-prod.iam.gserviceaccount.com must have permission to read the image, us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:23c5cfb865d46c51661a1d99b36d724593881ef1d0dc3b9f9af00805d121710c. Ensure that the provided container image URL is correct and that the above account has permission to access the image. If you just enabled the Cloud Run API, the permissions might take a few minutes to propagate. Note that the image is from project [artefatos], which is not the same as this project [pm-neogov-qa-lgpdweb]. Permission must be granted to the Google Cloud Run Service Agent service-115635227737@serverless-robot-prod.iam.gserviceaccount.com from this project. See https://cloud.google.com/run/docs/deploying#other-projects\n Cause: 403 Forbidden\nGET https://us-central1-docker.pkg.dev/v2/artefatos/gestao-de-dados-api/gestao-de-dados-api/manifests/sha256:23c5cfb865d46c51661a1d99b36d724593881ef1d0dc3b9f9af00805d121710c\n{\"errors\":[{\"code\":\"DENIED\",\"message\":\"Permission 'artifactregistry.repositories.downloadArtifacts' denied on resource '//artifactregistry.googleapis.com/projects/artefatos/locations/us-central1/repositories/gestao-de-dados-api' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMWExMTM1ZS1kNjA4LTc0NTUtYmFkOC0zMTNkYjBiM2ZlMTYSSXByb2plY3RzL2FydGVmYXRvcy9sb2NhdGlvbnMvdXMtY2VudHJhbDEvcmVwb3NpdG9yaWVzL2dlc3Rhby1kZS1kYWRvcy1hcGk%!D(MISSING) .\"}]}\n",
+            "reason": "Retired",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-08T12:32:47.733509Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "severity": "Info",
+            "status": "False",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-08T12:32:47.733509Z",
+            "message": "Revision retired.",
+            "reason": "Retired",
+            "status": "Unknown",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:fb546aff6b70c9b2d26cd4e2f1fc838e87b9de3e49d465665a9a32e33475cb87",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-neogov-qa-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00001-zx4&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00001-zx4%22",
+        "observedGeneration": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+OK — README idêntico ao original
+OK — 26 projetos / 23 serviços / 3 ausências
+OK — 23 projetos distintos
+OK — 23 serviços Ready e tráfego 100%
+OK — 92 índices esperados READY
+OK — 23 bancos Native Standard / us-central1
+OK — 23 buckets protegidos e em us-central1
+OK — 23 bindings Storage e autoassinatura
+OK — 23 domínios e certificados Ready
+OK — 23 vínculos Billing corretos
+FALHA — Secrets têm acesso runtime
+OK — 22 agendas de backup e lgpdweb sem agenda
+OK — Snapshots request/ativo iguais
+OK — Sintaxe Python verificada sem executar GCP
+OK — Metadados BQ restantes só no escopo
+OK — JSONs válidos
+OK — Mapa SQL cobre 23 projetos sem duplicatas
+OK — SQL somente SELECT e parâmetros pendentes
+
+SHA256 README: 685fa4997815b41ff82215c55dede6ba3e7ce8023137190f2bb758be3076a8d2
+
+SQL não executado e sem dry-run no BigQuery: falta tabela-fonte autorizada.

@@ -1,0 +1,38 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "get-iam-policy",
+    "gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:16.510581+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com",
+          "user:desenvolvimento.neogov@gmail.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountUser"
+      },
+      {
+        "members": [
+          "principalSet://iam.googleapis.com/projects/1012140942605/locations/global/workloadIdentityPools/github/attribute.repository/neogovbr/gestao-de-dados-api"
+        ],
+        "role": "roles/iam.workloadIdentityUser"
+      }
+    ],
+    "etag": "BwZewMQmdfw=",
+    "version": 1
+  }
+}

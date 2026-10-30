@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "backend-services",
+    "list",
+    "--project=camaraconceicaoalagoaslgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:31.549943+00:00",
+  "exit_code": 0,
+  "data": []
+}

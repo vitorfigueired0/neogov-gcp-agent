@@ -1,0 +1,14 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "domain-mappings",
+    "list",
+    "--region=us-central1",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:16.498900+00:00",
+  "exit_code": 2,
+  "error": "ERROR: (gcloud.run.domain-mappings.list) unrecognized arguments:\n  \n --region flag is available in one or more alternate release tracks. Try:\n\n  gcloud alpha run domain-mappings list --region\n  gcloud beta run domain-mappings list --region\n\n  --region=us-central1 (did you mean '--uri'?)\n  To search the help text of gcloud commands, run:\n  gcloud help -- SEARCH_TERMS\n"
+}

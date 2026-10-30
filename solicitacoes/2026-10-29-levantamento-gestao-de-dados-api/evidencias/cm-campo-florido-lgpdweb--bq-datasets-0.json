@@ -1,0 +1,42 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cm-campo-florido-lgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:24.255854+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "ejactocaMwaqoKAIwXfjaw==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-campo-florido-lgpdweb:_004931873aac5fe36f2db905662a047ee6b3139f",
+        "datasetReference": {
+          "datasetId": "_004931873aac5fe36f2db905662a047ee6b3139f",
+          "projectId": "cm-campo-florido-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-campo-florido-lgpdweb:_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5",
+        "datasetReference": {
+          "datasetId": "_cd6f7e33dcf1efe68c8cd24bc91a9ae7d09450f5",
+          "projectId": "cm-campo-florido-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cm-campo-florido-lgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "cm-campo-florido-lgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

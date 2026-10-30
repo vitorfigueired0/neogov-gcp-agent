@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "forwarding-rules",
+    "list",
+    "--project=pmdeltamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:26.560862+00:00",
+  "exit_code": 0,
+  "data": []
+}

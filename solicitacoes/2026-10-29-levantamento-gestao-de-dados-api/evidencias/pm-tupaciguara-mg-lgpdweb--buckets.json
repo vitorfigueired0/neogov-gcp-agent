@@ -1,0 +1,284 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=pm-tupaciguara-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:04.595007+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-08-26T17:53:34+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1787766814581387659,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-316815308630-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-08-26T17:53:34.854000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-316815308630-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-08-26T17:53:34+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-08-26T17:53:33+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1787766813037291361,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-316815308630-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-08-26T17:53:33.137000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-316815308630-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-08-26T17:53:33+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://pmtupaciguara.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T19:00:49+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T19:02:49.532000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793127649672522036,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-pm-tupaciguara-mg-lgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T19:00:49.908000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-pm-tupaciguara-mg-lgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T19:00:59+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://lgpdweb-pm-tupaciguara.vercel.app",
+            "https://pmtupaciguaramg.lgpdweb.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T16:56:17+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791219377713156028,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "pm-tupaciguara-mg-lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T16:56:17.847000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-tupaciguara-mg-lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:38:23+0000"
+    },
+    {
+      "creation_time": "2026-10-22T19:12:42+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792696362536510593,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "pm-tupaciguara-mg-lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T19:12:42.615000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-tupaciguara-mg-lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:13:02+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-316815308630",
+          "projectTeam": {
+            "projectNumber": "316815308630",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-316815308630",
+          "projectTeam": {
+            "projectNumber": "316815308630",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-316815308630",
+          "projectTeam": {
+            "projectNumber": "316815308630",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2026-08-26T12:36:12+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-316815308630",
+          "projectTeam": {
+            "projectNumber": "316815308630",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-316815308630",
+          "projectTeam": {
+            "projectNumber": "316815308630",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-316815308630",
+          "projectTeam": {
+            "projectNumber": "316815308630",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1787747772244457713,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "pm-tupaciguara-mg-lgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-08-26T12:36:12.337000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-tupaciguara-mg-lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2026-08-26T12:36:12+0000"
+    }
+  ]
+}

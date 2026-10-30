@@ -1,0 +1,42 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/camaraconceicaoalagoaslgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:24.003547+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "B/mUYxVCVSTyjtu0YtgYGQ==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "camaraconceicaoalagoaslgpdweb:_0843d1eecf4eeec5833e6ab2584352bc0222347f",
+        "datasetReference": {
+          "datasetId": "_0843d1eecf4eeec5833e6ab2584352bc0222347f",
+          "projectId": "camaraconceicaoalagoaslgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camaraconceicaoalagoaslgpdweb:_f77e9760cfdb59c0385b592c6318043099392a08",
+        "datasetReference": {
+          "datasetId": "_f77e9760cfdb59c0385b592c6318043099392a08",
+          "projectId": "camaraconceicaoalagoaslgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camaraconceicaoalagoaslgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "camaraconceicaoalagoaslgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

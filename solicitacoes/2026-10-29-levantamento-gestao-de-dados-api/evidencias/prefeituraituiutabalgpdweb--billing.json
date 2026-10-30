@@ -1,0 +1,18 @@
+{
+  "command": [
+    "gcloud",
+    "billing",
+    "projects",
+    "describe",
+    "prefeituraituiutabalgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:54.596853+00:00",
+  "exit_code": 0,
+  "data": {
+    "billingAccountName": "billingAccounts/01017B-9A8236-AA7CA7",
+    "billingEnabled": true,
+    "name": "projects/prefeituraituiutabalgpdweb/billingInfo",
+    "projectId": "prefeituraituiutabalgpdweb"
+  }
+}

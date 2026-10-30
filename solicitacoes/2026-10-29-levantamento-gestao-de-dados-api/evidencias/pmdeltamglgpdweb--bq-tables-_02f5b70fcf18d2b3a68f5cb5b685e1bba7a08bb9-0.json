@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pmdeltamglgpdweb/datasets/_02f5b70fcf18d2b3a68f5cb5b685e1bba7a08bb9/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:35.558130+00:00",
+  "status": 403,
+  "error": {
+    "error": {
+      "code": 403,
+      "message": "Access Denied: Dataset pmdeltamglgpdweb:_02f5b70fcf18d2b3a68f5cb5b685e1bba7a08bb9: Permission bigquery.tables.list denied on dataset pmdeltamglgpdweb:_02f5b70fcf18d2b3a68f5cb5b685e1bba7a08bb9 (or it may not exist).",
+      "errors": [
+        {
+          "message": "Access Denied: Dataset pmdeltamglgpdweb:_02f5b70fcf18d2b3a68f5cb5b685e1bba7a08bb9: Permission bigquery.tables.list denied on dataset pmdeltamglgpdweb:_02f5b70fcf18d2b3a68f5cb5b685e1bba7a08bb9 (or it may not exist).",
+          "domain": "global",
+          "reason": "accessDenied"
+        }
+      ],
+      "status": "PERMISSION_DENIED"
+    }
+  }
+}

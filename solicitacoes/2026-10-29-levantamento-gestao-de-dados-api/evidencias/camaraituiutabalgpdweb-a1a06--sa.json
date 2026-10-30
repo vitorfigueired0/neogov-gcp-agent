@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com",
+    "--project=camaraituiutabalgpdweb-a1a06",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:08.230844+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/camaraituiutabalgpdweb-a1a06/serviceAccounts/gestao-de-dados-api-runtime@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com",
+    "oauth2ClientId": "112583985155576195138",
+    "projectId": "camaraituiutabalgpdweb-a1a06",
+    "uniqueId": "112583985155576195138"
+  }
+}

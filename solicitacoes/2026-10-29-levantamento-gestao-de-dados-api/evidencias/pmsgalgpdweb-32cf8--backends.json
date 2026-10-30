@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "backend-services",
+    "list",
+    "--project=pmsgalgpdweb-32cf8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:57.437786+00:00",
+  "exit_code": 0,
+  "data": []
+}

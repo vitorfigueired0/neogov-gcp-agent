@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cm-campo-florido-lgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:25.707400+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "XwwUXDv0oPNax2oGI+Yjiw==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "cm-campo-florido-lgpdweb:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "cm-campo-florido-lgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1770036946042"
+      }
+    ],
+    "totalItems": 1
+  }
+}

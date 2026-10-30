@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "backups",
+    "schedules",
+    "list",
+    "--database=gestao-de-dados",
+    "--project=pmdeltamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:47.423340+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "createTime": "2026-10-27T18:51:21.050598Z",
+      "name": "projects/pmdeltamglgpdweb/databases/gestao-de-dados/backupSchedules/2a39427e-4f79-40fc-8755-612143bfbff5",
+      "retention": "8467200s",
+      "updateTime": "2026-10-27T18:51:21.050598Z",
+      "weeklyRecurrence": {
+        "day": "SUNDAY"
+      }
+    }
+  ]
+}

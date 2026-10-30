@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "backend-services",
+    "list",
+    "--project=pm-tupaciguara-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:05.982062+00:00",
+  "exit_code": 0,
+  "data": []
+}

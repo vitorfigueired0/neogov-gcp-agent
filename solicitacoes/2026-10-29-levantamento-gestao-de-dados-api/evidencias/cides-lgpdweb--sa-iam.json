@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "get-iam-policy",
+    "gestao-de-dados-api-runtime@cides-lgpdweb.iam.gserviceaccount.com",
+    "--project=cides-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:59.398696+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@cides-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      }
+    ],
+    "etag": "BwZe1r1O1jI=",
+    "version": 1
+  }
+}

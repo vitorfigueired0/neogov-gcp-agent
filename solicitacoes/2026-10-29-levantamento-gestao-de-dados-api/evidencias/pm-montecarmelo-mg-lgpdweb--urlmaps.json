@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "url-maps",
+    "list",
+    "--project=pm-montecarmelo-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:06.976427+00:00",
+  "exit_code": 0,
+  "data": []
+}

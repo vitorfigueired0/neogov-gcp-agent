@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pmsgalgpdweb-32cf8/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:34.612608+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "tEgq+RbNF0htZZvqTupdmA==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "pmsgalgpdweb-32cf8:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "pmsgalgpdweb-32cf8",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1754932324999"
+      }
+    ],
+    "totalItems": 1
+  }
+}

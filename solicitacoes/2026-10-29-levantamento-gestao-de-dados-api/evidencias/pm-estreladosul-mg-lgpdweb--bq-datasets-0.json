@@ -1,0 +1,42 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-estreladosul-mg-lgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:33.719771+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "woaSjoOXhmwDCSYLgdxjsA==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-estreladosul-mg-lgpdweb:_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+        "datasetReference": {
+          "datasetId": "_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+          "projectId": "pm-estreladosul-mg-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-estreladosul-mg-lgpdweb:_ac2f3bb0b31533b700f1dd66ee4aeb540b06eafc",
+        "datasetReference": {
+          "datasetId": "_ac2f3bb0b31533b700f1dd66ee4aeb540b06eafc",
+          "projectId": "pm-estreladosul-mg-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-estreladosul-mg-lgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "pm-estreladosul-mg-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

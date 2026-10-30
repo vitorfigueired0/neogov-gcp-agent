@@ -1,0 +1,70 @@
+{
+  "command": [
+    "gcloud",
+    "beta",
+    "run",
+    "domain-mappings",
+    "list",
+    "--platform=managed",
+    "--region=us-central1",
+    "--project=pmdeltamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:46.623496+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "domains.cloudrun.com/v1",
+      "kind": "DomainMapping",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/operation-id": "5d7379b8-b3b7-477a-bd42-fa3caeeb3f8b",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:24:10.935738Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/overrideAt": "2026-10-27T19:24:15.854Z"
+        },
+        "name": "api.pmdelta.gestaodedados.neogov.com.br",
+        "namespace": "363128949229",
+        "resourceVersion": "AAZe5gIVv3Y",
+        "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/363128949229/domainmappings/api.pmdelta.gestaodedados.neogov.com.br",
+        "uid": "0e6be5bc-eeca-42cd-9fc6-66d79cf5c551"
+      },
+      "spec": {
+        "routeName": "gestao-de-dados-api"
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-28T12:50:30.732662Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-28T12:50:30.732662Z",
+            "status": "True",
+            "type": "CertificateProvisioned"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:24:17.801015Z",
+            "status": "True",
+            "type": "DomainRoutable"
+          }
+        ],
+        "mappedRouteName": "gestao-de-dados-api",
+        "observedGeneration": 1,
+        "resourceRecords": [
+          {
+            "name": "api.pmdelta.gestaodedados",
+            "rrdata": "ghs.googlehosted.com.",
+            "type": "CNAME"
+          }
+        ]
+      }
+    }
+  ]
+}

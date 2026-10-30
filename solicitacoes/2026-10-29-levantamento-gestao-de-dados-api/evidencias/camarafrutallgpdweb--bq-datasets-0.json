@@ -1,0 +1,52 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/camarafrutallgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:40.380351+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "T9vcSQHqkWKxOPuIwUh7pg==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarafrutallgpdweb:_5897aed16ddf10c4c1adc50658a8ae360252f2ff",
+        "datasetReference": {
+          "datasetId": "_5897aed16ddf10c4c1adc50658a8ae360252f2ff",
+          "projectId": "camarafrutallgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarafrutallgpdweb:_7e4885e6df5b58a81d70e13c3c502b54159e9a45",
+        "datasetReference": {
+          "datasetId": "_7e4885e6df5b58a81d70e13c3c502b54159e9a45",
+          "projectId": "camarafrutallgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarafrutallgpdweb:_d1f3b633b7993f95f1c5fba2f06b5ba645e5f7b2",
+        "datasetReference": {
+          "datasetId": "_d1f3b633b7993f95f1c5fba2f06b5ba645e5f7b2",
+          "projectId": "camarafrutallgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarafrutallgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "camarafrutallgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

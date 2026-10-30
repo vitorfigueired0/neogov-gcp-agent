@@ -1,0 +1,277 @@
+[
+  {
+    "project_id": "cachoeiradouradamglgpdweb",
+    "project_number": "949172226134",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-cachoeiradouradamglgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "camaraconceicaoalagoaslgpdweb",
+    "project_number": "152048161192",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-camaraconceicaoalagoaslgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "camarafrutallgpdweb",
+    "project_number": "253187335391",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-camarafrutallgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "camaraituiutabalgpdweb-a1a06",
+    "project_number": "955512464223",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-camaraituiutabalgpdweb-a1a06",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "camarateresopolislgpdweb",
+    "project_number": "428870652797",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-camarateresopolislgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "cides-lgpdweb",
+    "project_number": "812458273636",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-cides-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "cisalp-lgpdweb",
+    "project_number": "252011168537",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-cisalp-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "cm-araguari-lgpdweb",
+    "project_number": "80441081297",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-cm-araguari-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "cm-campo-florido-lgpdweb",
+    "project_number": "223688126013",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-cm-campo-florido-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "frutallgpdweb-3dab8",
+    "project_number": "722099604113",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-frutallgpdweb-3dab8",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "lgpdweb",
+    "project_number": "824046366491",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "lgpdweb-gestao-de-dados",
+    "secret_names": [
+      "neogov-auth-api-key"
+    ]
+  },
+  {
+    "project_id": "lgpdwebsaaeituiutaba",
+    "project_number": "917044735941",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-lgpdwebsaaeituiutaba",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pm-estreladosul-mg-lgpdweb",
+    "project_number": "8425592986",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pm-estreladosul-mg-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pm-machado-lgpdweb",
+    "project_number": "183509511404",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pm-machado-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pm-montecarmelo-mg-lgpdweb",
+    "project_number": "932352030577",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pm-montecarmelo-mg-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pm-neogov-qa-lgpdweb",
+    "project_number": "115635227737",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-qa",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pm-pedrinopolis-lgpdweb",
+    "project_number": "374975682507",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pm-pedrinopolis-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pm-tupaciguara-mg-lgpdweb",
+    "project_number": "316815308630",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pm-tupaciguara-mg-lgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pmdeltamglgpdweb",
+    "project_number": "363128949229",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pmdeltamglgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "pmsgalgpdweb-32cf8",
+    "project_number": "947412222933",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-pmsgalgpdweb-32cf8",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "prefeituraituiutabalgpdweb",
+    "project_number": "637181059585",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-prefeituraituiutabalgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "prefeiturateresopolislgpdweb",
+    "project_number": "578760838874",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-prefeiturateresopolislgpdweb",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  },
+  {
+    "project_id": "saosimaolgpdweb-1a6e5",
+    "project_number": "986593446685",
+    "region": "us-central1",
+    "service_name": "gestao-de-dados-api",
+    "database_id": "gestao-de-dados",
+    "bucket_name": "gestao-de-dados-saosimaolgpdweb-1a6e5",
+    "secret_names": [
+      "NEOGOV_AUTH_ALLOWED_ISSUERS",
+      "NEOGOV_AUTH_API_KEY"
+    ]
+  }
+]

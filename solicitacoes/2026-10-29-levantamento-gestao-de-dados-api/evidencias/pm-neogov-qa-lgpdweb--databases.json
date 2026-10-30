@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "databases",
+    "list",
+    "--project=pm-neogov-qa-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:12.988819+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-05-29T14:22:32.315670Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:19:14.305377Z",
+      "etag": "IMDAvazJ4JcDMIvIg/fb3pQD",
+      "freeTier": true,
+      "locationId": "us-central1",
+      "name": "projects/pm-neogov-qa-lgpdweb/databases/modules",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "fe479545-9dbc-4f4b-bd73-9b3366447561",
+      "updateTime": "2026-05-29T14:22:32.315670Z",
+      "versionRetentionPeriod": "3600s"
+    },
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-10-06T15:32:23.643930Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:19:14.305400Z",
+      "etag": "IMvAvazJ4JcDMMHG29vbpZcD",
+      "freeTier": false,
+      "locationId": "us-central1",
+      "name": "projects/pm-neogov-qa-lgpdweb/databases/gestao-de-dados",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "c72156e9-f04d-4d83-9333-5a9363f36b73",
+      "updateTime": "2026-10-06T15:32:23.643930Z",
+      "versionRetentionPeriod": "3600s"
+    }
+  ]
+}

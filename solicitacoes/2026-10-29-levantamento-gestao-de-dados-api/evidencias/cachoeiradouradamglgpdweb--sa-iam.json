@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "get-iam-policy",
+    "gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com",
+    "--project=cachoeiradouradamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:38.878660+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      }
+    ],
+    "etag": "BwZe1tM8BSU=",
+    "version": 1
+  }
+}

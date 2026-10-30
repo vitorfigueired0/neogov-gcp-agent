@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/camaraconceicaoalagoaslgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:25.623152+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "CVq9ln0EvzLBbo/OjDjXsg==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "camaraconceicaoalagoaslgpdweb:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "camaraconceicaoalagoaslgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1770040885427"
+      }
+    ],
+    "totalItems": 1
+  }
+}

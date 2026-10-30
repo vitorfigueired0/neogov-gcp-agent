@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@pmsgalgpdweb-32cf8.iam.gserviceaccount.com",
+    "--project=pmsgalgpdweb-32cf8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:59.980400+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@pmsgalgpdweb-32cf8.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/pmsgalgpdweb-32cf8/serviceAccounts/gestao-de-dados-api-runtime@pmsgalgpdweb-32cf8.iam.gserviceaccount.com",
+    "oauth2ClientId": "106526706771188923648",
+    "projectId": "pmsgalgpdweb-32cf8",
+    "uniqueId": "106526706771188923648"
+  }
+}

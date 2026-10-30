@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cisalp-lgpdweb/datasets/_ac6339304ab9123b08efca676067d6b0d5c47277/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:23.167788+00:00",
+  "status": 403,
+  "error": {
+    "error": {
+      "code": 403,
+      "message": "Access Denied: Dataset cisalp-lgpdweb:_ac6339304ab9123b08efca676067d6b0d5c47277: Permission bigquery.tables.list denied on dataset cisalp-lgpdweb:_ac6339304ab9123b08efca676067d6b0d5c47277 (or it may not exist).",
+      "errors": [
+        {
+          "message": "Access Denied: Dataset cisalp-lgpdweb:_ac6339304ab9123b08efca676067d6b0d5c47277: Permission bigquery.tables.list denied on dataset cisalp-lgpdweb:_ac6339304ab9123b08efca676067d6b0d5c47277 (or it may not exist).",
+          "domain": "global",
+          "reason": "accessDenied"
+        }
+      ],
+      "status": "PERMISSION_DENIED"
+    }
+  }
+}

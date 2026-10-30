@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@frutallgpdweb-3dab8.iam.gserviceaccount.com",
+    "--project=frutallgpdweb-3dab8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:26.977811+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@frutallgpdweb-3dab8.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/frutallgpdweb-3dab8/serviceAccounts/gestao-de-dados-api-runtime@frutallgpdweb-3dab8.iam.gserviceaccount.com",
+    "oauth2ClientId": "105131072934481224931",
+    "projectId": "frutallgpdweb-3dab8",
+    "uniqueId": "105131072934481224931"
+  }
+}

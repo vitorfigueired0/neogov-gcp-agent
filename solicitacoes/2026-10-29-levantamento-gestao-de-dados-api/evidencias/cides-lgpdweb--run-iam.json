@@ -1,0 +1,17 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "services",
+    "get-iam-policy",
+    "gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=cides-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:58.287175+00:00",
+  "exit_code": 0,
+  "data": {
+    "etag": "ACAB"
+  }
+}

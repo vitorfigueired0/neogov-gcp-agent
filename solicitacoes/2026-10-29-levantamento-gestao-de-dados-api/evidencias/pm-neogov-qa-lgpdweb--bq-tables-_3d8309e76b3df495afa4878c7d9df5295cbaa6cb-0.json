@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-neogov-qa-lgpdweb/datasets/_3d8309e76b3df495afa4878c7d9df5295cbaa6cb/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:22.192637+00:00",
+  "status": 403,
+  "error": {
+    "error": {
+      "code": 403,
+      "message": "Access Denied: Dataset pm-neogov-qa-lgpdweb:_3d8309e76b3df495afa4878c7d9df5295cbaa6cb: Permission bigquery.tables.list denied on dataset pm-neogov-qa-lgpdweb:_3d8309e76b3df495afa4878c7d9df5295cbaa6cb (or it may not exist).",
+      "errors": [
+        {
+          "message": "Access Denied: Dataset pm-neogov-qa-lgpdweb:_3d8309e76b3df495afa4878c7d9df5295cbaa6cb: Permission bigquery.tables.list denied on dataset pm-neogov-qa-lgpdweb:_3d8309e76b3df495afa4878c7d9df5295cbaa6cb (or it may not exist).",
+          "domain": "global",
+          "reason": "accessDenied"
+        }
+      ],
+      "status": "PERMISSION_DENIED"
+    }
+  }
+}

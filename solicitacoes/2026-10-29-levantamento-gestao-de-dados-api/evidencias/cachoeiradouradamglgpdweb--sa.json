@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com",
+    "--project=cachoeiradouradamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:39.955554+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/cachoeiradouradamglgpdweb/serviceAccounts/gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com",
+    "oauth2ClientId": "111408470210255354412",
+    "projectId": "cachoeiradouradamglgpdweb",
+    "uniqueId": "111408470210255354412"
+  }
+}

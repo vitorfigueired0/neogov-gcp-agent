@@ -1,0 +1,70 @@
+{
+  "command": [
+    "gcloud",
+    "beta",
+    "run",
+    "domain-mappings",
+    "list",
+    "--platform=managed",
+    "--region=us-central1",
+    "--project=frutallgpdweb-3dab8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:53.866428+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "domains.cloudrun.com/v1",
+      "kind": "DomainMapping",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/operation-id": "f74131d9-de62-4a22-9a6e-ab79405431ef",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+          "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:25:27.861750Z",
+        "generation": 1,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/overrideAt": "2026-10-27T19:25:32.099Z"
+        },
+        "name": "api.pmfrutal.gestaodedados.neogov.com.br",
+        "namespace": "722099604113",
+        "resourceVersion": "AAZe5t1R1Kg",
+        "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/722099604113/domainmappings/api.pmfrutal.gestaodedados.neogov.com.br",
+        "uid": "cff9a67a-97ee-4ae8-b8ea-9e2793ce7c1d"
+      },
+      "spec": {
+        "routeName": "gestao-de-dados-api"
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-28T13:51:48.880552Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-28T13:51:48.880552Z",
+            "status": "True",
+            "type": "CertificateProvisioned"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:25:33.463286Z",
+            "status": "True",
+            "type": "DomainRoutable"
+          }
+        ],
+        "mappedRouteName": "gestao-de-dados-api",
+        "observedGeneration": 1,
+        "resourceRecords": [
+          {
+            "name": "api.pmfrutal.gestaodedados",
+            "rrdata": "ghs.googlehosted.com.",
+            "type": "CNAME"
+          }
+        ]
+      }
+    }
+  ]
+}

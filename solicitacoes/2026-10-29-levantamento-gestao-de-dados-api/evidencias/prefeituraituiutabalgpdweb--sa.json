@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com",
+    "--project=prefeituraituiutabalgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:00.231171+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/prefeituraituiutabalgpdweb/serviceAccounts/gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com",
+    "oauth2ClientId": "103983131448651875474",
+    "projectId": "prefeituraituiutabalgpdweb",
+    "uniqueId": "103983131448651875474"
+  }
+}

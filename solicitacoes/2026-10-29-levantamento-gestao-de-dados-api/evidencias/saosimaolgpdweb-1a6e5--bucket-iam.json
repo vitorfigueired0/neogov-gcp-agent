@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "get-iam-policy",
+    "gs://gestao-de-dados-saosimaolgpdweb-1a6e5",
+    "--project=saosimaolgpdweb-1a6e5",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:11.453819+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "projectEditor:saosimaolgpdweb-1a6e5",
+          "projectOwner:saosimaolgpdweb-1a6e5"
+        ],
+        "role": "roles/storage.legacyBucketOwner"
+      },
+      {
+        "members": [
+          "projectViewer:saosimaolgpdweb-1a6e5"
+        ],
+        "role": "roles/storage.legacyBucketReader"
+      },
+      {
+        "members": [
+          "projectEditor:saosimaolgpdweb-1a6e5",
+          "projectOwner:saosimaolgpdweb-1a6e5"
+        ],
+        "role": "roles/storage.legacyObjectOwner"
+      },
+      {
+        "members": [
+          "projectViewer:saosimaolgpdweb-1a6e5"
+        ],
+        "role": "roles/storage.legacyObjectReader"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.objectViewer"
+      }
+    ],
+    "etag": "CAQ="
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-estreladosul-mg-lgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:35.111755+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "Vm5N5AlWnNGP928zl+bSFg==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "pm-estreladosul-mg-lgpdweb:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "pm-estreladosul-mg-lgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1754506108096"
+      }
+    ],
+    "totalItems": 1
+  }
+}

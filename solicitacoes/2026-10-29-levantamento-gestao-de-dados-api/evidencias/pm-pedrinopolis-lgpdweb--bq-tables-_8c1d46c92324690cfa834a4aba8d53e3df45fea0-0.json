@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-pedrinopolis-lgpdweb/datasets/_8c1d46c92324690cfa834a4aba8d53e3df45fea0/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:26.554532+00:00",
+  "status": 403,
+  "error": {
+    "error": {
+      "code": 403,
+      "message": "Access Denied: Dataset pm-pedrinopolis-lgpdweb:_8c1d46c92324690cfa834a4aba8d53e3df45fea0: Permission bigquery.tables.list denied on dataset pm-pedrinopolis-lgpdweb:_8c1d46c92324690cfa834a4aba8d53e3df45fea0 (or it may not exist).",
+      "errors": [
+        {
+          "message": "Access Denied: Dataset pm-pedrinopolis-lgpdweb:_8c1d46c92324690cfa834a4aba8d53e3df45fea0: Permission bigquery.tables.list denied on dataset pm-pedrinopolis-lgpdweb:_8c1d46c92324690cfa834a4aba8d53e3df45fea0 (or it may not exist).",
+          "domain": "global",
+          "reason": "accessDenied"
+        }
+      ],
+      "status": "PERMISSION_DENIED"
+    }
+  }
+}

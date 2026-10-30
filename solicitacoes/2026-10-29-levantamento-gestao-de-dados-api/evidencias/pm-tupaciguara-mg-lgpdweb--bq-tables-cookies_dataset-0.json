@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-tupaciguara-mg-lgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:22.646985+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "zVVy5VYGM1+YI5CfJshpMA==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "pm-tupaciguara-mg-lgpdweb:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "pm-tupaciguara-mg-lgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1787751240934"
+      }
+    ],
+    "totalItems": 1
+  }
+}

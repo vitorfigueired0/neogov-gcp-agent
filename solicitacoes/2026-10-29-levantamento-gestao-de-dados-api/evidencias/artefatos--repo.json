@@ -1,0 +1,31 @@
+{
+  "command": [
+    "gcloud",
+    "artifacts",
+    "repositories",
+    "describe",
+    "gestao-de-dados-api",
+    "--location=us-central1",
+    "--project=artefatos",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:31.191024+00:00",
+  "exit_code": 0,
+  "data": {
+    "cleanupPolicyDryRun": true,
+    "createTime": "2026-10-06T21:15:38.195380Z",
+    "description": "API do serivço Gestão de Dados",
+    "dockerConfig": {},
+    "format": "DOCKER",
+    "mode": "STANDARD_REPOSITORY",
+    "name": "projects/artefatos/locations/us-central1/repositories/gestao-de-dados-api",
+    "registryUri": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api",
+    "satisfiesPzi": true,
+    "updateTime": "2026-10-27T15:30:15.176706Z",
+    "vulnerabilityScanningConfig": {
+      "enablementConfig": "INHERITED",
+      "enablementState": "SCANNING_ACTIVE",
+      "lastEnableTime": "2026-10-06T21:15:37.452895217Z"
+    }
+  }
+}

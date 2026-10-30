@@ -1,0 +1,178 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "revisions",
+    "list",
+    "--service=gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=cm-araguari-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:50.462432+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Revision",
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "560.0.0",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/operation-id": "f3204a33-c365-455c-8286-4588ec73ea6a",
+          "run.googleapis.com/startup-cpu-boost": "true",
+          "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+        },
+        "creationTimestamp": "2026-10-27T19:13:50.154341Z",
+        "generation": 1,
+        "labels": {
+          "client.knative.dev/nonce": "yjnsknbjkc",
+          "cloud.googleapis.com/location": "us-central1",
+          "run.googleapis.com/startupProbeType": "Default",
+          "serving.knative.dev/configuration": "gestao-de-dados-api",
+          "serving.knative.dev/configurationGeneration": "1",
+          "serving.knative.dev/route": "gestao-de-dados-api",
+          "serving.knative.dev/service": "gestao-de-dados-api",
+          "serving.knative.dev/serviceUid": "a80095ba-f95a-4180-8e6b-ece736ce771c"
+        },
+        "name": "gestao-de-dados-api-00001-947",
+        "namespace": "80441081297",
+        "ownerReferences": [
+          {
+            "apiVersion": "serving.knative.dev/v1",
+            "blockOwnerDeletion": true,
+            "controller": true,
+            "kind": "Configuration",
+            "name": "gestao-de-dados-api",
+            "uid": "f60d3a11-2494-409c-9b1a-f3f30c594494"
+          }
+        ],
+        "resourceVersion": "AAZe1z/oVHA",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/80441081297/revisions/gestao-de-dados-api-00001-947",
+        "uid": "f8d6b428-03cc-4b57-9b09-fd7c5d1941c6"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "GOOGLE_CLOUD_PROJECT",
+                "value": "cm-araguari-lgpdweb"
+              },
+              {
+                "name": "FIRESTORE_DATABASE_ID",
+                "value": "gestao-de-dados"
+              },
+              {
+                "name": "STORAGE_BUCKET",
+                "value": "gestao-de-dados-cm-araguari-lgpdweb"
+              },
+              {
+                "name": "FRONTEND_ORIGIN",
+                "value": "https://cmaraguarimg.gestaodedados.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_BASE_URL",
+                "value": "https://api.auth.neogov.com.br"
+              },
+              {
+                "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                "value": "20000"
+              },
+              {
+                "name": "AUTH_COOKIE_SECURE",
+                "value": "true"
+              },
+              {
+                "name": "AUTH_COOKIE_SAME_SITE",
+                "value": "lax"
+              },
+              {
+                "name": "NEOGOV_AUTH_API_KEY",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_API_KEY"
+                  }
+                }
+              },
+              {
+                "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                "valueFrom": {
+                  "secretKeyRef": {
+                    "key": "latest",
+                    "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                  }
+                }
+              }
+            ],
+            "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:48f148f601f146f8eb3858d58559ae3150d5a31ed2c515e30d43d20a439761d4",
+            "name": "gestao-de-dados-api-1",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "1",
+                "memory": "1Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "gestao-de-dados-api-runtime@cm-araguari-lgpdweb.iam.gserviceaccount.com",
+        "timeoutSeconds": 3600
+      },
+      "status": {
+        "conditions": [
+          {
+            "lastTransitionTime": "2026-10-27T19:14:02.091559Z",
+            "message": "Deploying revision succeeded in 11.94s.",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:14:02.238838Z",
+            "severity": "Info",
+            "status": "True",
+            "type": "Active"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:14:02.023433Z",
+            "message": "Containers became healthy in 8.1s.",
+            "status": "True",
+            "type": "ContainerHealthy"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:13:51.976106Z",
+            "message": "Container image import completed in 1.24s.",
+            "status": "True",
+            "type": "ContainerReady"
+          },
+          {
+            "lastTransitionTime": "2026-10-27T19:13:53.516445Z",
+            "message": "Provisioning imported containers completed in 1.54s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+            "status": "True",
+            "type": "ResourcesAvailable"
+          }
+        ],
+        "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:48f148f601f146f8eb3858d58559ae3150d5a31ed2c515e30d43d20a439761d4",
+        "logUrl": "https://console.cloud.google.com/logs/viewer?project=cm-araguari-lgpdweb&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00001-947&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00001-947%22",
+        "observedGeneration": 1
+      }
+    }
+  ]
+}

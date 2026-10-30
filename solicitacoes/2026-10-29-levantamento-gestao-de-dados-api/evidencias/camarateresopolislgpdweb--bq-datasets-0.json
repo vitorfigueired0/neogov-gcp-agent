@@ -1,0 +1,52 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/camarateresopolislgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:29.964488+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "G3l4n3TqAyT0ob/kgLIB9A==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarateresopolislgpdweb:_7e4885e6df5b58a81d70e13c3c502b54159e9a45",
+        "datasetReference": {
+          "datasetId": "_7e4885e6df5b58a81d70e13c3c502b54159e9a45",
+          "projectId": "camarateresopolislgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarateresopolislgpdweb:_8fe87e5a4e4a91ff12138634da93d66b4d9a7ed0",
+        "datasetReference": {
+          "datasetId": "_8fe87e5a4e4a91ff12138634da93d66b4d9a7ed0",
+          "projectId": "camarateresopolislgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarateresopolislgpdweb:_af2e05c37391fddc6eaed716d819d7583423ccf2",
+        "datasetReference": {
+          "datasetId": "_af2e05c37391fddc6eaed716d819d7583423ccf2",
+          "projectId": "camarateresopolislgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "camarateresopolislgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "camarateresopolislgpdweb"
+        },
+        "location": "us-central1",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/prefeituraituiutabalgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:26.436364+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "a21yeui34KSJP1WcvX1svg==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "prefeituraituiutabalgpdweb:_1f076e3b27d88200cf932f5cb331cdc143aae59c",
+        "datasetReference": {
+          "datasetId": "_1f076e3b27d88200cf932f5cb331cdc143aae59c",
+          "projectId": "prefeituraituiutabalgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "prefeituraituiutabalgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "prefeituraituiutabalgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

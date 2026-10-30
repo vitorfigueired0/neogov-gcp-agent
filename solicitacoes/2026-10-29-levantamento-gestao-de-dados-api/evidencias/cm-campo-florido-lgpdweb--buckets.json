@@ -1,0 +1,284 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=cm-campo-florido-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:38.984122+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://camaracampofloridomg.lgpdweb.neogov.com.br",
+            "https://lgpdweb-camara-campo-florido.vercel.app"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:05:54+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791219953692066235,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "cm-campo-florido-lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:05:54.008000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cm-campo-florido-lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:47:52+0000"
+    },
+    {
+      "creation_time": "2026-10-22T18:55:22+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792695322493344137,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "cm-campo-florido-lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T18:55:22.708000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cm-campo-florido-lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T18:56:17+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-223688126013",
+          "projectTeam": {
+            "projectNumber": "223688126013",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-223688126013",
+          "projectTeam": {
+            "projectNumber": "223688126013",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-223688126013",
+          "projectTeam": {
+            "projectNumber": "223688126013",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2026-02-02T12:31:06+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-223688126013",
+          "projectTeam": {
+            "projectNumber": "223688126013",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-223688126013",
+          "projectTeam": {
+            "projectNumber": "223688126013",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-223688126013",
+          "projectTeam": {
+            "projectNumber": "223688126013",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1770035466559104464,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "cm-campo-florido-lgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-02-02T12:31:06.732000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cm-campo-florido-lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2026-02-02T12:31:06+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-15T18:39:01+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776278341271123050,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-223688126013-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-15T18:39:01.495000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-223688126013-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-15T18:39:01+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-15T18:39:00+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776278340270303215,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-223688126013-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-15T18:39:00.491000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-223688126013-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-15T18:39:00+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://cmcampoflorido.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:45:31+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:47:31.542000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793126731588507592,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-cm-campo-florido-lgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:45:31.790000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-cm-campo-florido-lgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:45:39+0000"
+    }
+  ]
+}

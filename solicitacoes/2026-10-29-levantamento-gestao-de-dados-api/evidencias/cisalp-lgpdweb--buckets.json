@@ -1,0 +1,284 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=cisalp-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:21.854623+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://cisalp.lgpdweb.neogov.com.br",
+            "https://lgpdweb-cisalp.vercel.app"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:00:51+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791219651451115825,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "cisalp-lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:00:51.532000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cisalp-lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:45:46+0000"
+    },
+    {
+      "creation_time": "2026-10-22T18:55:23+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792695323081594086,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "cisalp-lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T18:55:23.264000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cisalp-lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T18:56:10+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-252011168537",
+          "projectTeam": {
+            "projectNumber": "252011168537",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-252011168537",
+          "projectTeam": {
+            "projectNumber": "252011168537",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-252011168537",
+          "projectTeam": {
+            "projectNumber": "252011168537",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2026-02-23T15:45:48+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-252011168537",
+          "projectTeam": {
+            "projectNumber": "252011168537",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-252011168537",
+          "projectTeam": {
+            "projectNumber": "252011168537",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-252011168537",
+          "projectTeam": {
+            "projectNumber": "252011168537",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1771861548061500932,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "cisalp-lgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-02-23T15:45:48.286000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cisalp-lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2026-02-23T15:45:48+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-15T17:57:17+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776275836966241478,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-252011168537-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-15T17:57:17.049000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-252011168537-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-15T17:57:17+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-15T17:57:16+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776275835947244335,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-252011168537-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-15T17:57:16.034000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-252011168537-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-15T17:57:16+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://cisalp.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:42:24+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:44:24.431000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793126544446908039,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-cisalp-lgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:42:24.537000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-cisalp-lgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:42:32+0000"
+    }
+  ]
+}

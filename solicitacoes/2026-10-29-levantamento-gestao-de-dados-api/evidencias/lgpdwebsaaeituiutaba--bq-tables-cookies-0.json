@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdwebsaaeituiutaba/datasets/cookies/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:42.409369+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "XR0MbdUoQfCCcua9SlXaYg==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "lgpdwebsaaeituiutaba:cookies.registros",
+        "tableReference": {
+          "projectId": "lgpdwebsaaeituiutaba",
+          "datasetId": "cookies",
+          "tableId": "registros"
+        },
+        "type": "TABLE",
+        "creationTime": "1749499137765"
+      }
+    ],
+    "totalItems": 1
+  }
+}

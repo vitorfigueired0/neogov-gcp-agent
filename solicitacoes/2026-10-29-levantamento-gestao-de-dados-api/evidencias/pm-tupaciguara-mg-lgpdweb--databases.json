@@ -1,0 +1,56 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "databases",
+    "list",
+    "--project=pm-tupaciguara-mg-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:04.248369+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-10-27T19:00:36.622358Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:19:05.802810Z",
+      "etag": "INvurKjJ4JcDMLui7YDx2pcD",
+      "freeTier": false,
+      "locationId": "us-central1",
+      "name": "projects/pm-tupaciguara-mg-lgpdweb/databases/gestao-de-dados",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "095466ed-1e14-4186-b167-e84f42086d25",
+      "updateTime": "2026-10-27T19:00:36.622358Z",
+      "versionRetentionPeriod": "3600s"
+    },
+    {
+      "appEngineIntegrationMode": "DISABLED",
+      "backupConfig": {
+        "backupSchedulesEnabled": true
+      },
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-08-26T12:35:08.100637Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-30T00:19:05.802828Z",
+      "etag": "IPXurKjJ4JcDMIi8o4ixvpYD",
+      "freeTier": true,
+      "locationId": "us-central1",
+      "name": "projects/pm-tupaciguara-mg-lgpdweb/databases/modules",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "e3905d6d-5941-435f-8fb3-dd1bc2d44385",
+      "updateTime": "2026-08-26T12:35:08.100637Z",
+      "versionRetentionPeriod": "3600s"
+    }
+  ]
+}

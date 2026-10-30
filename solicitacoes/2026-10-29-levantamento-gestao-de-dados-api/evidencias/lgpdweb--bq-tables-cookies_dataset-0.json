@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:41.010621+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "89BNN8QbRUQ9jAbJA3VBlg==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "lgpdweb:cookies_dataset.registros",
+        "tableReference": {
+          "projectId": "lgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "registros"
+        },
+        "type": "TABLE",
+        "creationTime": "1750683422434"
+      }
+    ],
+    "totalItems": 1
+  }
+}

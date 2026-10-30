@@ -1,0 +1,137 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "services",
+    "list",
+    "--platform=managed",
+    "--project=camaraituiutabalgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:29.650233+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "apiVersion": "serving.knative.dev/v1",
+      "kind": "Service",
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "525.0.0",
+          "run.googleapis.com/ingress": "all",
+          "run.googleapis.com/ingress-status": "all",
+          "run.googleapis.com/operation-id": "b5377017-e9d4-48fc-a1ca-a7bdc12f850f",
+          "run.googleapis.com/urls": "[\"https://crypto-gestao-969877508692.us-central1.run.app\",\"https://crypto-gestao-amjc4wot6a-uc.a.run.app\"]",
+          "serving.knative.dev/creator": "desenvolvimento@neogov.com.br",
+          "serving.knative.dev/lastModifier": "969877508692-compute@developer.gserviceaccount.com"
+        },
+        "creationTimestamp": "2025-06-04T14:17:04.415920Z",
+        "generation": 3,
+        "labels": {
+          "cloud.googleapis.com/location": "us-central1",
+          "commit-sha": "ee6278c5a505eed482c88a8b0077a4af763a0f6a",
+          "gcb-build-id": "378f6ec6-79b6-4464-8af7-62c401c2b5fd",
+          "gcb-trigger-id": "f1a2a352-79be-4be0-8673-af5f3532e640",
+          "gcb-trigger-region": "global",
+          "managed-by": "gcp-cloud-build-deploy-cloud-run"
+        },
+        "name": "crypto-gestao",
+        "namespace": "969877508692",
+        "resourceVersion": "AAY2v6vmRIo",
+        "selfLink": "/apis/serving.knative.dev/v1/namespaces/969877508692/services/crypto-gestao",
+        "uid": "91d68087-fefb-4aa0-a556-3caf4c6f51f3"
+      },
+      "spec": {
+        "template": {
+          "metadata": {
+            "annotations": {
+              "autoscaling.knative.dev/maxScale": "100",
+              "run.googleapis.com/client-name": "gcloud",
+              "run.googleapis.com/client-version": "525.0.0",
+              "run.googleapis.com/startup-cpu-boost": "true"
+            },
+            "labels": {
+              "client.knative.dev/nonce": "dbihfrmbyr",
+              "commit-sha": "ee6278c5a505eed482c88a8b0077a4af763a0f6a",
+              "gcb-build-id": "378f6ec6-79b6-4464-8af7-62c401c2b5fd",
+              "gcb-trigger-id": "f1a2a352-79be-4be0-8673-af5f3532e640",
+              "gcb-trigger-region": "global",
+              "managed-by": "gcp-cloud-build-deploy-cloud-run",
+              "run.googleapis.com/startupProbeType": "Default"
+            }
+          },
+          "spec": {
+            "containerConcurrency": 80,
+            "containers": [
+              {
+                "image": "us-central1-docker.pkg.dev/camaraituiutabalgpdweb/cloud-run-source-deploy/crypto-gestao/crypto-gestao:ee6278c5a505eed482c88a8b0077a4af763a0f6a",
+                "name": "placeholder-1",
+                "ports": [
+                  {
+                    "containerPort": 8080,
+                    "name": "http1"
+                  }
+                ],
+                "resources": {
+                  "limits": {
+                    "cpu": "1000m",
+                    "memory": "4Gi"
+                  }
+                },
+                "startupProbe": {
+                  "failureThreshold": 1,
+                  "periodSeconds": 240,
+                  "tcpSocket": {
+                    "port": 8080
+                  },
+                  "timeoutSeconds": 240
+                }
+              }
+            ],
+            "serviceAccountName": "969877508692-compute@developer.gserviceaccount.com",
+            "timeoutSeconds": 180
+          }
+        },
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100
+          }
+        ]
+      },
+      "status": {
+        "address": {
+          "url": "https://crypto-gestao-amjc4wot6a-uc.a.run.app"
+        },
+        "conditions": [
+          {
+            "lastTransitionTime": "2025-06-04T14:18:30.912138Z",
+            "status": "True",
+            "type": "Ready"
+          },
+          {
+            "lastTransitionTime": "2025-06-04T14:18:29.672837Z",
+            "status": "True",
+            "type": "ConfigurationsReady"
+          },
+          {
+            "lastTransitionTime": "2025-06-04T14:18:30.883295Z",
+            "status": "True",
+            "type": "RoutesReady"
+          }
+        ],
+        "latestCreatedRevisionName": "crypto-gestao-00002-q6m",
+        "latestReadyRevisionName": "crypto-gestao-00002-q6m",
+        "observedGeneration": 3,
+        "traffic": [
+          {
+            "latestRevision": true,
+            "percent": 100,
+            "revisionName": "crypto-gestao-00002-q6m"
+          }
+        ],
+        "url": "https://crypto-gestao-amjc4wot6a-uc.a.run.app"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "backups",
+    "schedules",
+    "list",
+    "--database=gestao-de-dados",
+    "--project=pm-machado-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:40.874103+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "createTime": "2026-10-27T18:55:23.761031Z",
+      "name": "projects/pm-machado-lgpdweb/databases/gestao-de-dados/backupSchedules/93b0c8e6-0991-44c5-9c3d-bf3626315c02",
+      "retention": "8467200s",
+      "updateTime": "2026-10-27T18:55:23.761031Z",
+      "weeklyRecurrence": {
+        "day": "SUNDAY"
+      }
+    }
+  ]
+}

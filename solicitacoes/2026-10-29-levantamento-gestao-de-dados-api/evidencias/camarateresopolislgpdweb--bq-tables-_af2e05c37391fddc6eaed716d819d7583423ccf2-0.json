@@ -1,0 +1,20 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/camarateresopolislgpdweb/datasets/_af2e05c37391fddc6eaed716d819d7583423ccf2/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:31.503670+00:00",
+  "status": 403,
+  "error": {
+    "error": {
+      "code": 403,
+      "message": "Access Denied: Dataset camarateresopolislgpdweb:_af2e05c37391fddc6eaed716d819d7583423ccf2: Permission bigquery.tables.list denied on dataset camarateresopolislgpdweb:_af2e05c37391fddc6eaed716d819d7583423ccf2 (or it may not exist).",
+      "errors": [
+        {
+          "message": "Access Denied: Dataset camarateresopolislgpdweb:_af2e05c37391fddc6eaed716d819d7583423ccf2: Permission bigquery.tables.list denied on dataset camarateresopolislgpdweb:_af2e05c37391fddc6eaed716d819d7583423ccf2 (or it may not exist).",
+          "domain": "global",
+          "reason": "accessDenied"
+        }
+      ],
+      "status": "PERMISSION_DENIED"
+    }
+  }
+}

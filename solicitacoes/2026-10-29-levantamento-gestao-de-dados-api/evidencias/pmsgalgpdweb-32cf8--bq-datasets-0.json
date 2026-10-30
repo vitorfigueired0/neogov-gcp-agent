@@ -1,0 +1,42 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pmsgalgpdweb-32cf8/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:33.255359+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "2R22bQkFw2PuozJxx3LEjg==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "pmsgalgpdweb-32cf8:_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+        "datasetReference": {
+          "datasetId": "_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+          "projectId": "pmsgalgpdweb-32cf8"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pmsgalgpdweb-32cf8:_ffa6cd1cfddb181473824dfc8539d7683c407439",
+        "datasetReference": {
+          "datasetId": "_ffa6cd1cfddb181473824dfc8539d7683c407439",
+          "projectId": "pmsgalgpdweb-32cf8"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pmsgalgpdweb-32cf8:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "pmsgalgpdweb-32cf8"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

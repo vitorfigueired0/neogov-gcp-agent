@@ -1,0 +1,46 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "describe",
+    "gs://lgpdweb-gestao-de-dados",
+    "--project=lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:51.163979+00:00",
+  "exit_code": 0,
+  "data": {
+    "cors_config": [
+      {
+        "maxAgeSeconds": 300,
+        "method": [
+          "GET",
+          "PUT"
+        ],
+        "origin": [
+          "https://gestaodedados.neogov.com.br"
+        ],
+        "responseHeader": [
+          "Content-Type",
+          "x-goog-if-generation-match"
+        ]
+      }
+    ],
+    "creation_time": "2026-10-27T16:24:16+0000",
+    "default_storage_class": "STANDARD",
+    "generation": 1793118256370545863,
+    "location": "US-CENTRAL1",
+    "location_type": "region",
+    "metageneration": 4,
+    "name": "lgpdweb-gestao-de-dados",
+    "public_access_prevention": "enforced",
+    "soft_delete_policy": {
+      "effectiveTime": "2026-10-27T16:24:16.456000+00:00",
+      "retentionDurationSeconds": "604800"
+    },
+    "storage_url": "gs://lgpdweb-gestao-de-dados/",
+    "uniform_bucket_level_access": true,
+    "update_time": "2026-10-27T16:26:21+0000"
+  }
+}

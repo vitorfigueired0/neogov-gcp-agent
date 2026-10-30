@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/novapontelgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:27.123349+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "xdL1/XhZY6HDH/VxopGf5g==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "novapontelgpdweb:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "novapontelgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1761151454180"
+      }
+    ],
+    "totalItems": 1
+  }
+}

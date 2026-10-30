@@ -1,0 +1,52 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/lgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:39.192345+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "OdbvrOIH+Psx8b+fSiBQqQ==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "lgpdweb:_6036c8204f7dba0006b5bd65f09e76e7eb8aead3",
+        "datasetReference": {
+          "datasetId": "_6036c8204f7dba0006b5bd65f09e76e7eb8aead3",
+          "projectId": "lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "lgpdweb:_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+        "datasetReference": {
+          "datasetId": "_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+          "projectId": "lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "lgpdweb:_da1ba81c51f8007c2033f2e42dca4495eec2f4b8",
+        "datasetReference": {
+          "datasetId": "_da1ba81c51f8007c2033f2e42dca4495eec2f4b8",
+          "projectId": "lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "lgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

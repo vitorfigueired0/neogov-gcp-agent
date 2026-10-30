@@ -1,0 +1,370 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=prefeituraituiutabalgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:19:55.354299+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "creation_time": "2026-01-16T01:14:37+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1768526077539424692,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "backup-lgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-01-16T01:14:37.621000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://backup-lgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-01-16T01:14:37+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T17:28:27+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776878907432806964,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-637181059585-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T17:28:27.676000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-637181059585-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T17:28:27+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T17:28:26+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776878906468619913,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-637181059585-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T17:28:26.715000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-637181059585-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T17:28:26+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://pmituiutaba.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:53:44+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:55:44.534000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793127224673746677,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-prefeituraituiutabalgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:53:44.822000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-prefeituraituiutabalgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:53:55+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-10-09T18:26:12+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1760034372748277333,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gestaodedados-pmituiutaba",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-10-09T18:26:12.829000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestaodedados-pmituiutaba/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-10-09T18:26:12+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://lgpdweb-pm-ituiutaba.vercel.app",
+            "https://prefeituraituiutabamg.lgpdweb.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:28:31+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791221311071551145,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "prefeituraituiutabalgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:28:31.206000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://prefeituraituiutabalgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T15:07:42+0000"
+    },
+    {
+      "creation_time": "2026-10-22T19:13:38+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792696418770990151,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "prefeituraituiutabalgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T19:13:38.948000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://prefeituraituiutabalgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:13:58+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-09-26T16:27:06+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-637181059585",
+          "projectTeam": {
+            "projectNumber": "637181059585",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1758904026471348897,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "prefeituraituiutabalgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-09-26T16:27:06.589000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://prefeituraituiutabalgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-09-26T16:27:06+0000"
+    }
+  ]
+}

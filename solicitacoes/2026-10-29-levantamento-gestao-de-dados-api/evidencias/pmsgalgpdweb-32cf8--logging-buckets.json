@@ -1,0 +1,28 @@
+{
+  "command": [
+    "gcloud",
+    "logging",
+    "buckets",
+    "list",
+    "--location=global",
+    "--project=pmsgalgpdweb-32cf8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:43.403187+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "description": "Default bucket",
+      "lifecycleState": "ACTIVE",
+      "name": "projects/pmsgalgpdweb-32cf8/locations/global/buckets/_Default",
+      "retentionDays": 30
+    },
+    {
+      "description": "Audit bucket",
+      "lifecycleState": "ACTIVE",
+      "locked": true,
+      "name": "projects/pmsgalgpdweb-32cf8/locations/global/buckets/_Required",
+      "retentionDays": 400
+    }
+  ]
+}

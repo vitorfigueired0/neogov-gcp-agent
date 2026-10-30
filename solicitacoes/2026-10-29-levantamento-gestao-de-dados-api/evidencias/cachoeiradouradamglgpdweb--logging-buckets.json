@@ -1,0 +1,28 @@
+{
+  "command": [
+    "gcloud",
+    "logging",
+    "buckets",
+    "list",
+    "--location=global",
+    "--project=cachoeiradouradamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:49.049135+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "description": "Default bucket",
+      "lifecycleState": "ACTIVE",
+      "name": "projects/cachoeiradouradamglgpdweb/locations/global/buckets/_Default",
+      "retentionDays": 30
+    },
+    {
+      "description": "Audit bucket",
+      "lifecycleState": "ACTIVE",
+      "locked": true,
+      "name": "projects/cachoeiradouradamglgpdweb/locations/global/buckets/_Required",
+      "retentionDays": 400
+    }
+  ]
+}

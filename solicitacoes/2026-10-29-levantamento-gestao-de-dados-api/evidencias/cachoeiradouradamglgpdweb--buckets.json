@@ -1,0 +1,301 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=cachoeiradouradamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:34.790342+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "creation_time": "2026-01-16T01:21:46+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1768526506769209816,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "backup-lgpdweb-0bd3e90b",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-01-16T01:21:46.904000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://backup-lgpdweb-0bd3e90b/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-01-16T01:21:46+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://camaracachoeiradouradamg.lgpdweb.neogov.com.br",
+            "https://lgpdweb-cm-cachoeira-dourada-mg.vercel.app"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:19:36+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791220776315207665,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "cachoeiradouradamglgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:19:36.528000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cachoeiradouradamglgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:44:37+0000"
+    },
+    {
+      "creation_time": "2026-10-22T18:48:36+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792694916168989180,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 5,
+      "name": "cachoeiradouradamglgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T18:48:36.430000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cachoeiradouradamglgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:33:43+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-949172226134",
+          "projectTeam": {
+            "projectNumber": "949172226134",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-949172226134",
+          "projectTeam": {
+            "projectNumber": "949172226134",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-949172226134",
+          "projectTeam": {
+            "projectNumber": "949172226134",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-07-23T18:45:26+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-949172226134",
+          "projectTeam": {
+            "projectNumber": "949172226134",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-949172226134",
+          "projectTeam": {
+            "projectNumber": "949172226134",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-949172226134",
+          "projectTeam": {
+            "projectNumber": "949172226134",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1753296326825208219,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "cachoeiradouradamglgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-07-23T18:45:26.898000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://cachoeiradouradamglgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-07-23T18:45:26+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-15T17:38:03+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776274683671141087,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-949172226134-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-15T17:38:03.922000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-949172226134-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-15T17:38:03+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-15T17:38:02+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776274682632797531,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-949172226134-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-15T17:38:02.778000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-949172226134-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-15T17:38:02+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://cmcachoeiradouradamg.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:43:28+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:45:28.231000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793126608369575949,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-cachoeiradouradamglgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:43:28.602000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-cachoeiradouradamglgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:43:37+0000"
+    }
+  ]
+}

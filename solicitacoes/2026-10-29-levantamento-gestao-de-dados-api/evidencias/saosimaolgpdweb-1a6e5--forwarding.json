@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gcloud",
+    "compute",
+    "forwarding-rules",
+    "list",
+    "--project=saosimaolgpdweb-1a6e5",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:07.232260+00:00",
+  "exit_code": 0,
+  "data": []
+}

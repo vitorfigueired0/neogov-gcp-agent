@@ -1,0 +1,25 @@
+{
+  "command": [
+    "gcloud",
+    "firestore",
+    "backups",
+    "schedules",
+    "list",
+    "--database=gestao-de-dados",
+    "--project=camarafrutallgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:51.181224+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "createTime": "2026-10-27T18:48:14.694332Z",
+      "name": "projects/camarafrutallgpdweb/databases/gestao-de-dados/backupSchedules/cf0442d8-f410-44d8-9b08-358d73279335",
+      "retention": "8467200s",
+      "updateTime": "2026-10-27T18:48:14.694332Z",
+      "weeklyRecurrence": {
+        "day": "SUNDAY"
+      }
+    }
+  ]
+}

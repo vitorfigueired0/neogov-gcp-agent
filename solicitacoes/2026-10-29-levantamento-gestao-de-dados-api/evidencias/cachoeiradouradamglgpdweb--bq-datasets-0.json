@@ -1,0 +1,52 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cachoeiradouradamglgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:36.857049+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "YdlikA8dinlAaPFSXQcmjg==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "cachoeiradouradamglgpdweb:_505597f29ed90acfd6f36f2e9860c705477729bb",
+        "datasetReference": {
+          "datasetId": "_505597f29ed90acfd6f36f2e9860c705477729bb",
+          "projectId": "cachoeiradouradamglgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cachoeiradouradamglgpdweb:_5364397db87d34c9b919c120f3a4b724a97e2524",
+        "datasetReference": {
+          "datasetId": "_5364397db87d34c9b919c120f3a4b724a97e2524",
+          "projectId": "cachoeiradouradamglgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cachoeiradouradamglgpdweb:_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+        "datasetReference": {
+          "datasetId": "_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+          "projectId": "cachoeiradouradamglgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "cachoeiradouradamglgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "cachoeiradouradamglgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

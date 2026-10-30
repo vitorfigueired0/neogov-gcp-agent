@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/cisalp-lgpdweb/datasets/cookies_dataset/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:23.713947+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "BebpUSp/SPlwqhZVjNqMLg==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "cisalp-lgpdweb:cookies_dataset.cookies",
+        "tableReference": {
+          "projectId": "cisalp-lgpdweb",
+          "datasetId": "cookies_dataset",
+          "tableId": "cookies"
+        },
+        "type": "TABLE",
+        "creationTime": "1771862001634"
+      }
+    ],
+    "totalItems": 1
+  }
+}

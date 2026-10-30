@@ -1,0 +1,17 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "services",
+    "get-iam-policy",
+    "gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=camarateresopolislgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:29.909223+00:00",
+  "exit_code": 0,
+  "data": {
+    "etag": "ACAB"
+  }
+}

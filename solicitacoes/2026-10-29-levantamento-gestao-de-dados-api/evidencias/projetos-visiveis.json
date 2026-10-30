@@ -1,0 +1,680 @@
+{
+  "command": [
+    "gcloud",
+    "projects",
+    "list",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:18:16.111774+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "createTime": "2026-09-29T12:40:55.126Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "neogov-auth-prd",
+      "projectId": "neogov-auth-prd",
+      "projectNumber": "569943311841"
+    },
+    {
+      "createTime": "2026-09-10T18:39:42.298Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cides-lgpdweb",
+      "projectId": "cides-lgpdweb",
+      "projectNumber": "812458273636"
+    },
+    {
+      "createTime": "2026-09-10T13:12:59.085Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "neogov-auth-dev",
+      "projectId": "neogov-auth-dev",
+      "projectNumber": "757454966640"
+    },
+    {
+      "createTime": "2026-09-08T11:14:40.365Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sao-joao-delrei-lgpdrive-mg",
+      "projectId": "pm-sao-joao-delrei-lgpdrive-mg",
+      "projectNumber": "495745028868"
+    },
+    {
+      "createTime": "2026-09-04T18:41:18.289Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sao-joao-del-rei-mg",
+      "projectId": "pm-sao-joao-del-rei-mg",
+      "projectNumber": "971507433447"
+    },
+    {
+      "createTime": "2026-09-01T14:00:56.127Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "app-frota",
+      "projectId": "app-frota-eefcc",
+      "projectNumber": "1052732747069"
+    },
+    {
+      "createTime": "2026-08-26T12:20:41.083Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-tupaciguara-mg-lgpdweb",
+      "projectId": "pm-tupaciguara-mg-lgpdweb",
+      "projectNumber": "316815308630"
+    },
+    {
+      "createTime": "2026-08-17T13:45:31.599Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "lgpdrive-qa",
+      "projectId": "lgpdrive-qa",
+      "projectNumber": "355878296531"
+    },
+    {
+      "createTime": "2026-08-12T13:12:57.788Z",
+      "lifecycleState": "ACTIVE",
+      "name": "artefatos",
+      "projectId": "artefatos",
+      "projectNumber": "1012140942605"
+    },
+    {
+      "createTime": "2026-07-29T17:25:07.471Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "treinamento-neogov-prod",
+      "projectId": "treinamento-neogov-prod",
+      "projectNumber": "263715830192"
+    },
+    {
+      "createTime": "2026-07-23T19:03:24.215Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "treinamento-neogov-dev",
+      "projectId": "treinamento-neogov-dev",
+      "projectNumber": "104377657271"
+    },
+    {
+      "createTime": "2026-05-29T14:06:36.614Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-neogov-qa-lgpdweb",
+      "projectId": "pm-neogov-qa-lgpdweb",
+      "projectNumber": "115635227737"
+    },
+    {
+      "createTime": "2026-02-23T15:41:37.540974Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cisalp-lgpdweb",
+      "projectId": "cisalp-lgpdweb",
+      "projectNumber": "252011168537"
+    },
+    {
+      "createTime": "2026-02-19T16:58:52.131259Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-estrela-do-sul-lgpdweb",
+      "projectId": "cm-estrela-do-sul-lgpdweb",
+      "projectNumber": "168525941025"
+    },
+    {
+      "createTime": "2026-02-05T20:55:31.057093Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "Dashboard Admin DEV",
+      "projectId": "dashboard-admin-dev-a9b7c",
+      "projectNumber": "997120428277"
+    },
+    {
+      "createTime": "2026-02-02T13:41:53.522553Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CamaraConceicaoAlagoasLGPDweb",
+      "projectId": "camaraconceicaoalagoaslgpdweb",
+      "projectNumber": "152048161192"
+    },
+    {
+      "createTime": "2026-02-02T12:25:45.835532Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-campo-florido-lgpdweb",
+      "projectId": "cm-campo-florido-lgpdweb",
+      "projectNumber": "223688126013"
+    },
+    {
+      "createTime": "2025-12-17T16:38:12.827980Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "Dashboard admin",
+      "projectId": "dashboard-admin-481516",
+      "projectNumber": "643187744430"
+    },
+    {
+      "createTime": "2025-10-21T11:14:25.125532Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-Pedrinopolis-LGPDweb",
+      "projectId": "pm-pedrinopolis-lgpdweb",
+      "projectNumber": "374975682507"
+    },
+    {
+      "createTime": "2025-10-07T14:57:39.757207Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-nova-ponte-lgpdweb",
+      "projectId": "novapontelgpdweb",
+      "projectNumber": "878878523707"
+    },
+    {
+      "createTime": "2025-09-26T16:23:48.574546Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-ituiutaba-lgpdweb",
+      "projectId": "prefeituraituiutabalgpdweb",
+      "projectNumber": "637181059585"
+    },
+    {
+      "createTime": "2025-09-24T17:00:18.158185Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-ituiutaba-lgpdrive",
+      "projectId": "prefeituraituiutabalgpdrive",
+      "projectNumber": "492763343577"
+    },
+    {
+      "createTime": "2025-09-24T12:58:38.301753Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-nova-ponte-lgpdrive",
+      "projectId": "camaranovapontelgpdrive",
+      "projectNumber": "221834254947"
+    },
+    {
+      "createTime": "2025-09-05T17:05:23.199522Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "teste",
+      "projectId": "teste-daa68",
+      "projectNumber": "339652842322"
+    },
+    {
+      "createTime": "2025-09-04T16:36:45.311892Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sao-simao-lgpdweb",
+      "projectId": "saosimaolgpdweb-1a6e5",
+      "projectNumber": "986593446685"
+    },
+    {
+      "createTime": "2025-08-18T18:05:45.410543Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-teresopolis-lgpdweb",
+      "projectId": "prefeiturateresopolislgpdweb",
+      "projectNumber": "578760838874"
+    },
+    {
+      "createTime": "2025-08-18T15:48:10.664928Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-teresopolis-lgpdweb",
+      "projectId": "camarateresopolislgpdweb",
+      "projectNumber": "428870652797"
+    },
+    {
+      "createTime": "2025-08-12T20:20:06.284019Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CM-ARAGUARI-LGPDRIVE",
+      "projectId": "cm-araguari-lgpdrive",
+      "projectNumber": "109090160832"
+    },
+    {
+      "createTime": "2025-08-12T15:32:13.777212Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-MACHADO-LGPDWEB",
+      "projectId": "pm-machado-lgpdweb",
+      "projectNumber": "183509511404"
+    },
+    {
+      "createTime": "2025-08-12T15:31:18.259584Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CM-ARAGUARI-LGPDWEB",
+      "projectId": "cm-araguari-lgpdweb",
+      "projectNumber": "80441081297"
+    },
+    {
+      "createTime": "2025-08-11T17:07:47.696217Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sga-lgpdweb",
+      "projectId": "pmsgalgpdweb-32cf8",
+      "projectNumber": "947412222933"
+    },
+    {
+      "createTime": "2025-08-06T11:58:24.338856Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-monte-carmelo-lgpdweb",
+      "projectId": "pm-montecarmelo-mg-lgpdweb",
+      "projectNumber": "932352030577"
+    },
+    {
+      "createTime": "2025-08-02T20:04:11.353285Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-estrela-do-sul-lgpdweb",
+      "projectId": "pm-estreladosul-mg-lgpdweb",
+      "projectNumber": "8425592986"
+    },
+    {
+      "createTime": "2025-08-01T17:09:44.657126Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-Teresopolis-LGPDrive",
+      "projectId": "pm-teresopolis-lgpdrive",
+      "projectNumber": "999687726551"
+    },
+    {
+      "createTime": "2025-07-31T18:31:48.231016Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-teresopolis-lgpdrive",
+      "projectId": "cm-teresopolis-lgpdrive",
+      "projectNumber": "414714683938"
+    },
+    {
+      "createTime": "2025-07-31T14:17:47.359420Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-delta-lgpdweb",
+      "projectId": "pmdeltamglgpdweb",
+      "projectNumber": "363128949229"
+    },
+    {
+      "createTime": "2025-07-23T18:59:04.642893Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-cachoeira-dourada-lgpdrive",
+      "projectId": "cm-cachoeira-dourada-lgpdrive",
+      "projectNumber": "1010517360518"
+    },
+    {
+      "createTime": "2025-07-23T18:16:09.278225Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cachoeira-dourada-lgpdweb",
+      "projectId": "cachoeiradouradamglgpdweb",
+      "projectNumber": "949172226134"
+    },
+    {
+      "createTime": "2025-06-30T18:24:35.988402Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "SAE-ituiutaba-lgpdrive",
+      "projectId": "sae-ituiutaba-lgpdrive",
+      "projectNumber": "821936758553"
+    },
+    {
+      "createTime": "2025-06-27T12:59:46.250108Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-Neogov-LGPDrive",
+      "projectId": "pm-neogov-lgpdrive",
+      "projectNumber": "774942416424"
+    },
+    {
+      "createTime": "2025-06-25T19:16:04.440838Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CM-Frutal-lgpdrive",
+      "projectId": "cm-frutal-lgpdrive",
+      "projectNumber": "747185096415"
+    },
+    {
+      "createTime": "2025-06-25T18:39:32.499044Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "PM-Frutal-LGPDrive",
+      "projectId": "pm-frutal-lgpdrive",
+      "projectNumber": "505845824333"
+    },
+    {
+      "createTime": "2025-06-23T12:28:07.398078Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "LGPDWEB",
+      "projectId": "lgpdweb",
+      "projectNumber": "824046366491"
+    },
+    {
+      "createTime": "2025-06-18T17:54:33.150825Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-frutal-lgpdweb",
+      "projectId": "camarafrutallgpdweb",
+      "projectNumber": "253187335391"
+    },
+    {
+      "createTime": "2025-06-10T12:56:20.641931Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-ituiutaba-lgpdweb",
+      "projectId": "camaraituiutabalgpdweb-a1a06",
+      "projectNumber": "955512464223"
+    },
+    {
+      "createTime": "2025-06-09T19:45:43.940217Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "sae-ituiutaba-lgpdweb",
+      "projectId": "lgpdwebsaaeituiutaba",
+      "projectNumber": "917044735941"
+    },
+    {
+      "createTime": "2025-06-09T17:54:29.371182Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-frutal-lgpdweb",
+      "projectId": "frutallgpdweb-3dab8",
+      "projectNumber": "722099604113"
+    },
+    {
+      "createTime": "2025-06-04T14:04:43.248467Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CamaraItuiutabaOuvidoria",
+      "projectId": "camaraituiutabalgpdweb",
+      "projectNumber": "969877508692"
+    },
+    {
+      "createTime": "2025-01-16T14:56:44.122106Z",
+      "labels": {
+        "firebase": "enabled",
+        "firebase-core": "disabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "modulocookies",
+      "projectId": "modulocookies",
+      "projectNumber": "1012628815211"
+    },
+    {
+      "createTime": "2024-12-05T16:28:38.999753Z",
+      "labels": {
+        "firebase": "enabled",
+        "generative-language": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "uberlandia-prefeitura",
+      "projectId": "uberlandia-prefeitura",
+      "projectNumber": "57929528569"
+    },
+    {
+      "createTime": "2024-12-03T17:46:20.815199Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "exemplo",
+      "projectId": "exemplo-c20ee",
+      "projectNumber": "1032966055143"
+    },
+    {
+      "createTime": "2024-12-03T12:24:12.652531Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-monte-carmelo-lgpdrive",
+      "projectId": "prefeituramontecarmelomg",
+      "projectNumber": "978950516084"
+    },
+    {
+      "createTime": "2024-11-07T12:42:54.144515Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "CamaraSGALGPDrive",
+      "projectId": "camarasaogoncalodoabaete",
+      "projectNumber": "674723667101"
+    },
+    {
+      "createTime": "2024-10-15T11:53:18.594745Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "neogov-default",
+      "projectId": "neogov-default",
+      "projectNumber": "656076548598"
+    },
+    {
+      "createTime": "2024-10-15T11:52:41.048340Z",
+      "lifecycleState": "ACTIVE",
+      "name": "neogov-hosting-geral",
+      "projectId": "neogov-hosting-geral",
+      "projectNumber": "882204647120"
+    },
+    {
+      "createTime": "2024-09-27T12:18:02.466092Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-machado-lgpdrive",
+      "projectId": "machadomglgpdrive",
+      "projectNumber": "336966460270"
+    },
+    {
+      "createTime": "2024-09-05T19:11:13.448959Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sga-lgpdrive",
+      "projectId": "saogoncalodoabaetelgpdri-ac3d0",
+      "projectNumber": "1034832224065"
+    },
+    {
+      "createTime": "2024-07-31T13:33:45.292261Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "cm-estrela-do-sul-lgpdrive",
+      "projectId": "camaraestreladosul",
+      "projectNumber": "1067038054029"
+    },
+    {
+      "createTime": "2024-07-30T13:42:12.218785Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-sao-simao-lgpdrive",
+      "projectId": "saosimaolgpdrive",
+      "projectNumber": "36071575745"
+    },
+    {
+      "createTime": "2024-07-30T13:41:46.732803Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "pm-estrela-do-sul-lgpdrive",
+      "projectId": "estreladosullgpdrive",
+      "projectNumber": "954933032468"
+    },
+    {
+      "createTime": "2024-05-15T11:45:18.863129Z",
+      "labels": {
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "LGPDrive",
+      "projectId": "lgpdrive-8f2a8",
+      "projectNumber": "48220459614"
+    },
+    {
+      "createTime": "2020-05-20T12:00:37.590Z",
+      "labels": {
+        "earth-engine": "",
+        "firebase": "enabled"
+      },
+      "lifecycleState": "ACTIVE",
+      "name": "NEOGOV GERAL",
+      "parent": {
+        "id": "50540986238",
+        "type": "organization"
+      },
+      "projectId": "chequei",
+      "projectNumber": "493578038860"
+    }
+  ]
+}

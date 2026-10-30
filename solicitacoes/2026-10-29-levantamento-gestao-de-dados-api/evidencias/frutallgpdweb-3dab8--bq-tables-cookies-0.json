@@ -1,0 +1,24 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/frutallgpdweb-3dab8/datasets/cookies/tables?maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:42.904253+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#tableList",
+    "etag": "exb8TcNYbc9jadT0XHW6Uw==",
+    "tables": [
+      {
+        "kind": "bigquery#table",
+        "id": "frutallgpdweb-3dab8:cookies.registros",
+        "tableReference": {
+          "projectId": "frutallgpdweb-3dab8",
+          "datasetId": "cookies",
+          "tableId": "registros"
+        },
+        "type": "TABLE",
+        "creationTime": "1764703607583"
+      }
+    ],
+    "totalItems": 1
+  }
+}

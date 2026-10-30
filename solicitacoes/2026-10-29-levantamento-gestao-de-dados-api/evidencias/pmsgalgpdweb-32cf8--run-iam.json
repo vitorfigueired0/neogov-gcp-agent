@@ -1,0 +1,17 @@
+{
+  "command": [
+    "gcloud",
+    "run",
+    "services",
+    "get-iam-policy",
+    "gestao-de-dados-api",
+    "--region=us-central1",
+    "--project=pmsgalgpdweb-32cf8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:58.811989+00:00",
+  "exit_code": 0,
+  "data": {
+    "etag": "ACAB"
+  }
+}

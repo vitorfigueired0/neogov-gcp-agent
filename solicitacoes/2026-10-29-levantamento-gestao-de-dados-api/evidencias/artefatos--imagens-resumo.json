@@ -1,0 +1,13 @@
+{
+  "command": ["gcloud", "artifacts", "docker", "images", "list", "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api", "--include-tags", "--project=artefatos", "--format=json(package,version,tags,imageSizeBytes,buildTime,uploadTime,updateTime)"],
+  "exit_code": 0,
+  "note": "Resumo fiel dos digests e tags retornados; a projeção não retornou tamanhos. Não inferir armazenamento faturado a partir desta listagem.",
+  "data": [
+    {"version":"sha256:48f148f601f146f8eb3858d58559ae3150d5a31ed2c515e30d43d20a439761d4","tags":[]},
+    {"version":"sha256:6e8f065a970cd5fa1a279701894d1f3ae740e15dfd540c36e5caf3ab3892ad5d","tags":["develop"]},
+    {"version":"sha256:72ab7958af9cf666d167d39f5ae68c5562fa3613c034a6e9688a545e16f8a439","tags":["1.0.0","latest","master"]},
+    {"version":"sha256:7eaa84bd2b43c7ce8fc406bf5d5d9b38a3a286546f439b89e5d256a63dfaa665","tags":[]},
+    {"version":"sha256:d30232f1fb0e927b774919c1a5e17d09e85e7ce1e753d1cc114834aad788f142","tags":[]},
+    {"version":"sha256:e385e7fe97bf88252637e718dbf294f7c9fa912fabe522e0252ddb852877db93","tags":[]}
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "command": [
+    "gcloud",
+    "projects",
+    "get-iam-policy",
+    "pm-machado-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:35.917325+00:00",
+  "exit_code": 0,
+  "data": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:anonimizacao@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/aiplatform.user"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-artifactregistry.iam.gserviceaccount.com"
+        ],
+        "role": "roles/artifactregistry.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/artifactregistry.writer"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-6c8i@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-ins9@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-wgu9@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.dataEditor"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.dataViewer"
+      },
+      {
+        "members": [
+          "serviceAccount:cookies@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.jobUser"
+      },
+      {
+        "members": [
+          "serviceAccount:ext-firestore-bigquery-ex-6c8i@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-ins9@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-wgu9@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/bigquery.user"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404@cloudbuild.gserviceaccount.com"
+        ],
+        "role": "roles/cloudbuild.builds.builder"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-cloudbuild.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudbuild.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudfunctions.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcf-admin-robot.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudfunctions.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-cloudscheduler.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudscheduler.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-cloudtasks.iam.gserviceaccount.com"
+        ],
+        "role": "roles/cloudtasks.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404@cloudservices.gserviceaccount.com"
+        ],
+        "role": "roles/compute.instanceGroupManagerServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@compute-system.iam.gserviceaccount.com"
+        ],
+        "role": "roles/compute.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@container-analysis.iam.gserviceaccount.com"
+        ],
+        "role": "roles/containeranalysis.ServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@containerregistry.iam.gserviceaccount.com"
+        ],
+        "role": "roles/containerregistry.ServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:backup-mensal@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.importExportAdmin"
+      },
+      {
+        "members": [
+          "serviceAccount:336966460270-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.owner"
+      },
+      {
+        "members": [
+          "serviceAccount:336966460270-compute@developer.gserviceaccount.com",
+          "serviceAccount:anonimizacao@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-6c8i@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-ins9@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:ext-firestore-bigquery-ex-wgu9@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:gestao-de-dados-api-runtime@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:relatorios@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.user"
+      },
+      {
+        "members": [
+          "serviceAccount:336966460270-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/datastore.viewer"
+      },
+      {
+        "members": [
+          "serviceAccount:anonimizacao@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/documentai.apiUser"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-prod-dai-core.iam.gserviceaccount.com"
+        ],
+        "role": "roles/documentaicore.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com",
+          "serviceAccount:183509511404@cloudservices.gserviceaccount.com"
+        ],
+        "role": "roles/editor"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/eventarc.eventReceiver"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-eventarc.iam.gserviceaccount.com"
+        ],
+        "role": "roles/eventarc.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-firebase.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebase.managementServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebase.sdkAdminServiceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:relatorios@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaseauth.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:neogov-auth-runtime@neogov-auth-prd.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaseauth.editor"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-firebasemods.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebasemods.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@firebase-rules.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebaserules.system"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-firebasestorage.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firebasestorage.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-firestore.iam.gserviceaccount.com"
+        ],
+        "role": "roles/firestore.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com",
+          "serviceAccount:firebase-adminsdk-fbsvc@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "serviceAccount:service-183509511404@gcp-sa-pubsub.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountUser"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/logging.logWriter"
+      },
+      {
+        "members": [
+          "serviceAccount:default-compute-service-accoun@pm-machado-lgpdweb.iam.gserviceaccount.com",
+          "user:desenvolvimento.neogov@gmail.com"
+        ],
+        "role": "roles/owner"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@gcp-sa-pubsub.iam.gserviceaccount.com"
+        ],
+        "role": "roles/pubsub.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:183509511404-compute@developer.gserviceaccount.com"
+        ],
+        "role": "roles/run.admin"
+      },
+      {
+        "members": [
+          "serviceAccount:service-183509511404@serverless-robot-prod.iam.gserviceaccount.com"
+        ],
+        "role": "roles/run.serviceAgent"
+      },
+      {
+        "members": [
+          "serviceAccount:firebase-adminsdk-fbsvc@pm-machado-lgpdweb.iam.gserviceaccount.com"
+        ],
+        "role": "roles/storage.admin"
+      }
+    ],
+    "etag": "BwZe54-C_pA=",
+    "version": 1
+  }
+}

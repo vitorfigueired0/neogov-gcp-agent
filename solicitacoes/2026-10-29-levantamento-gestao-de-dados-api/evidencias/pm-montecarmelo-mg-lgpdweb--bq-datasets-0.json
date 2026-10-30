@@ -1,0 +1,42 @@
+{
+  "method": "GET",
+  "url": "https://bigquery.googleapis.com/bigquery/v2/projects/pm-montecarmelo-mg-lgpdweb/datasets?all=true&maxResults=1000",
+  "timestamp_utc": "2026-10-30T01:19:33.277204+00:00",
+  "status": 200,
+  "data": {
+    "kind": "bigquery#datasetList",
+    "etag": "frW/TgI166bSoSQJNLZACw==",
+    "datasets": [
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-montecarmelo-mg-lgpdweb:_0ba3c8b03aa1353f15533b97bb9f830fb5ba415f",
+        "datasetReference": {
+          "datasetId": "_0ba3c8b03aa1353f15533b97bb9f830fb5ba415f",
+          "projectId": "pm-montecarmelo-mg-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-montecarmelo-mg-lgpdweb:_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+        "datasetReference": {
+          "datasetId": "_75200e9907ea0aed078fdd352cacca19d6a8fe8b",
+          "projectId": "pm-montecarmelo-mg-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      },
+      {
+        "kind": "bigquery#dataset",
+        "id": "pm-montecarmelo-mg-lgpdweb:cookies_dataset",
+        "datasetReference": {
+          "datasetId": "cookies_dataset",
+          "projectId": "pm-montecarmelo-mg-lgpdweb"
+        },
+        "location": "US",
+        "type": "DEFAULT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=pmdeltamglgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:21:24.681022+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "creation_time": "2026-01-16T01:29:38+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1768526977862778667,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "backup-lgpdweb-5124261a",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-01-16T01:29:38.007000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://backup-lgpdweb-5124261a/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-01-16T01:29:38+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T13:48:00+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776865679842879397,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-363128949229-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T13:48:00.109000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-363128949229-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T13:48:00+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T13:47:59+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776865678859354792,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-363128949229-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T13:47:59.005000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-363128949229-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T13:47:59+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://pmdelta.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:50:39+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:52:39.243000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793127039260273436,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-pmdeltamglgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:50:39.463000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-pmdeltamglgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:50:48+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://lgpdweb-pm-delta-mg.vercel.app",
+            "https://prefeituradeltamg.lgpdweb.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:21:36+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791220895883471395,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "pmdeltamglgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:21:36.107000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pmdeltamglgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:59:39+0000"
+    },
+    {
+      "creation_time": "2026-10-22T19:01:48+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792695708492173359,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "pmdeltamglgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T19:01:48.670000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pmdeltamglgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:02:08+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-363128949229",
+          "projectTeam": {
+            "projectNumber": "363128949229",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-363128949229",
+          "projectTeam": {
+            "projectNumber": "363128949229",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-363128949229",
+          "projectTeam": {
+            "projectNumber": "363128949229",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-07-31T14:25:36+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-363128949229",
+          "projectTeam": {
+            "projectNumber": "363128949229",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-363128949229",
+          "projectTeam": {
+            "projectNumber": "363128949229",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-363128949229",
+          "projectTeam": {
+            "projectNumber": "363128949229",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1753971936761191002,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "pmdeltamglgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-07-31T14:25:36.959000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pmdeltamglgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-07-31T14:25:36+0000"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=pm-machado-lgpdweb",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:37.195164+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "creation_time": "2026-01-16T01:19:01+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1768526341634591067,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "backup-lgpdweb-343d3457",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-01-16T01:19:01.763000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://backup-lgpdweb-343d3457/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-01-16T01:19:01+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T17:37:53+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776879473464654720,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-183509511404-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T17:37:53.569000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-183509511404-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T17:37:53+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T17:37:52+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776879472452533952,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-183509511404-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T17:37:52.603000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-183509511404-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T17:37:52+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://pmmachado.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:54:44+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:56:43.836000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793127283979148285,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-pm-machado-lgpdweb",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:54:44.173000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-pm-machado-lgpdweb/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:54:53+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://lgpdweb-pm-machado.vercel.app",
+            "https://prefeituramachadomg.lgpdweb.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:30:14+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791221413940880581,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "pm-machado-lgpdweb-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:30:14.149000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-machado-lgpdweb-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T14:41:40+0000"
+    },
+    {
+      "creation_time": "2026-10-22T19:06:39+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792695999387757217,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "pm-machado-lgpdweb-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T19:06:39.579000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-machado-lgpdweb-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T19:06:59+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-183509511404",
+          "projectTeam": {
+            "projectNumber": "183509511404",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-183509511404",
+          "projectTeam": {
+            "projectNumber": "183509511404",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-183509511404",
+          "projectTeam": {
+            "projectNumber": "183509511404",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-08-12T16:04:37+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-183509511404",
+          "projectTeam": {
+            "projectNumber": "183509511404",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-183509511404",
+          "projectTeam": {
+            "projectNumber": "183509511404",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-183509511404",
+          "projectTeam": {
+            "projectNumber": "183509511404",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1755014677030638319,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "pm-machado-lgpdweb.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-08-12T16:04:37.160000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://pm-machado-lgpdweb.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-08-12T16:04:37+0000"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "command": [
+    "gcloud",
+    "storage",
+    "buckets",
+    "list",
+    "--project=frutallgpdweb-3dab8",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:22:22.357080+00:00",
+  "exit_code": 0,
+  "data": [
+    {
+      "creation_time": "2026-01-16T01:32:55+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1768527175345372599,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "backup-lgpdweb-28c1886e",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-01-16T01:32:55.465000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://backup-lgpdweb-28c1886e/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-01-16T01:32:55+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://lgpdweb-pm-frutal-mg.vercel.app",
+            "https://prefeiturafrutalmg.lgpdweb.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "Content-Length"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-05T17:26:49+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1791221209461265893,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "daysSinceCustomTime": 3
+            }
+          },
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 13,
+      "name": "frutallgpdweb-3dab8-anonimizacao",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-05T17:26:49.628000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://frutallgpdweb-3dab8-anonimizacao/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-28T15:05:47+0000"
+    },
+    {
+      "creation_time": "2026-10-22T18:58:23+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1792695503775937559,
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "age": 365
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 3,
+      "name": "frutallgpdweb-3dab8-backup-mensal",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-22T18:58:23.923000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://frutallgpdweb-3dab8-backup-mensal/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-22T18:59:14+0000"
+    },
+    {
+      "acl": [
+        {
+          "entity": "project-owners-722099604113",
+          "projectTeam": {
+            "projectNumber": "722099604113",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-722099604113",
+          "projectTeam": {
+            "projectNumber": "722099604113",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-722099604113",
+          "projectTeam": {
+            "projectNumber": "722099604113",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "creation_time": "2025-06-09T19:25:20+0000",
+      "default_acl": [
+        {
+          "entity": "project-owners-722099604113",
+          "projectTeam": {
+            "projectNumber": "722099604113",
+            "team": "owners"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-editors-722099604113",
+          "projectTeam": {
+            "projectNumber": "722099604113",
+            "team": "editors"
+          },
+          "role": "OWNER"
+        },
+        {
+          "entity": "project-viewers-722099604113",
+          "projectTeam": {
+            "projectNumber": "722099604113",
+            "team": "viewers"
+          },
+          "role": "READER"
+        }
+      ],
+      "default_storage_class": "REGIONAL",
+      "generation": 1749497119921872675,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "frutallgpdweb-3dab8.firebasestorage.app",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2025-06-09T19:25:20.015000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://frutallgpdweb-3dab8.firebasestorage.app/",
+      "uniform_bucket_level_access": false,
+      "update_time": "2025-06-09T19:25:20+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T14:13:57+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776867236930436739,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-sources-722099604113-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T14:13:57.264000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-sources-722099604113-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T14:13:57+0000"
+    },
+    {
+      "cors_config": [
+        {
+          "method": [
+            "GET"
+          ],
+          "origin": [
+            "https://*.cloud.google.com",
+            "https://*.corp.google.com",
+            "https://*.corp.google.com:*",
+            "https://*.cloud.google",
+            "https://*.byoid.goog"
+          ]
+        }
+      ],
+      "creation_time": "2026-04-22T14:13:55+0000",
+      "default_storage_class": "STANDARD",
+      "generation": 1776867235826961795,
+      "labels": {
+        "goog-managed-by": "cloudfunctions"
+      },
+      "lifecycle_config": {
+        "rule": [
+          {
+            "action": {
+              "type": "Delete"
+            },
+            "condition": {
+              "isLive": false,
+              "numNewerVersions": 3
+            }
+          }
+        ]
+      },
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 1,
+      "name": "gcf-v2-sources-722099604113-us-central1",
+      "public_access_prevention": "inherited",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-04-22T14:13:55.981000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gcf-v2-sources-722099604113-us-central1/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-04-22T14:13:55+0000",
+      "versioning_enabled": true
+    },
+    {
+      "cors_config": [
+        {
+          "maxAgeSeconds": 3600,
+          "method": [
+            "PUT",
+            "GET"
+          ],
+          "origin": [
+            "https://pmfrutal.gestaodedados.neogov.com.br"
+          ],
+          "responseHeader": [
+            "Content-Type",
+            "x-goog-if-generation-match"
+          ]
+        }
+      ],
+      "creation_time": "2026-10-27T18:52:41+0000",
+      "csek_enforcement": {
+        "effectiveTime": "2026-10-27T18:54:41.735000+00:00",
+        "restrictionMode": "FullyRestricted"
+      },
+      "default_storage_class": "STANDARD",
+      "generation": 1793127161741739463,
+      "location": "US-CENTRAL1",
+      "location_type": "region",
+      "metageneration": 4,
+      "name": "gestao-de-dados-frutallgpdweb-3dab8",
+      "public_access_prevention": "enforced",
+      "soft_delete_policy": {
+        "effectiveTime": "2026-10-27T18:52:41.894000+00:00",
+        "retentionDurationSeconds": "604800"
+      },
+      "storage_url": "gs://gestao-de-dados-frutallgpdweb-3dab8/",
+      "uniform_bucket_level_access": true,
+      "update_time": "2026-10-27T18:52:53+0000"
+    }
+  ]
+}

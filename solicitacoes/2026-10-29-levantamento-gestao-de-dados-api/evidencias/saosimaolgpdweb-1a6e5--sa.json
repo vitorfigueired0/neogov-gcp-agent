@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gcloud",
+    "iam",
+    "service-accounts",
+    "describe",
+    "gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com",
+    "--project=saosimaolgpdweb-1a6e5",
+    "--format=json"
+  ],
+  "timestamp_utc": "2026-10-30T01:20:10.373196+00:00",
+  "exit_code": 0,
+  "data": {
+    "displayName": "API Gestão de Dados runtime",
+    "email": "gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com",
+    "etag": "MDEwMjE5MjA=",
+    "name": "projects/saosimaolgpdweb-1a6e5/serviceAccounts/gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com",
+    "oauth2ClientId": "113388518335548234132",
+    "projectId": "saosimaolgpdweb-1a6e5",
+    "uniqueId": "113388518335548234132"
+  }
+}
