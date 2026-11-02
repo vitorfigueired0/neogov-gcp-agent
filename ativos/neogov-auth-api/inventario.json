@@ -1,0 +1,49 @@
+{
+  "ativo": {
+    "identificador": "neogov-auth-api",
+    "nome": "neogov-auth",
+    "finalidade": "API de autenticação; finalidade e ambientes informados pelo usuário"
+  },
+  "coleta": {
+    "instante": "2026-10-29T23:25:30-03:00",
+    "fuso": "America/Sao_Paulo",
+    "escopo": ["neogov-auth-prd", "neogov-auth-dev"],
+    "dados_de_negocio_lidos": false,
+    "valores_de_segredos_lidos": false
+  },
+  "instalacoes": [
+    {
+      "ambiente": "produção (informado pelo usuário)",
+      "projeto": {"id": "neogov-auth-prd", "numero": "569943311841", "estado": "ACTIVE"},
+      "cloud_run": {"servico": "neogov-auth-prd", "regiao": "us-central1", "revisao_pronta": "neogov-auth-prd-00008-rdp", "trafego_percentual": 100, "ready": true, "ingress": "all", "invocacao_iam_desabilitada": true, "url_padrao_desabilitada": true, "url_observada": null, "imagem": "us-central1-docker.pkg.dev/artefatos/neogov-auth/neogov-auth:1.0.1", "conta_execucao": "neogov-auth-runtime@neogov-auth-prd.iam.gserviceaccount.com", "limites": {"cpu": "4000m", "memoria": "2Gi"}, "concorrencia": 80, "timeout_segundos": 300, "escala": {"min": 0, "max": 100}},
+      "firestore": {"id": "auth-db-prd", "localizacao": "us-central1", "tipo": "FIRESTORE_NATIVE", "modo_concorrencia": "PESSIMISTIC", "protecao_exclusao": "DELETE_PROTECTION_DISABLED", "retencao_versoes": "3600s"},
+      "segredos_referenciados": ["API_KEY_HMAC_SECRET:1", "GCP_PROJECT_ID:latest", "PLATFORM_API_KEY_HMAC_SECRET:1", "PLATFORM_JWT_SECRET:latest", "ZEPTOMAIL_API_TOKEN:latest"]
+    },
+    {
+      "ambiente": "desenvolvimento (informado pelo usuário)",
+      "projeto": {"id": "neogov-auth-dev", "numero": "757454966640", "estado": "ACTIVE"},
+      "cloud_run": {"servico": "neogov-auth-dev", "regiao": "us-central1", "revisao_pronta": "neogov-auth-dev-00025-lhc", "trafego_percentual": 100, "ready": true, "ingress": "all", "invocacao_iam_desabilitada": true, "url_padrao_desabilitada": true, "url_observada": null, "imagem": "us-central1-docker.pkg.dev/artefatos/neogov-auth/neogov-auth:develop", "conta_execucao": "neogov-auth-runtime@neogov-auth-dev.iam.gserviceaccount.com", "limites": {"cpu": "2", "memoria": "1Gi"}, "concorrencia": 80, "timeout_segundos": 300, "escala": {"min": 0, "max": 100}},
+      "firestore": {"id": "auth-db-dev", "localizacao": "us-central1", "tipo": "FIRESTORE_NATIVE", "modo_concorrencia": "PESSIMISTIC", "protecao_exclusao": "DELETE_PROTECTION_DISABLED", "retencao_versoes": "3600s"},
+      "segredos_referenciados": ["API_KEY_HMAC_SECRET:latest", "GCP_PROJECT_ID:latest", "PLATFORM_API_KEY_HMAC_SECRET:latest", "PLATFORM_JWT_SECRET:latest", "ZEPTOMAIL_API_TOKEN:latest"]
+    }
+  ],
+  "dependencias_externas": [{"tipo": "imagem", "referencia": "projeto artefatos", "estado": "observado; fora do escopo"}],
+  "ausencias_confirmadas": {"artifact_registry_local": true, "buckets_storage_locais": true, "app_engine": true},
+  "verificacao_pendencias": {
+    "instante": "2026-10-29T23:32:55-03:00",
+    "dominios": [
+      {"projeto": "neogov-auth-prd", "dominio": "api.auth.neogov.com.br", "rota_cloud_run": "neogov-auth-prd", "ready": true, "certificado_provisionado": true, "dns": "CNAME api.auth -> ghs.googlehosted.com."},
+      {"projeto": "neogov-auth-dev", "dominio": "api.auth-develop.neogov.com.br", "rota_cloud_run": "neogov-auth-dev", "ready": true, "certificado_provisionado": true, "dns": "CNAME api.auth-develop -> ghs.googlehosted.com."}
+    ],
+    "firestore": {
+      "neogov-auth-prd": {"backups_ready": 4, "backups_snapshot": ["2026-10-03T09:44:48Z", "2026-10-10T10:40:39Z", "2026-10-17T11:26:12Z", "2026-10-24T12:23:00Z"], "indices_compostos_ready": 3},
+      "neogov-auth-dev": {"backups_ready": 0, "indices_compostos_ready": 0}
+    },
+    "politicas_diretas_segredos": "nenhum binding retornado para os cinco segredos de cada projeto",
+    "firebase_auth": "inacessível: ADC locais sem quota project",
+    "cloud_functions": "não verificável: API desabilitada em ambos os projetos",
+    "cloud_sql": "não verificável: API desabilitada em ambos os projetos"
+  },
+  "nao_verificado": ["WAF/CDN e demais autenticações de borda", "Firebase Auth: provedores, tenants e domínios autorizados", "restauração dos backups Firestore", "Cloud Functions", "Cloud SQL"],
+  "fontes": ["gcloud projects describe", "gcloud run services list/describe/get-iam-policy", "gcloud run revisions list", "gcloud projects get-iam-policy", "gcloud firestore databases list", "gcloud secrets list", "gcloud artifacts repositories list", "gcloud storage buckets list", "gcloud services list --enabled"]
+}
