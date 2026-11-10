@@ -1,52 +1,59 @@
 # Projetos GCP relacionados ao LGPDWeb
 
-Na consulta de 20/10/2026, foram encontrados **26 projetos com `lgpdweb` no nome ou no ID**, sem diferenciar maiúsculas e minúsculas, acessíveis à conta `desenvolvimento@neogov.com.br`. Todos estavam com status `ACTIVE`.
-
-A lista considera os projetos visíveis à autenticação existente do Google Cloud CLI. Projetos com outros nomes ou sem acesso para essa conta podem também hospedar componentes do LGPDWeb.
+Lista de **29 projetos** informada pelo usuário em **09/11/2026** (fuso
+`America/Sao_Paulo`), substituindo a relação anterior de 20/10/2026.
+Esta atualização é documental: existência, acesso, status e recursos dos
+projetos não foram revalidados no GCP.
 
 ## Lista de projetos
 
-| Nome do projeto | ID do projeto |
+| ID do projeto | Ambiente / finalidade confirmada |
 | --- | --- |
-| LGPDWEB | `lgpdweb` |
-| pm-neogov-qa-lgpdweb | `pm-neogov-qa-lgpdweb` |
-| cides-lgpdweb | `cides-lgpdweb` |
-| cisalp-lgpdweb | `cisalp-lgpdweb` |
-| cachoeira-dourada-lgpdweb | `cachoeiradouradamglgpdweb` |
-| CM-ARAGUARI-LGPDWEB | `cm-araguari-lgpdweb` |
-| cm-campo-florido-lgpdweb | `cm-campo-florido-lgpdweb` |
-| CamaraConceicaoAlagoasLGPDweb | `camaraconceicaoalagoaslgpdweb` |
-| cm-estrela-do-sul-lgpdweb | `cm-estrela-do-sul-lgpdweb` |
-| cm-frutal-lgpdweb | `camarafrutallgpdweb` |
-| cm-ituiutaba-lgpdweb | `camaraituiutabalgpdweb-a1a06` |
-| CamaraItuiutabaOuvidoria | `camaraituiutabalgpdweb` |
-| cm-nova-ponte-lgpdweb | `novapontelgpdweb` |
-| cm-teresopolis-lgpdweb | `camarateresopolislgpdweb` |
-| pm-delta-lgpdweb | `pmdeltamglgpdweb` |
-| pm-estrela-do-sul-lgpdweb | `pm-estreladosul-mg-lgpdweb` |
-| pm-frutal-lgpdweb | `frutallgpdweb-3dab8` |
-| pm-ituiutaba-lgpdweb | `prefeituraituiutabalgpdweb` |
-| PM-MACHADO-LGPDWEB | `pm-machado-lgpdweb` |
-| pm-monte-carmelo-lgpdweb | `pm-montecarmelo-mg-lgpdweb` |
-| PM-Pedrinopolis-LGPDweb | `pm-pedrinopolis-lgpdweb` |
-| pm-sao-simao-lgpdweb | `saosimaolgpdweb-1a6e5` |
-| pm-sga-lgpdweb | `pmsgalgpdweb-32cf8` |
-| pm-teresopolis-lgpdweb | `prefeiturateresopolislgpdweb` |
-| pm-tupaciguara-mg-lgpdweb | `pm-tupaciguara-mg-lgpdweb` |
-| sae-ituiutaba-lgpdweb | `lgpdwebsaaeituiutaba` |
-
-O projeto `CamaraItuiutabaOuvidoria` foi incluído porque seu ID contém `lgpdweb`.
+| `pm-itaguai-rj-lgpdweb` | Não confirmado |
+| `pm-neogov-qa-lgpdweb` | QA de Gestão de Dados e LGPDweb |
+| `lgpdweb` | Apresentação de produção |
+| `camaraconceicaoalagoaslgpdweb` | Não confirmado |
+| `pm-tupaciguara-mg-lgpdweb` | Não confirmado |
+| `pm-pedrinopolis-lgpdweb` | Não confirmado |
+| `frutallgpdweb-3dab8` | Não confirmado |
+| `cm-campo-florido-lgpdweb` | Não confirmado |
+| `prefeiturateresopolislgpdweb` | Não confirmado |
+| `pmsgalgpdweb-32cf8` | Não confirmado |
+| `pmdeltamglgpdweb` | Não confirmado |
+| `prefeituraituiutabalgpdweb` | Não confirmado |
+| `novapontelgpdweb` | Não confirmado |
+| `cm-estrela-do-sul-lgpdweb` | Não confirmado |
+| `pm-estreladosul-mg-lgpdweb` | Não confirmado |
+| `cm-araguari-lgpdweb` | Não confirmado |
+| `pm-machado-lgpdweb` | Não confirmado |
+| `lgpdwebsaaeituiutaba` | Não confirmado |
+| `camarafrutallgpdweb` | Não confirmado |
+| `saosimaolgpdweb-1a6e5` | Não confirmado |
+| `camarateresopolislgpdweb` | Não confirmado |
+| `pm-sao-joao-del-rei-mg` | Não confirmado |
+| `pm-montecarmelo-mg-lgpdweb` | Não confirmado |
+| `cides-lgpdweb` | Não confirmado |
+| `cisalp-lgpdweb` | Não confirmado |
+| `neogov-default` | Não confirmado |
+| `cachoeiradouradamglgpdweb` | Não confirmado |
+| `camaraituiutabalgpdweb-a1a06` | Não confirmado |
+| `pm-coromandel-mg-lgpdweb` | Não confirmado |
 
 ## Ambiente conhecido
 
-O projeto `pm-neogov-qa-lgpdweb` corresponde ao ambiente de **QA de Gestão de Dados e LGPDweb**, conforme associação confirmada pelo usuário em 12/10/2026 e registrada em [AGENTS.md](AGENTS.md). Os ambientes dos demais projetos não foram classificados nesta consulta.
+O projeto `pm-neogov-qa-lgpdweb` corresponde ao ambiente de **QA de Gestão de Dados e LGPDweb**, conforme associação confirmada pelo usuário em 12/10/2026 e registrada em [AGENTS.md](AGENTS.md).
 
-## Origem da consulta
+O projeto `lgpdweb` é o projeto de **apresentação de produção**, conforme
+informado pelo usuário em 09/11/2026. Os ambientes dos demais projetos ainda
+não foram confirmados.
 
-A listagem foi obtida com o comando de leitura abaixo, seguido da seleção dos nomes ou IDs que contêm `lgpdweb`:
+## Origem e limites
 
-```bash
-gcloud projects list --format='json(projectId,name,lifecycleState)'
-```
+A fonte desta relação é a lista fornecida pelo usuário em 09/11/2026,
+preservada na mesma ordem. A inclusão não depende de o ID conter `lgpdweb`.
+O ID `camaraituiutabalgpdweb`, presente na relação anterior e ausente na nova
+lista, foi retirado deste mapeamento; isso não indica exclusão do projeto no GCP.
 
-O status `ACTIVE` indica o estado do projeto no GCP e não comprova a disponibilidade das aplicações hospedadas.
+Esta referência não comprova disponibilidade das aplicações nem autoriza
+alterações em recursos. Use o ID explícito em cada operação e confirme o
+recurso e o ambiente pertinentes antes de operar.

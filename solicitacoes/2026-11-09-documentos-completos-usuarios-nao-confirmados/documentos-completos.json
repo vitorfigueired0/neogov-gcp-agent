@@ -1,0 +1,2206 @@
+{
+  "gerado_em": "2026-11-09T15:51:12.537240-03:00",
+  "origem": "Firestore modules/user-data; readTime da coleta anterior; segredos omitidos antes de salvar",
+  "documentos": [
+    {
+      "alvo": {
+        "projeto": "cachoeiradouradamglgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "Euu36PRnYVfP9Uwv0BYgMWklrIW2",
+        "read_time": "2026-11-09T18:22:15.865971Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:03.933496-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/cachoeiradouradamglgpdweb/databases/modules/documents/user-data/Euu36PRnYVfP9Uwv0BYgMWklrIW2",
+        "fields": {
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-07-23T21:16:08.307327Z",
+        "updateTime": "2025-08-06T21:13:52.798480Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "cachoeiradouradamglgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "gxbZV7VrYSfYzMuIfDPq8qRNH2d2",
+        "read_time": "2026-11-09T18:22:15.865971Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:03.937968-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/cachoeiradouradamglgpdweb/databases/modules/documents/user-data/gxbZV7VrYSfYzMuIfDPq8qRNH2d2",
+        "fields": {
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-07-23T21:16:33.297401Z",
+        "updateTime": "2025-08-06T21:14:00.361138Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "cachoeiradouradamglgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "scmogG2owdYlgw2TnLCqtRSPerJ3",
+        "read_time": "2026-11-09T18:22:15.865971Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:03.902889-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/cachoeiradouradamglgpdweb/databases/modules/documents/user-data/scmogG2owdYlgw2TnLCqtRSPerJ3",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-07-23T20:39:19.533997Z",
+        "updateTime": "2025-07-23T20:39:19.533997Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 1,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "camarafrutallgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "mzpLGrQ6dCgjwRPlHAZdl5rbeIM2",
+        "read_time": "2026-11-09T18:22:11.365381Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:03.964981-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/camarafrutallgpdweb/databases/modules/documents/user-data/mzpLGrQ6dCgjwRPlHAZdl5rbeIM2",
+        "fields": {
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-25T19:33:51.590489Z",
+        "updateTime": "2025-06-25T19:33:51.590489Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "camaraituiutabalgpdweb-a1a06",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "tbz1TwlY4HSmoP0gtt8I1D9hCgy1",
+        "read_time": "2026-11-09T18:22:16.384002Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.963873-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/camaraituiutabalgpdweb-a1a06/databases/modules/documents/user-data/tbz1TwlY4HSmoP0gtt8I1D9hCgy1",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-30T21:17:46.019735Z",
+        "updateTime": "2025-06-30T21:17:46.019735Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "frutallgpdweb-3dab8",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "W8TlFpR5RCbbZOAlFU0BNvZgOOw2",
+        "read_time": "2026-11-09T18:22:04.013505Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.414831-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/frutallgpdweb-3dab8/databases/modules/documents/user-data/W8TlFpR5RCbbZOAlFU0BNvZgOOw2",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-18T16:22:06.376612Z",
+        "updateTime": "2025-06-18T16:22:06.376612Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 1,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "frutallgpdweb-3dab8",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "zZGZAqBBKPeeebcKPxLjY2eqVCH3",
+        "read_time": "2026-11-09T18:22:04.013505Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.416387-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/frutallgpdweb-3dab8/databases/modules/documents/user-data/zZGZAqBBKPeeebcKPxLjY2eqVCH3",
+        "fields": {
+          "inventario": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-25T19:29:01.707520Z",
+        "updateTime": "2025-06-25T19:29:01.707520Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "lgpdwebsaaeituiutaba",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "2Q29ZGRu4EPyZUR1TSeM5VVSyez1",
+        "read_time": "2026-11-09T18:22:10.856631Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:04.417063-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/lgpdwebsaaeituiutaba/databases/modules/documents/user-data/2Q29ZGRu4EPyZUR1TSeM5VVSyez1",
+        "fields": {
+          "inventario": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-30T19:47:24.423247Z",
+        "updateTime": "2025-06-30T19:47:24.423247Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "lgpdwebsaaeituiutaba",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "JX09hvFsMlSlVPtA5abn0nnMIto1",
+        "read_time": "2026-11-09T18:22:10.856631Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.825842-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/lgpdwebsaaeituiutaba/databases/modules/documents/user-data/JX09hvFsMlSlVPtA5abn0nnMIto1",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-18T14:06:18.889690Z",
+        "updateTime": "2025-06-18T14:06:18.889690Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "DCEtTzoO1rhoh5ILWJ9He8SOqJJ2",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.827014-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/DCEtTzoO1rhoh5ILWJ9He8SOqJJ2",
+        "fields": {
+          "dados": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-05-14T17:57:50.292499Z",
+        "updateTime": "2025-05-16T12:23:10.767523Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "HyBzU3n4J0hdFzzPLo867eAXR903",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.827935-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/HyBzU3n4J0hdFzzPLo867eAXR903",
+        "fields": {
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-05-26T13:02:29.701252Z",
+        "updateTime": "2025-06-11T15:59:41.978578Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "Iro02Fi7srfV3AbARQR5tLV7VCI3",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:05.083595-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/Iro02Fi7srfV3AbARQR5tLV7VCI3",
+        "fields": {
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-08-14T15:46:57.969060Z",
+        "updateTime": "2025-08-14T15:46:57.969060Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "RtM9At1hVNg34ehjN2Uybj7UZsL2",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:04.999073-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/RtM9At1hVNg34ehjN2Uybj7UZsL2",
+        "fields": {
+          "inventario": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": false
+          },
+          "cookies": {
+            "booleanValue": false
+          },
+          "riscos": {
+            "booleanValue": false
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": false
+          },
+          "lgpdrive": {
+            "booleanValue": false
+          }
+        },
+        "createTime": "2025-07-18T18:54:10.675310Z",
+        "updateTime": "2025-07-18T18:54:10.675310Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "S3g3Gfo2ibZ4KVe2dkYPewmCZT73",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:05.101133-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/S3g3Gfo2ibZ4KVe2dkYPewmCZT73",
+        "fields": {
+          "dados": {
+            "booleanValue": false
+          },
+          "riscos": {
+            "booleanValue": false
+          },
+          "treinamentos": {
+            "booleanValue": false
+          },
+          "cookies": {
+            "booleanValue": false
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-07-18T18:55:36.209324Z",
+        "updateTime": "2025-07-18T18:55:36.209324Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "YpUvLwAL89dzvjckf8xuo0qdLBy2",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:05.149203-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/YpUvLwAL89dzvjckf8xuo0qdLBy2",
+        "fields": {
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-07-18T18:49:07.579471Z",
+        "updateTime": "2025-07-18T18:49:07.579471Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "Z7YVSh7w4zUBqcLycxEfdk9oSVw2",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:05.228035-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/Z7YVSh7w4zUBqcLycxEfdk9oSVw2",
+        "fields": {
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-16T16:36:17.890387Z",
+        "updateTime": "2025-06-18T16:21:43.796251Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "a3M5nncraSPC6o8J1LLz1vj8mk02",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:05.282037-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/a3M5nncraSPC6o8J1LLz1vj8mk02",
+        "fields": {
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-06-25T16:07:09.582864Z",
+        "updateTime": "2025-06-25T16:07:09.582864Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "rTfpsBWYHbbrMOaUSXRdiv63tXM2",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:05.287202-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/rTfpsBWYHbbrMOaUSXRdiv63tXM2",
+        "fields": {
+          "cookies": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-03-31T12:45:30.098615Z",
+        "updateTime": "2025-05-19T13:20:20.664040Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "neogov-default",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "servico-relatorios",
+        "read_time": "2026-11-09T18:22:15.231790Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:05.307284-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/neogov-default/databases/modules/documents/user-data/servico-relatorios",
+        "fields": {
+          "firstAccess": {
+            "booleanValue": false
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "email": {
+            "nullValue": null
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "somenteLeitura": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "Serviço de relatórios (captura de telas)"
+          }
+        },
+        "createTime": "2026-10-15T02:11:53.237332Z",
+        "updateTime": "2026-10-15T02:11:53.237332Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 10,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-machado-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "3e2WMzU06eOB9Yhk1rHenGwOAM62",
+        "read_time": "2026-11-09T18:22:10.353718Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:06.362230-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-machado-lgpdweb/databases/modules/documents/user-data/3e2WMzU06eOB9Yhk1rHenGwOAM62",
+        "fields": {
+          "inventario": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "joao@neogov.com"
+          },
+          "name": {
+            "stringValue": "João Victor"
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2025-08-28T12:11:19.357447Z",
+        "updateTime": "2025-08-28T12:11:19.357447Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 9,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "2kEDuYkFxVe3jX5nKF5rkuLsPH23",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:06.365427-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/2kEDuYkFxVe3jX5nKF5rkuLsPH23",
+        "fields": {
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "joao@neogov.com.br"
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "João Victor França"
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-05-29T14:35:24.330008Z",
+        "updateTime": "2026-05-29T14:35:24.330008Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 10,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "8FP7iXi4g5V5tKBdZ9YGh8Mghmd2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:06.364226-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/8FP7iXi4g5V5tKBdZ9YGh8Mghmd2",
+        "fields": {
+          "dados": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "João Victor França"
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "joao@neogov.com.br"
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.109299Z",
+        "updateTime": "2026-10-08T12:44:08.109299Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 9,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "8tBJHyKjVFXvYvgLiRZQCnxMHau2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:06.366096-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/8tBJHyKjVFXvYvgLiRZQCnxMHau2",
+        "fields": {
+          "riscos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "Thiago Honório"
+          },
+          "firstAccess": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "email": {
+            "stringValue": "thiago.honorio@neogov.com.br"
+          }
+        },
+        "createTime": "2026-05-29T14:35:17.441320Z",
+        "updateTime": "2026-05-29T14:35:17.441320Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 10,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "D2cucMG7FWbu5tTafpHGO5qbfDp1",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:07.387375-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/D2cucMG7FWbu5tTafpHGO5qbfDp1",
+        "fields": {
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "cpf": {
+            "stringValue": ""
+          },
+          "createdBy": {
+            "stringValue": "MIapHuGZRIW3HV6fYItWrXPbMxE2"
+          },
+          "createdAt": {
+            "timestampValue": "2025-12-19T19:10:35.574Z"
+          },
+          "passwordChangedAt": {
+            "timestampValue": "2025-12-19T19:11:28.669Z"
+          },
+          "email": {
+            "stringValue": "gu@teste.com"
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "mobile": {
+            "stringValue": ""
+          },
+          "name": {
+            "stringValue": "gustavo"
+          },
+          "firstAccess": {
+            "booleanValue": false
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.117098Z",
+        "updateTime": "2026-10-08T12:44:08.117098Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 15,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "DCEtTzoO1rhoh5ILWJ9He8SOqJJ2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:07.388128-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/DCEtTzoO1rhoh5ILWJ9He8SOqJJ2",
+        "fields": {
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.749051Z",
+        "updateTime": "2026-10-08T12:44:08.749051Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "G8CZBV1CabUITTJg9ITb5EjTUen1",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:07.383818-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/G8CZBV1CabUITTJg9ITb5EjTUen1",
+        "fields": {
+          "email": {
+            "stringValue": "gustavo@teste.com.br"
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": false
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "createdAt": {
+            "timestampValue": "2025-10-22T11:41:51.513Z"
+          },
+          "passwordChangedAt": {
+            "timestampValue": "2025-10-22T11:49:46.777Z"
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "Gustavo Lennyng"
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "createdBy": {
+            "stringValue": "MIapHuGZRIW3HV6fYItWrXPbMxE2"
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.358279Z",
+        "updateTime": "2026-10-08T12:44:08.358279Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 13,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "HLw68lFJaxSOrmTI0phke1dkCDG2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:07.394658-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/HLw68lFJaxSOrmTI0phke1dkCDG2",
+        "fields": {
+          "lgpdrive": {
+            "booleanValue": false
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "cpf": {
+            "stringValue": "020.400.040-03"
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": false
+          },
+          "mobile": {
+            "stringValue": "3"
+          },
+          "email": {
+            "stringValue": "adilsonteste@email.com"
+          },
+          "riscos": {
+            "booleanValue": false
+          },
+          "name": {
+            "stringValue": "Adddd"
+          },
+          "type": {
+            "stringValue": "official"
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": false
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.397133Z",
+        "updateTime": "2026-10-08T12:44:08.397133Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 12,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "HyBzU3n4J0hdFzzPLo867eAXR903",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:08.372651-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/HyBzU3n4J0hdFzzPLo867eAXR903",
+        "fields": {
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.412811Z",
+        "updateTime": "2026-10-08T12:44:08.412811Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "Iro02Fi7srfV3AbARQR5tLV7VCI3",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:08.408461-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/Iro02Fi7srfV3AbARQR5tLV7VCI3",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.513669Z",
+        "updateTime": "2026-10-08T12:44:08.513669Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "PYxZqu5vTyX6pQLIKcNCSr2UIi63",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:08.384097-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/PYxZqu5vTyX6pQLIKcNCSr2UIi63",
+        "fields": {
+          "name": {
+            "stringValue": "Teste Anonimização"
+          },
+          "firstAccess": {
+            "booleanValue": false
+          },
+          "email": {
+            "stringValue": "teste-anonimizacao-ana@neogov.com.br"
+          }
+        },
+        "createTime": "2026-10-01T14:54:53.295927Z",
+        "updateTime": "2026-10-01T14:54:53.295927Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 3,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "PbTYSwgcetMxHPyxpW3RWBjmXcg1",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:08.399163-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/PbTYSwgcetMxHPyxpW3RWBjmXcg1",
+        "fields": {
+          "createdAt": {
+            "timestampValue": "2026-08-28T16:07:48.449Z"
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "createdBy": {
+            "stringValue": "MIapHuGZRIW3HV6fYItWrXPbMxE2"
+          },
+          "email": {
+            "stringValue": "daniel-feijao@live.com"
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "adf"
+          },
+          "cookies": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.352487Z",
+        "updateTime": "2026-10-08T12:44:09.352487Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 11,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "RCsdoC4IcGQai6c276qZHzyMxDh1",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:09.433843-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/RCsdoC4IcGQai6c276qZHzyMxDh1",
+        "fields": {
+          "user-ng": {
+            "booleanValue": false
+          },
+          "name": {
+            "stringValue": "aaaaaaaaaaaaaa"
+          },
+          "email": {
+            "stringValue": "lennynggustdavog@gmail.com"
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.470879Z",
+        "updateTime": "2026-10-08T12:44:09.470879Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 9,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "RtM9At1hVNg34ehjN2Uybj7UZsL2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:09.440547-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/RtM9At1hVNg34ehjN2Uybj7UZsL2",
+        "fields": {
+          "treinamentos": {
+            "booleanValue": false
+          },
+          "riscos": {
+            "booleanValue": false
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": false
+          },
+          "cookies": {
+            "booleanValue": false
+          },
+          "dados": {
+            "booleanValue": false
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.461659Z",
+        "updateTime": "2026-10-08T12:44:09.461659Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "S3g3Gfo2ibZ4KVe2dkYPewmCZT73",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:09.431928-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/S3g3Gfo2ibZ4KVe2dkYPewmCZT73",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": false
+          },
+          "dados": {
+            "booleanValue": false
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": false
+          },
+          "treinamentos": {
+            "booleanValue": false
+          }
+        },
+        "createTime": "2026-10-08T12:44:08.916243Z",
+        "updateTime": "2026-10-08T12:44:08.916243Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "Sn1dXnRjzNPFwUoE5qNdyffSLhy1",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:09.434915-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/Sn1dXnRjzNPFwUoE5qNdyffSLhy1",
+        "fields": {
+          "cookies": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "gustavo@gus.com"
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "createdAt": {
+            "timestampValue": "2026-04-09T19:56:09.378Z"
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": false
+          },
+          "createdBy": {
+            "stringValue": "MIapHuGZRIW3HV6fYItWrXPbMxE2"
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "Gustavo"
+          },
+          "passwordChangedAt": {
+            "timestampValue": "2026-04-09T19:57:05.395Z"
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.045628Z",
+        "updateTime": "2026-10-08T12:44:09.045628Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 13,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "YpUvLwAL89dzvjckf8xuo0qdLBy2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:10.427918-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/YpUvLwAL89dzvjckf8xuo0qdLBy2",
+        "fields": {
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.035732Z",
+        "updateTime": "2026-10-08T12:44:09.035732Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "Z7YVSh7w4zUBqcLycxEfdk9oSVw2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:10.399215-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/Z7YVSh7w4zUBqcLycxEfdk9oSVw2",
+        "fields": {
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.098339Z",
+        "updateTime": "2026-10-08T12:44:09.098339Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "ZynNBmGI5WavziesgxtNaqbl9YF3",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:10.441648-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/ZynNBmGI5WavziesgxtNaqbl9YF3",
+        "fields": {
+          "inventario": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "thiago.honorio@neogov.com.br"
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "Thiago Honório"
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.208849Z",
+        "updateTime": "2026-10-08T12:44:09.208849Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 9,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "a3M5nncraSPC6o8J1LLz1vj8mk02",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:10.416546-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/a3M5nncraSPC6o8J1LLz1vj8mk02",
+        "fields": {
+          "dados": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.981258Z",
+        "updateTime": "2026-10-08T12:44:09.981258Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "aN66wj1n4VX2YzvlfjQUoIngzAt2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:11.494743-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/aN66wj1n4VX2YzvlfjQUoIngzAt2",
+        "fields": {
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "gustavo@teste.com"
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "name": {
+            "stringValue": "Gustavo"
+          },
+          "riscos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.998698Z",
+        "updateTime": "2026-10-08T12:44:09.998698Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 9,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "gDUHBVYKT3fN7BxQuLAhSrlf5x62",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:11.483105-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/gDUHBVYKT3fN7BxQuLAhSrlf5x62",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "root@root.com"
+          },
+          "name": {
+            "stringValue": "Root Admin"
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:10.162414Z",
+        "updateTime": "2026-10-08T12:44:10.162414Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 9,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "j9nKhPPTLCXZ7UctVYaSwdYixIB3",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:11.496056-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/j9nKhPPTLCXZ7UctVYaSwdYixIB3",
+        "fields": {
+          "email": {
+            "stringValue": "test@dka.com"
+          },
+          "firstAccess": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "gustavo"
+          },
+          "createdAt": {
+            "timestampValue": "2026-09-07T12:13:27.155Z"
+          },
+          "createdBy": {
+            "stringValue": "MIapHuGZRIW3HV6fYItWrXPbMxE2"
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:10.241500Z",
+        "updateTime": "2026-10-08T12:44:10.241500Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 11,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "kMiC8oks5HQpEjeRRE2Xop2rKdv2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:11.484991-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/kMiC8oks5HQpEjeRRE2Xop2rKdv2",
+        "fields": {
+          "firstAccess": {
+            "booleanValue": false
+          },
+          "name": {
+            "stringValue": "Teste Anonimização"
+          },
+          "email": {
+            "stringValue": "teste-anonimizacao-ana@neogov.com.br"
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.784179Z",
+        "updateTime": "2026-10-08T12:44:09.784179Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 3,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "kqK6OH8wz7To2E2BVhUhx3C828Z2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:12.486903-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/kqK6OH8wz7To2E2BVhUhx3C828Z2",
+        "fields": {
+          "user-ng": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "gustavossssss@neogov.com.br"
+          },
+          "createdBy": {
+            "stringValue": "MIapHuGZRIW3HV6fYItWrXPbMxE2"
+          },
+          "name": {
+            "stringValue": "Gustavo Lennyng Gondim de Godoy"
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "createdAt": {
+            "timestampValue": "2026-08-28T19:10:18.173Z"
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:09.771388Z",
+        "updateTime": "2026-10-08T12:44:09.771388Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 11,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "nedXZujz6BUeRVJ3imQ1KzW2kPE3",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "EMAIL_NAO_LOCALIZADO_NO_AUTH",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:12.464466-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/nedXZujz6BUeRVJ3imQ1KzW2kPE3",
+        "fields": {
+          "user-ng": {
+            "booleanValue": false
+          },
+          "name": {
+            "stringValue": "João Doreto"
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": true
+          },
+          "email": {
+            "stringValue": "joao.doreto@neogov.com.br"
+          },
+          "inventario": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-05-29T14:35:25.759737Z",
+        "updateTime": "2026-05-29T14:35:25.759737Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 10,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "rTfpsBWYHbbrMOaUSXRdiv63tXM2",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": false
+      },
+      "consultado_em": "2026-11-09T15:51:12.529452-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/rTfpsBWYHbbrMOaUSXRdiv63tXM2",
+        "fields": {
+          "dados": {
+            "booleanValue": true
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "lgpdrive": {
+            "booleanValue": true
+          },
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-10-08T12:44:10.089672Z",
+        "updateTime": "2026-10-08T12:44:10.089672Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 7,
+      "mesmo_update_time_da_coleta_anterior": true
+    },
+    {
+      "alvo": {
+        "projeto": "pm-neogov-qa-lgpdweb",
+        "banco": "modules",
+        "colecao": "user-data",
+        "id_documento": "servico-relatorios",
+        "read_time": "2026-11-09T18:22:01.749860Z",
+        "resultado_anterior": "SEM_EMAIL_FIRESTORE",
+        "uid_auxiliar_encontrado": true
+      },
+      "consultado_em": "2026-11-09T15:51:12.472669-03:00",
+      "status": "OK",
+      "documento_firestore": {
+        "name": "projects/pm-neogov-qa-lgpdweb/databases/modules/documents/user-data/servico-relatorios",
+        "fields": {
+          "cookies": {
+            "booleanValue": true
+          },
+          "user-ng": {
+            "booleanValue": false
+          },
+          "dados": {
+            "booleanValue": true
+          },
+          "riscos": {
+            "booleanValue": true
+          },
+          "name": {
+            "stringValue": "Serviço de relatórios (captura de telas)"
+          },
+          "inventario": {
+            "booleanValue": true
+          },
+          "firstAccess": {
+            "booleanValue": false
+          },
+          "email": {
+            "nullValue": null
+          },
+          "somenteLeitura": {
+            "booleanValue": true
+          },
+          "treinamentos": {
+            "booleanValue": true
+          }
+        },
+        "createTime": "2026-11-04T13:23:03.892760Z",
+        "updateTime": "2026-11-04T13:23:03.892760Z"
+      },
+      "campos_omitidos_por_segredo": [],
+      "campos_topo": 10,
+      "mesmo_update_time_da_coleta_anterior": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "data": "2026-11-09T15:53:16.630373-03:00",
+  "status": "OK",
+  "alvos": 47,
+  "documentos_obtidos": 47,
+  "projetos": 8,
+  "campos_topo": 373,
+  "ocorrencias_omitidas_por_segredo": 0,
+  "mesmo_update_time_da_coleta_anterior": true,
+  "docx_integridade_zip_xml": "OK",
+  "jsons_reconstruidos_do_docx": 47,
+  "conteudo_docx_igual_ao_json_convertido": true,
+  "permissoes_arquivos": "600",
+  "limite": "Verificação estrutural e de conteúdo; sem renderização em Microsoft Word/LibreOffice"
+}

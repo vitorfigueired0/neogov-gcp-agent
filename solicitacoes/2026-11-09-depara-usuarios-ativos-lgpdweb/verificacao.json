@@ -1,0 +1,26 @@
+{
+  "data": "2026-11-09T15:24:19.061776-03:00",
+  "projetos": 29,
+  "csvs_verificados": 29,
+  "totais": {
+    "documentos": 426,
+    "iguais": 373,
+    "diferentes": 6,
+    "nao_confirmados": 47,
+    "desativados": 2
+  },
+  "resultados": {
+    "IGUAL": 373,
+    "EMAIL_NAO_LOCALIZADO_NO_AUTH": 18,
+    "DIFERENTE": 6,
+    "SEM_EMAIL_FIRESTORE": 29
+  },
+  "verificacoes": [
+    "29 IDs únicos e um CSV por projeto",
+    "colunas, integridade SHA-256, contagens e IDs únicos",
+    "comparação literal documento/UID e correspondência de e-mail confirmadas nas evidências",
+    "estados de contas desativadas e pendências conferidos",
+    "buscas auxiliares pelo ID conferidas"
+  ],
+  "status": "OK"
+}
