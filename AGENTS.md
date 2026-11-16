@@ -23,48 +23,45 @@ os projetos conhecidos, observando a data e os limites do levantamento.
 - Comece por consultas de diagnóstico. Não revele tokens, chaves ou segredos
   e não afirme sucesso sem evidência de verificação.
 
-## Registro de solicitações GCP
+## Registros e entregas GCP
 
-- A organização abaixo se aplica somente a pedidos e dúvidas relacionados
-  a GCP, incluindo diagnóstico, operação, infraestrutura, IAM, rede,
-  observabilidade e custos. Ajustes administrativos deste projeto, das
-  instruções ou das skills e conversas sobre outros assuntos não exigem
-  pasta de solicitação nem relatório em arquivo.
-- Para cada solicitação relacionada a GCP recebida, crie uma pasta exclusiva em
-  `solicitacoes/AAAA-MM-DD-resumo-curto/` antes de iniciar sua execução,
-  após apresentar os impactos das alterações conforme as regras acima.
-  Use a data do fuso `America/Sao_Paulo` e um resumo descritivo no nome.
-  Se o nome já existir, acrescente um sufixo numérico; não sobrescreva
-  registros de solicitações anteriores.
-- Crie `contexto.md` nessa pasta com a data, o prompt recebido e um resumo
-  técnico do pedido: objetivo, contexto relevante, escopo, projetos e
-  recursos envolvidos, restrições e informações ainda não confirmadas.
-  Reproduza o prompt fielmente, omitindo eventuais segredos conforme a
-  regra de proteção abaixo.
-- Salve dentro dessa pasta todos os arquivos gerados para atender ao
-  pedido, incluindo planos, instruções de execução, scripts, comandos
-  salvos, evidências, resultados, backups e relatórios. Essa organização
-  também se aplica aos documentos gerados por skills.
-- Exceção para levantamentos e catalogação de ativos: mantenha a documentação
-  consolidada em `ativos/<identificador-do-ativo>/`, conforme a skill
-  `gcp-catalogar-ativos`, acessada pela skill principal. Esse consolidado pode
-  ser criado ou atualizado no escopo do pedido; mantenha evidências, backups
-  dos arquivos alterados, diffs e relatório na pasta da solicitação, preservando
-  os registros anteriores. Consultar referências não autoriza modificar os
-  recursos GCP descritos nem recatalogar itens fora do escopo.
-- Arquivos preexistentes que sejam o alvo autorizado da solicitação podem
-  ser alterados no local original. Registre as alterações no relatório;
-  mantenha os artefatos auxiliares dentro da pasta da solicitação.
-- Não grave tokens, chaves, senhas ou outros segredos nos registros.
-  Quando presentes no prompt ou nas evidências, substitua seus valores por
-  `[SEGREDO OMITIDO]`.
-- Ao encerrar, sempre gere `relatorio.md` na mesma pasta, inclusive se o
-  pedido ficar parcial, bloqueado ou for cancelado. Registre o que foi
-  feito, os arquivos e recursos afetados, os resultados das verificações,
-  as pendências e, quando houver mudanças, como revertê-las e os limites
-  da reversão. Não declare execução ou sucesso sem evidência.
-- Na resposta final de cada solicitação GCP, informe o resultado e inclua
-  um link para o relatório.
+- Por padrão, responda no chat. Crie registro em `solicitacoes/` somente
+  quando o usuário pedir expressamente para registrar ou abrir uma
+  solicitação. Diagnóstico, deploy, catalogação, pedido de relatório ou de
+  arquivo isolado não autorizam automaticamente essa pasta.
+- Se o usuário indicar uma solicitação existente, continue nela; não abra
+  outra. Respeite instruções como “não crie solicitação”. Ajustes das
+  instruções ou skills e limpezas administrativas não exigem registro.
+- Quando solicitado o registro, crie uma pasta exclusiva
+  `solicitacoes/AAAA-MM-DD-resumo-curto/`, após apresentar os impactos locais.
+  Use a data de `America/Sao_Paulo` e sufixo numérico em caso de colisão;
+  não sobrescreva registros de outras solicitações.
+- No registro solicitado, mantenha `contexto.md` com data, prompt fiel,
+  objetivo, contexto, escopo, projetos/recursos, restrições e incertezas.
+  Ao encerrar, mantenha `relatorio.md`, inclusive em resultado parcial,
+  bloqueio ou cancelamento: ações realizadas, recursos/arquivos afetados,
+  verificações, pendências, reversão e seus limites.
+- Ao encerrar cada registro, deixe apenas o contexto da solicitação, o
+  relatório final e as entregas finais pedidas pelo usuário. Não retenha
+  scripts auxiliares, saídas brutas, evidências separadas, backups, diffs,
+  caches ou manifestos de verificação, salvo pedido expresso para entregá-los.
+  Consolide os resultados relevantes e as informações de reversão no relatório.
+- Pedidos de arquivos sem registro devem produzir apenas as entregas no
+  destino indicado ou adequado ao projeto, sem criar contexto/relatório
+  adicionais por iniciativa própria. O catálogo solicitado permanece em
+  `ativos/<identificador-do-ativo>/`, conforme `gcp-catalogar-ativos`;
+  não duplique o consolidado na solicitação.
+- Use diretório temporário exclusivo e restrito para intermediários
+  necessários. Não descarte a única cópia necessária à verificação ou à
+  reversão enquanto a operação estiver em andamento. Se algum arquivo de
+  recuperação precisar permanecer ao encerrar, exponha essa necessidade e
+  inclua sua conservação no escopo autorizado. Remova somente temporários
+  desta execução e confira a limpeza.
+- Não grave tokens, chaves, senhas ou outros segredos. Substitua valores
+  sensíveis por `[SEGREDO OMITIDO]`, inclusive em prompts e entregas.
+- Arquivos preexistentes que sejam alvo autorizado podem ser alterados no
+  local original. Informe o resultado no chat e inclua links para os arquivos
+  efetivamente entregues; não exija relatório em arquivo quando não solicitado.
 
 ## Catálogo de projetos e ambientes
 

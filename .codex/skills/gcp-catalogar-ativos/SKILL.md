@@ -63,14 +63,16 @@ restauração. Registre o que foi efetivamente verificado.
 
 ## Histórico, atualização e verificação
 
-Para cada solicitação GCP, preserve contexto, evidências, scripts, comandos,
-backups, diffs e relatório na pasta exclusiva definida por `AGENTS.md`, com
-data de São Paulo. O consolidado em `ativos/` é a exceção documental prevista
-ali. Relacione os arquivos do catálogo no relatório; não sobrescreva registros
-de solicitações anteriores.
+O pedido de catálogo autoriza o consolidado em `ativos/`, sem abrir
+automaticamente uma solicitação. Crie ou continue registro em `solicitacoes/`
+somente quando o usuário pedir expressamente, conforme `AGENTS.md`. Nesse
+caso, preserve ao encerrar somente contexto, relatório final e entregas
+solicitadas, sem duplicar o catálogo. Informe os arquivos afetados na resposta
+ou no relatório solicitado; preserve registros anteriores.
 
-Antes de editar catálogo existente, apresente impacto e reversão e salve
-backup dos arquivos afetados na solicitação. Atualize só o escopo pedido e
+Antes de editar catálogo existente, apresente impacto e reversão e mantenha
+as cópias de trabalho necessárias em temporário exclusivo e restrito, conforme
+`gcp-operations`. Não abra uma solicitação para guardar backups. Atualize só o escopo pedido e
 as representações correspondentes Markdown/JSON; preserve diferenças e
 datas de fatos antigos não revalidados. Uma consulta pontual não autoriza
 reescrever todo o catálogo. Registre explicitamente conflitos entre fontes.
@@ -78,7 +80,8 @@ reescrever todo o catálogo. Registre explicitamente conflitos entre fontes.
 Confira integridade da cópia sanitizada, JSON válido, coerência entre tabelas
 e vínculos, ausência de duplicatas/segredos e links locais. Não declare
 sucesso funcional, IAM efetivo ou valor monetário sem a evidência adequada.
-Na resposta final GCP, indique o resultado e os links para catálogo e relatório.
+Na resposta final, indique o resultado e os links para o catálogo; inclua
+relatório em arquivo somente quando solicitado.
 
 Se custos não foram solicitados, `custos.md` registra apenas componentes e
 limites; não inicia análise financeira. Se foram, não atribua o projeto inteiro

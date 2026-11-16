@@ -1,5 +1,7 @@
 # Relatório — verificação de pendências da Auth API
 
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
 ## Resultado
 
 Foram verificadas as pendências autorizadas, sem alterar recursos GCP, ativar APIs, ler dados de negócio ou revelar valores de segredos.
@@ -13,9 +15,9 @@ Foram verificadas as pendências autorizadas, sem alterar recursos GCP, ativar A
 ## Arquivos afetados
 
 - [Contexto](contexto.md)
-- [Evidências](evidencias/coleta-resumo.md)
-- [Cópias anteriores](backups/)
-- [Resumo das diferenças](diff-resumo.md)
+- Evidências (auxiliar removido; resultado consolidado neste relatório)
+- Cópias anteriores (auxiliar removido; resultado consolidado neste relatório)
+- Resumo das diferenças (auxiliar removido; resultado consolidado neste relatório)
 - [Catálogo atualizado — componentes](../../ativos/neogov-auth-api/componentes.md)
 - [Catálogo atualizado — inventário](../../ativos/neogov-auth-api/inventario.md)
 - [Catálogo atualizado — permissões](../../ativos/neogov-auth-api/permissoes.md)

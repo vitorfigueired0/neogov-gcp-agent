@@ -1,5 +1,7 @@
 # Inventário — neogov-auth
 
+> Conservação de fontes — 13/11/2026: auxiliares históricos removidos por pedido do usuário; links correspondentes agora remetem aos relatórios finais. Estado GCP não revalidado nesta limpeza.
+
 Coleta de metadados em 2026-10-29T23:25:30-03:00 (`America/Sao_Paulo`). Escopo: `neogov-auth-prd` e `neogov-auth-dev`; sem leitura de dados de negócio ou valores de segredos.
 
 ## Instalações
@@ -36,4 +38,4 @@ As variáveis não secretas observadas foram somente registradas por nome: `AUTH
 
 ## Proveniência
 
-As consultas sanitizadas e o resumo dos resultados estão em [evidencias/coleta-resumo.md](../../solicitacoes/2026-10-29-catalogo-api-auth/evidencias/coleta-resumo.md) e [na verificação complementar](../../solicitacoes/2026-10-29-verificar-pendencias-auth/evidencias/coleta-resumo.md). Não foi fornecido documento-fonte da aplicação.
+As consultas sanitizadas e o resumo dos resultados estão em [evidencias/coleta-resumo.md](../../solicitacoes/2026-10-29-catalogo-api-auth/relatorio.md) e [na verificação complementar](../../solicitacoes/2026-10-29-verificar-pendencias-auth/relatorio.md). Não foi fornecido documento-fonte da aplicação.

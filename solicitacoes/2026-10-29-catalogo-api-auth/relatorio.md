@@ -1,5 +1,7 @@
 # Relatório — catálogo da API de Auth
 
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
 ## Resultado
 
 Catálogo criado para `neogov-auth` em `ativos/neogov-auth-api/`, com instalações de produção e desenvolvimento documentadas. Foram feitas somente leituras de metadados, políticas e estados. Nenhum recurso GCP, configuração, API, segredo ou credencial foi alterado.
@@ -9,7 +11,7 @@ Os dois projetos estão `ACTIVE`; cada um contém um serviço Cloud Run em `us-c
 ## Arquivos afetados
 
 - [Contexto](contexto.md)
-- [Evidências](evidencias/coleta-resumo.md)
+- Evidências (auxiliar removido; resultado consolidado neste relatório)
 - [Componentes](../../ativos/neogov-auth-api/componentes.md)
 - [Inventário Markdown](../../ativos/neogov-auth-api/inventario.md)
 - [Inventário JSON](../../ativos/neogov-auth-api/inventario.json)

@@ -9447,5 +9447,1236 @@
     "evidence": "../../solicitacoes/2026-10-29-validacao-exportacao-billing/evidencias/resumo.json",
     "previous_proposal": "artefatos.finops_billing; superseded by explicit user choice of lgpdweb",
     "activation_reported_by_user": true
-  }
+  },
+  "scoped_project_checks": [
+    {
+      "project_id": "pm-sao-joao-del-rei-mg",
+      "project_number": "971507433447",
+      "collected_at": "2026-11-12T09:43:11.847877-03:00",
+      "timezone": "America/Sao_Paulo",
+      "environment": null,
+      "status": "pre_deployment_metadata_only",
+      "scope": "somente metadados no projeto alvo; nenhum dado de negócio; nenhuma mutação GCP",
+      "project_state": "ACTIVE",
+      "service_exact_name": "gestao-de-dados-api",
+      "service_found": false,
+      "listed_cloud_run_services": 8,
+      "firestore_databases": [
+        {
+          "database_id": "modules",
+          "location": "us-central1",
+          "type": "FIRESTORE_NATIVE",
+          "edition": "STANDARD"
+        }
+      ],
+      "expected_database_found": false,
+      "runtime_account_found": false,
+      "secrets_count": 0,
+      "storage_bucket_names": [
+        "gcf-sources-971507433447-us-central1",
+        "gcf-v2-sources-971507433447-us-central1",
+        "pm-sao-joao-del-rei-mg-anonimizacao",
+        "pm-sao-joao-del-rei-mg-backup-mensal",
+        "pm-sao-joao-del-rei-mg.firebasestorage.app"
+      ],
+      "dedicated_bucket_found_by_name": false,
+      "existing_bucket_application_links_verified": false,
+      "required_apis_enabled": [
+        "run.googleapis.com",
+        "firestore.googleapis.com",
+        "storage.googleapis.com",
+        "iam.googleapis.com",
+        "iamcredentials.googleapis.com",
+        "secretmanager.googleapis.com"
+      ],
+      "sources": [
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/projeto.json",
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/apis-habilitadas.json",
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/cloud-run.json",
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/firestore.json",
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/buckets.json",
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/contas-servico.json",
+        "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/segredos-metadados.json"
+      ],
+      "pending": [
+        "ambiente",
+        "domínios e origem do frontend",
+        "imagem por digest e origem master",
+        "vínculo neogov-auth e referências de versões de segredos",
+        "IAM efetivo e acesso à imagem central",
+        "retenção e entrada HTTP",
+        "homologação funcional"
+      ],
+      "limits": [
+        "Não é inventário completo do projeto.",
+        "Ausência por nome não prova inexistência de implementação equivalente.",
+        "Demais projetos e contagens preservam a coleta anterior.",
+        "Políticas IAM, DNS, logs e faturamento não consultados."
+      ],
+      "authorized_scope": "API e infraestrutura; frontend fora do escopo",
+      "frontend_origin_informed": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+      "auth_tenant_status": "usuário criará posteriormente; existência não verificada",
+      "secret_preparation_requested": "criar recursos sem payload e preparar env; nenhuma mutação executada",
+      "api_hostname_proposed": "api.pmsaojoaodelreimg.gestaodedados.neogov.com.br"
+    }
+  ],
+  "infrastructure_preparations": [
+    {
+      "project_id": "pm-sao-joao-del-rei-mg",
+      "project_number": "971507433447",
+      "environment": "production",
+      "environment_source": "confirmado pelo usuário em 12/11/2026",
+      "region": "us-central1",
+      "verified_at": "2026-11-12T09:59:10.373973-03:00",
+      "timezone": "America/Sao_Paulo",
+      "status": "infrastructure_prepared_cloud_run_pending",
+      "runtime_service_account": "gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com",
+      "user_managed_service_account_keys": [],
+      "database": {
+        "appEngineIntegrationMode": "DISABLED",
+        "concurrencyMode": "PESSIMISTIC",
+        "createTime": "2026-11-12T12:52:52.342094Z",
+        "databaseEdition": "STANDARD",
+        "deleteProtectionState": "DELETE_PROTECTION_ENABLED",
+        "earliestVersionTime": "2026-11-12T12:52:52.342094Z",
+        "etag": "INawxZu9gpgDMKzczuO8gpgD",
+        "freeTier": false,
+        "locationId": "us-central1",
+        "name": "projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados",
+        "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+        "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+        "type": "FIRESTORE_NATIVE",
+        "uid": "a0bda5ef-5abd-47a4-8ad1-9773a246f917",
+        "updateTime": "2026-11-12T12:52:52.342094Z",
+        "versionRetentionPeriod": "3600s"
+      },
+      "indexes": [
+        {
+          "density": "SPARSE_ALL",
+          "fields": [
+            {
+              "fieldPath": "reportedBy",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "reasonCode",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "timestamp",
+              "order": "DESCENDING"
+            },
+            {
+              "fieldPath": "__name__",
+              "order": "DESCENDING"
+            }
+          ],
+          "name": "projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgJim14AK",
+          "queryScope": "COLLECTION",
+          "state": "READY"
+        },
+        {
+          "density": "SPARSE_ALL",
+          "fields": [
+            {
+              "fieldPath": "reportedBy",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "timestamp",
+              "order": "DESCENDING"
+            },
+            {
+              "fieldPath": "__name__",
+              "order": "DESCENDING"
+            }
+          ],
+          "name": "projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgOjXh4EK",
+          "queryScope": "COLLECTION",
+          "state": "READY"
+        },
+        {
+          "density": "SPARSE_ALL",
+          "fields": [
+            {
+              "fieldPath": "reportedBy",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "status",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "reasonCode",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "timestamp",
+              "order": "DESCENDING"
+            },
+            {
+              "fieldPath": "__name__",
+              "order": "DESCENDING"
+            }
+          ],
+          "name": "projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgJjF9oIK",
+          "queryScope": "COLLECTION",
+          "state": "READY"
+        },
+        {
+          "density": "SPARSE_ALL",
+          "fields": [
+            {
+              "fieldPath": "reportedBy",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "status",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "timestamp",
+              "order": "DESCENDING"
+            },
+            {
+              "fieldPath": "__name__",
+              "order": "DESCENDING"
+            }
+          ],
+          "name": "projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados/collectionGroups/complaints/indexes/CICAgJiUpoMK",
+          "queryScope": "COLLECTION",
+          "state": "READY"
+        }
+      ],
+      "indexes_source": "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/execucao-aprovada/ver-indices-5.json",
+      "bucket": {
+        "cors_config": [
+          {
+            "maxAgeSeconds": 300,
+            "method": [
+              "GET",
+              "PUT"
+            ],
+            "origin": [
+              "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br"
+            ],
+            "responseHeader": [
+              "Content-Type",
+              "x-goog-if-generation-match"
+            ]
+          }
+        ],
+        "creation_time": "2026-11-12T12:53:37+0000",
+        "default_storage_class": "STANDARD",
+        "generation": 1794488017838878581,
+        "location": "US-CENTRAL1",
+        "location_type": "region",
+        "metageneration": 4,
+        "name": "gestao-de-dados-pm-sao-joao-del-rei-mg",
+        "public_access_prevention": "enforced",
+        "soft_delete_policy": {
+          "effectiveTime": "2026-11-12T12:53:37.925000+00:00",
+          "retentionDurationSeconds": "604800"
+        },
+        "storage_url": "gs://gestao-de-dados-pm-sao-joao-del-rei-mg/",
+        "uniform_bucket_level_access": true,
+        "update_time": "2026-11-12T12:54:38+0000"
+      },
+      "secrets": [
+        {
+          "name": "projects/971507433447/secrets/NEOGOV_AUTH_API_KEY",
+          "replication": {
+            "userManaged": {
+              "replicas": [
+                {
+                  "location": "us-central1"
+                }
+              ]
+            }
+          },
+          "versions": []
+        },
+        {
+          "name": "projects/971507433447/secrets/NEOGOV_AUTH_ALLOWED_ISSUERS",
+          "replication": {
+            "userManaged": {
+              "replicas": [
+                {
+                  "location": "us-central1"
+                }
+              ]
+            }
+          },
+          "versions": []
+        }
+      ],
+      "cloud_run_service_created": false,
+      "image_digest": null,
+      "api_hostname_confirmed": "api.pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+      "dns_tls_verified": false,
+      "frontend_origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+      "backup_schedules": [],
+      "iam": {
+        "project_added": [
+          {
+            "condition": {
+              "description": "Acesso runtime somente ao banco gestao-de-dados",
+              "expression": "resource.name==\"projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados\"",
+              "title": "gestao-de-dados-only"
+            },
+            "members": [
+              "serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com"
+            ],
+            "role": "roles/datastore.user"
+          }
+        ],
+        "bucket_added": [
+          {
+            "members": [
+              "serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com"
+            ],
+            "role": "roles/storage.objectCreator"
+          },
+          {
+            "members": [
+              "serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com"
+            ],
+            "role": "roles/storage.objectViewer"
+          }
+        ],
+        "self_account": {
+          "bindings": [
+            {
+              "members": [
+                "serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com"
+              ],
+              "role": "roles/iam.serviceAccountTokenCreator"
+            }
+          ],
+          "etag": "BwZgE9AlobQ=",
+          "version": 1
+        },
+        "secrets": [
+          {
+            "bindings": [
+              {
+                "members": [
+                  "serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com"
+                ],
+                "role": "roles/secretmanager.secretAccessor"
+              }
+            ],
+            "etag": "BwZgE9CapL4=",
+            "version": 1
+          },
+          {
+            "bindings": [
+              {
+                "members": [
+                  "serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com"
+                ],
+                "role": "roles/secretmanager.secretAccessor"
+              }
+            ],
+            "etag": "BwZgE9C_4Wo=",
+            "version": 1
+          }
+        ],
+        "existing_project_and_bucket_bindings_preserved": true,
+        "effective_access_tested": false,
+        "inherited_iam_reviewed": false
+      },
+      "sources_directory": "solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/execucao-aprovada",
+      "pending": [
+        "Usuário cadastrar vínculo neogov-auth e adicionar versões aos dois segredos",
+        "Selecionar imagem de produção por digest e confirmar acesso central dentro de escopo autorizado",
+        "Aplicar configuração Cloud Run e validar startup/dependências",
+        "Definir backup/retensão e revisar acessos amplos preexistentes antes de dados reais",
+        "Definir solução de entrada DNS/TLS e realizar homologação funcional"
+      ],
+      "no_business_data_or_secret_payloads_accessed": true
+    }
+  ],
+  "secret_version_updates": [
+    {
+      "project_id": "pm-sao-joao-del-rei-mg",
+      "verified_at": "2026-11-12T10:05:48.603568-03:00",
+      "timezone": "America/Sao_Paulo",
+      "versions": [
+        {
+          "createTime": "2026-11-12T13:04:32.166861Z",
+          "name": "projects/971507433447/secrets/NEOGOV_AUTH_API_KEY/versions/1",
+          "state": "ENABLED"
+        },
+        {
+          "createTime": "2026-11-12T13:04:34.516568Z",
+          "name": "projects/971507433447/secrets/NEOGOV_AUTH_ALLOWED_ISSUERS/versions/1",
+          "state": "ENABLED"
+        }
+      ],
+      "api_key_payload": "[SEGREDO OMITIDO]",
+      "allowed_issuers_informed": "https://api.auth.neogov.com.br",
+      "issuer_source": "indicação explícita do usuário; sem validação de token",
+      "verification": "metadados somente; sem leitura de payload",
+      "cloud_run_deployed_in_this_update": false,
+      "iam_modified": false,
+      "source_directory": "solicitacoes/2026-11-12-preencher-segredos-gestao-dados-sao-joao"
+    }
+  ],
+  "deployments": [
+    {
+      "project_id": "pm-sao-joao-del-rei-mg",
+      "environment": "production",
+      "region": "us-central1",
+      "verified_at": "2026-11-12T10:20:22.124691-03:00",
+      "timezone": "America/Sao_Paulo",
+      "status": "running_default_url_custom_domain_pending",
+      "service": {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/ingress": "all",
+            "run.googleapis.com/ingress-status": "all",
+            "run.googleapis.com/invoker-iam-disabled": "true",
+            "run.googleapis.com/maxScale": "3",
+            "run.googleapis.com/operation-id": "acf2937d-9f47-462a-89ae-1d3088edb758",
+            "run.googleapis.com/urls": "[\"https://gestao-de-dados-api-971507433447.us-central1.run.app\",\"https://gestao-de-dados-api-zd65ahyzvq-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-11-12T13:10:52.095759Z",
+          "generation": 3,
+          "labels": {
+            "application": "gestao-de-dados",
+            "cloud.googleapis.com/location": "us-central1",
+            "environment": "production"
+          },
+          "name": "gestao-de-dados-api",
+          "namespace": "971507433447",
+          "resourceVersion": "AAZgFB5/U7o",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/971507433447/services/gestao-de-dados-api",
+          "uid": "d935a602-3a51-4d4f-8f90-ce715f0309d8"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "3",
+                "autoscaling.knative.dev/minScale": "0",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "560.0.0"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ynatdzsucw",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 80,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "NODE_ENV",
+                      "value": "production"
+                    },
+                    {
+                      "name": "GOOGLE_CLOUD_PROJECT",
+                      "value": "pm-sao-joao-del-rei-mg"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "gestao-de-dados"
+                    },
+                    {
+                      "name": "STORAGE_BUCKET",
+                      "value": "gestao-de-dados-pm-sao-joao-del-rei-mg"
+                    },
+                    {
+                      "name": "FRONTEND_ORIGIN",
+                      "value": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_BASE_URL",
+                      "value": "https://api.auth.neogov.com.br"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                      "value": "20000"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SECURE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "AUTH_COOKIE_SAME_SITE",
+                      "value": "lax"
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_API_KEY",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "1",
+                          "name": "NEOGOV_AUTH_API_KEY"
+                        }
+                      }
+                    },
+                    {
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                      "valueFrom": {
+                        "secretKeyRef": {
+                          "key": "1",
+                          "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                        }
+                      }
+                    }
+                  ],
+                  "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:d7f64a47030cbccad5cc5a7b4ae16ae95158651fe1548f8a364c5d6a3ea3c505",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "1",
+                      "memory": "1Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://gestao-de-dados-api-zd65ahyzvq-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-12T13:16:27.537338Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:16:19.057309Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:16:27.493046Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "gestao-de-dados-api-00002-l6h",
+          "latestReadyRevisionName": "gestao-de-dados-api-00002-l6h",
+          "observedGeneration": 3,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "gestao-de-dados-api-00002-l6h"
+            }
+          ],
+          "url": "https://gestao-de-dados-api-zd65ahyzvq-uc.a.run.app"
+        }
+      },
+      "revision": {
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "3",
+            "autoscaling.knative.dev/minScale": "0",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "560.0.0",
+            "run.googleapis.com/operation-id": "acf2937d-9f47-462a-89ae-1d3088edb758",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-11-12T13:16:18.016676Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "ynatdzsucw",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "gestao-de-dados-api",
+            "serving.knative.dev/configurationGeneration": "2",
+            "serving.knative.dev/route": "gestao-de-dados-api",
+            "serving.knative.dev/service": "gestao-de-dados-api",
+            "serving.knative.dev/serviceUid": "d935a602-3a51-4d4f-8f90-ce715f0309d8"
+          },
+          "name": "gestao-de-dados-api-00002-l6h",
+          "namespace": "971507433447",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "gestao-de-dados-api",
+              "uid": "4bb486db-4914-45fa-9826-599663789341"
+            }
+          ],
+          "resourceVersion": "AAZgFB5+aVE",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/971507433447/revisions/gestao-de-dados-api-00002-l6h",
+          "uid": "8ecc8ce1-e5ff-4c28-8e6e-184383856e45"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "NODE_ENV",
+                  "value": "production"
+                },
+                {
+                  "name": "GOOGLE_CLOUD_PROJECT",
+                  "value": "pm-sao-joao-del-rei-mg"
+                },
+                {
+                  "name": "FIRESTORE_DATABASE_ID",
+                  "value": "gestao-de-dados"
+                },
+                {
+                  "name": "STORAGE_BUCKET",
+                  "value": "gestao-de-dados-pm-sao-joao-del-rei-mg"
+                },
+                {
+                  "name": "FRONTEND_ORIGIN",
+                  "value": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br"
+                },
+                {
+                  "name": "NEOGOV_AUTH_BASE_URL",
+                  "value": "https://api.auth.neogov.com.br"
+                },
+                {
+                  "name": "NEOGOV_AUTH_TIMEOUT_MS",
+                  "value": "20000"
+                },
+                {
+                  "name": "AUTH_COOKIE_SECURE",
+                  "value": "true"
+                },
+                {
+                  "name": "AUTH_COOKIE_SAME_SITE",
+                  "value": "lax"
+                },
+                {
+                  "name": "NEOGOV_AUTH_API_KEY",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "1",
+                      "name": "NEOGOV_AUTH_API_KEY"
+                    }
+                  }
+                },
+                {
+                  "name": "NEOGOV_AUTH_ALLOWED_ISSUERS",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "1",
+                      "name": "NEOGOV_AUTH_ALLOWED_ISSUERS"
+                    }
+                  }
+                }
+              ],
+              "image": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:5d9ed6fca626a3b9544aed13286442246b17b5af34af0f1cb15ea5ba2cfdbf0a",
+              "name": "gestao-de-dados-api-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1",
+                  "memory": "1Gi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-12T13:16:26.235377Z",
+              "message": "Deploying revision succeeded in 8.22s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:16:26.370998Z",
+              "severity": "Info",
+              "status": "True",
+              "type": "Active"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:16:26.178572Z",
+              "message": "Containers became healthy in 5.25s.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:16:18.939516Z",
+              "message": "Container image import completed.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:16:20.545813Z",
+              "message": "Provisioning imported containers completed in 1.61s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:5d9ed6fca626a3b9544aed13286442246b17b5af34af0f1cb15ea5ba2cfdbf0a",
+              "name": "gestao-de-dados-api-1"
+            }
+          ],
+          "imageDigest": "us-central1-docker.pkg.dev/artefatos/gestao-de-dados-api/gestao-de-dados-api@sha256:5d9ed6fca626a3b9544aed13286442246b17b5af34af0f1cb15ea5ba2cfdbf0a",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=pm-sao-joao-del-rei-mg&resource=cloud_run_revision/service_name/gestao-de-dados-api/revision_name/gestao-de-dados-api-00002-l6h&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22gestao-de-dados-api%22%0Aresource.labels.revision_name%3D%22gestao-de-dados-api-00002-l6h%22",
+          "observedGeneration": 1
+        }
+      },
+      "release_tags_observed": [
+        "master",
+        "latest",
+        "2.0.0"
+      ],
+      "image_platform_proof": {
+        "instante": "2026-11-12T10:18:07.943295-03:00",
+        "source": "https://us-central1-docker.pkg.dev/v2/artefatos/gestao-de-dados-api/gestao-de-dados-api/manifests/sha256:d7f64a47030cbccad5cc5a7b4ae16ae95158651fe1548f8a364c5d6a3ea3c505",
+        "authentication": "sessão gcloud existente; token somente em memória, omitido",
+        "http_status": 200,
+        "selected_index_digest": "sha256:d7f64a47030cbccad5cc5a7b4ae16ae95158651fe1548f8a364c5d6a3ea3c505",
+        "mediaType": "application/vnd.oci.image.index.v1+json",
+        "manifests": [
+          {
+            "digest": "sha256:5d9ed6fca626a3b9544aed13286442246b17b5af34af0f1cb15ea5ba2cfdbf0a",
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            },
+            "mediaType": "application/vnd.oci.image.manifest.v1+json"
+          },
+          {
+            "digest": "sha256:f9f71ca7e488a39265109d28729ae0350eeb2f3b21fe6f5e6e61e64ef539e172",
+            "platform": {
+              "architecture": "unknown",
+              "os": "unknown"
+            },
+            "mediaType": "application/vnd.oci.image.manifest.v1+json"
+          }
+        ],
+        "resolved_revision_digest": "sha256:5d9ed6fca626a3b9544aed13286442246b17b5af34af0f1cb15ea5ba2cfdbf0a",
+        "verified_platform_match": true
+      },
+      "domain_mapping": {
+        "apiVersion": "domains.cloudrun.com/v1",
+        "kind": "DomainMapping",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/operation-id": "42cb6eb3-2339-4f7c-a2b5-463769b025a0",
+            "serving.knative.dev/creator": "desenvolvimento.neogov@gmail.com",
+            "serving.knative.dev/lastModifier": "desenvolvimento.neogov@gmail.com"
+          },
+          "creationTimestamp": "2026-11-12T13:13:44.698815Z",
+          "generation": 1,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/overrideAt": "2026-11-12T13:13:49.692Z"
+          },
+          "name": "api.pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+          "namespace": "971507433447",
+          "resourceVersion": "AAZgFByhtzQ",
+          "selfLink": "/apis/domains.cloudrun.com/v1/namespaces/971507433447/domainmappings/api.pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+          "uid": "406c2432-962e-4782-989a-b166a7e28540"
+        },
+        "spec": {
+          "routeName": "gestao-de-dados-api"
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-11-12T13:13:50.558066Z",
+              "message": "Waiting for certificate provisioning. You must configure your DNS records for certificate issuance to begin.",
+              "reason": "CertificatePending",
+              "status": "Unknown",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:14:50.700876Z",
+              "message": "Certificate issuance pending.",
+              "reason": "CertificatePending",
+              "status": "Unknown",
+              "type": "CertificateProvisioned"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:13:50.558066Z",
+              "status": "True",
+              "type": "DomainRoutable"
+            },
+            {
+              "lastTransitionTime": "2026-11-12T13:15:56.236596Z",
+              "message": "System will retry after 00:05 from lastTransitionTime for polling interval",
+              "reason": "WaitingForOperation",
+              "severity": "Info",
+              "status": "True",
+              "type": "Retry"
+            }
+          ],
+          "mappedRouteName": "gestao-de-dados-api",
+          "observedGeneration": 1,
+          "resourceRecords": [
+            {
+              "name": "api.pmsaojoaodelreimg.gestaodedados",
+              "rrdata": "ghs.googlehosted.com.",
+              "type": "CNAME"
+            }
+          ]
+        }
+      },
+      "domain_dns_published_by_agent": false,
+      "http_tests": {
+        "instante": "2026-11-12T10:17:22.653766-03:00",
+        "base_url": "https://gestao-de-dados-api-zd65ahyzvq-uc.a.run.app",
+        "mode": "final",
+        "results": [
+          {
+            "path": "/docs-json",
+            "method": "GET",
+            "status": 200,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin",
+              "access-control-allow-credentials": "true",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "openapi": "3.0.0",
+            "info": {
+              "title": "Gestão de Dados — API",
+              "description": "API do sistema Gestão de Dados da NEOGOV",
+              "version": "1.0",
+              "contact": {}
+            },
+            "paths": {
+              "/auth/login": {
+                "post": {
+                  "operationId": "AuthController_login",
+                  "security": null,
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/auth/logout": {
+                "post": {
+                  "operationId": "AuthController_logout",
+                  "security": null,
+                  "responses": [
+                    "204",
+                    "500"
+                  ]
+                }
+              },
+              "/auth/password-reset": {
+                "post": {
+                  "operationId": "AuthController_requestPasswordReset",
+                  "security": null,
+                  "responses": [
+                    "202",
+                    "400",
+                    "401",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/auth/register": {
+                "post": {
+                  "operationId": "AuthController_register",
+                  "security": null,
+                  "responses": [
+                    "201",
+                    "400",
+                    "404",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/auth/introspect": {
+                "post": {
+                  "operationId": "AuthController_introspect",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/auth/self": {
+                "get": {
+                  "operationId": "AuthController_self",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "401",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                },
+                "patch": {
+                  "operationId": "AuthController_updateSelf",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints/aggregates": {
+                "get": {
+                  "operationId": "ComplaintAggregatesController_get",
+                  "security": [
+                    {
+                      "bearerAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints/uploads": {
+                "post": {
+                  "operationId": "ComplaintsController_authorizeUpload",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "201",
+                    "400",
+                    "401",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints": {
+                "post": {
+                  "operationId": "ComplaintsController_create",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "201",
+                    "400",
+                    "401",
+                    "404",
+                    "409",
+                    "413",
+                    "415",
+                    "500",
+                    "503"
+                  ]
+                },
+                "get": {
+                  "operationId": "ComplaintsController_list",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints/{id}": {
+                "get": {
+                  "operationId": "ComplaintsController_detail",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "404",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints/{id}/status": {
+                "patch": {
+                  "operationId": "ComplaintsController_changeStatus",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "404",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints/{id}/comments": {
+                "get": {
+                  "operationId": "ComplaintCommentsController_list",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "404",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                },
+                "post": {
+                  "operationId": "ComplaintCommentsController_create",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "201",
+                    "400",
+                    "401",
+                    "404",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              },
+              "/complaints/{id}/media": {
+                "get": {
+                  "operationId": "ComplaintFilesController_media",
+                  "security": [
+                    {
+                      "cookieAuth": []
+                    }
+                  ],
+                  "responses": [
+                    "200",
+                    "400",
+                    "401",
+                    "404",
+                    "409",
+                    "500",
+                    "503"
+                  ]
+                }
+              }
+            },
+            "securitySchemes": {
+              "cookieAuth": {
+                "type": "apiKey",
+                "in": "cookie",
+                "name": "access_token",
+                "description": "Sessão HttpOnly estabelecida por POST /auth/login. Use credentials: include. FRONTEND_ORIGIN configura somente CORS. O token não é acessível ao JavaScript."
+              },
+              "bearerAuth": {
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "type": "http",
+                "description": "ID token do Google emitido para uma conta de serviço de AGGREGATES_ALLOWED_CALLERS, com público AGGREGATES_TOKEN_AUDIENCE. Usado só por GET /complaints/aggregates."
+              }
+            }
+          },
+          {
+            "path": "/docs",
+            "method": "GET",
+            "status": 200,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin",
+              "access-control-allow-credentials": "true",
+              "content-type": "text/html; charset=utf-8"
+            }
+          },
+          {
+            "path": "/auth/self",
+            "method": "GET",
+            "status": 401,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin",
+              "access-control-allow-credentials": "true",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "response_code": "INVALID_SESSION",
+            "status_code": 401
+          },
+          {
+            "path": "/auth/self",
+            "method": "GET",
+            "status": 401,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin",
+              "access-control-allow-credentials": "true",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "response_code": "INVALID_SESSION",
+            "status_code": 401
+          },
+          {
+            "path": "/complaints",
+            "method": "GET",
+            "status": 401,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin",
+              "access-control-allow-credentials": "true",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "response_code": "INVALID_SESSION",
+            "status_code": 401
+          },
+          {
+            "path": "/complaints",
+            "method": "GET",
+            "status": 401,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin",
+              "access-control-allow-credentials": "true",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "response_code": "INVALID_SESSION",
+            "status_code": 401
+          },
+          {
+            "path": "/complaints",
+            "method": "OPTIONS",
+            "status": 204,
+            "headers": {
+              "access-control-allow-origin": "https://pmsaojoaodelreimg.gestaodedados.neogov.com.br",
+              "vary": "Origin, Access-Control-Request-Headers",
+              "access-control-allow-credentials": "true",
+              "access-control-allow-methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+              "access-control-allow-headers": "content-type",
+              "content-type": "text/html"
+            }
+          }
+        ]
+      },
+      "final_error_metadata": [],
+      "service_iam": {
+        "etag": "ACAB"
+      },
+      "registry_reader_added": {
+        "principal": "serviceAccount:service-971507433447@serverless-robot-prod.iam.gserviceaccount.com",
+        "role": "roles/artifactregistry.reader",
+        "resource": "projects/artefatos/locations/us-central1/repositories/gestao-de-dados-api"
+      },
+      "functional_login_tested": false,
+      "business_data_accessed_or_modified": false,
+      "frontend_modified": false,
+      "sources_directory": "solicitacoes/2026-11-12-deploy-gestao-dados-sao-joao",
+      "pending": [
+        "Publicar CNAME no DNS externo e validar certificado HTTPS",
+        "Homologar login de usuário real e operações CRUD/mídias",
+        "Definir política de recuperação antes de dados reais; preparação anterior não ativou backups/PITR"
+      ],
+      "limitations": [
+        "Timeout inicial da central mitigado para 20s; causa de lentidão não comprovada.",
+        "Proveniência/assinatura do build não retornada; versão selecionada por tags do repositório.",
+        "Mapeamento direto Cloud Run é Preview, com limitações."
+      ]
+    }
+  ]
 }

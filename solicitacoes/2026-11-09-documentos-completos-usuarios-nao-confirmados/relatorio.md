@@ -1,5 +1,7 @@
 # Relatório da exportação completa dos 47 documentos
 
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
 Data de geração: 2026-11-09T15:53:16.631269-03:00.
 
 Obtidos os **47 documentos** selecionados em **8 projetos**, no banco `modules`, coleção `user-data`. Todos têm o mesmo `updateTime` da coleta original e foram consultados usando os `readTime` originais, por volta de 15h22 de 09/11/2026 (America/Sao_Paulo).
@@ -8,7 +10,7 @@ Obtidos os **47 documentos** selecionados em **8 projetos**, no banco `modules`,
 
 - [Documento Word com todos os campos e metadados](dados-dos-47-documentos.docx).
 - [JSON na representação nativa do Firestore](documentos-completos.json).
-- [Verificação](verificacao.json) e [integridade SHA-256](manifesto-sha256.json).
+- Verificação (auxiliar removido; resultado consolidado neste relatório) e integridade SHA-256 (auxiliar removido; resultado consolidado neste relatório).
 
 | Projeto | Documentos |
 | --- | ---: |

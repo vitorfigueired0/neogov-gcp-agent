@@ -1,10 +1,12 @@
 # Verificação após ativação — histórico
 
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
 Data da execução: **29/10/2026**, fuso `America/Sao_Paulo`.
 
 ## Pedido e resultado
 
-Após o usuário informar que ativou a exportação detalhada, foram consultados os metadados de **`lgpdweb.finops_billing`** e a lista de tabelas. As duas chamadas retornaram HTTP 200: o dataset existia em US, mas havia **zero tabelas** naquele instante. A primeira carga ainda não tinha sido observada. [Evidências consolidadas e instantes](evidencias/resumo.json).
+Após o usuário informar que ativou a exportação detalhada, foram consultados os metadados de **`lgpdweb.finops_billing`** e a lista de tabelas. As duas chamadas retornaram HTTP 200: o dataset existia em US, mas havia **zero tabelas** naquele instante. A primeira carga ainda não tinha sido observada. Evidências consolidadas e instantes (auxiliar removido; resultado consolidado neste relatório).
 
 A ativação foi informada pelo usuário; o agente não inspecionou as configurações do console Billing. Nenhum recurso GCP, IAM ou configuração foi alterado nesta etapa. Não foram lidos registros financeiros, dados da aplicação ou segredos. **Não houve SELECT de dados, dry-run ou apuração de valores**, pois a tabela esperada estava ausente.
 

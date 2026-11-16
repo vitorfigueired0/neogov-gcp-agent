@@ -1,5 +1,7 @@
 # Relatório — Gestão de Dados API nos projetos LGPDWeb
 
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
 Data: **29/10/2026**, fuso `America/Sao_Paulo`.
 
 Resultado: **inventário técnico concluído no escopo acessível; documentação do ativo criada; consultas e proposta de custos preparadas. Valores monetários ainda não apurados. Nenhum recurso GCP criado ou alterado.**
@@ -85,7 +87,7 @@ Nesta pasta de solicitação: `contexto.md`, cópia do README, `inventario-conso
 
 ## Verificações e limitações de coleta
 
-[verificacoes.txt](verificacoes.txt) registra **19 verificações locais aprovadas**: cópia do README, contagem e unicidade, estado/tráfego, 92 índices com campos e ordenações esperados, metadados dos bancos/buckets, concessões de acesso, domínios, faturamento, backups, JSON/Python válidos, mapeamento SQL e links locais.
+verificacoes.txt (auxiliar removido; resultado consolidado neste relatório) registra **19 verificações locais aprovadas**: cópia do README, contagem e unicidade, estado/tráfego, 92 índices com campos e ordenações esperados, metadados dos bancos/buckets, concessões de acesso, domínios, faturamento, backups, JSON/Python válidos, mapeamento SQL e links locais.
 
 SHA256 do README copiado: `685fa4997815b41ff82215c55dede6ba3e7ce8023137190f2bb758be3076a8d2`.
 

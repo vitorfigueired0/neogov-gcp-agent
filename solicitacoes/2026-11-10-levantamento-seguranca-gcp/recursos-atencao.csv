@@ -1,0 +1,837 @@
+prioridade,projeto,tipo,recurso,observacao
+Alta,pm-neogov-qa-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-neogov-qa-lgpdweb,Firebase Storage,pm-neogov-qa-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cides-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cides-lgpdweb,Firebase Storage,cides-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,pm-itaguai-rj-lgpdweb,Firestore,modules,Acesso sem autenticação a caminhos específicos; ver regras
+Alta,pm-itaguai-rj-lgpdweb,Firebase Storage,pm-itaguai-rj-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-tupaciguara-mg-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-tupaciguara-mg-lgpdweb,Firebase Storage,pm-tupaciguara-mg-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,pm-sao-joao-del-rei-mg,Firestore,modules,Acesso sem autenticação a caminhos específicos; ver regras
+Alta,pm-sao-joao-del-rei-mg,Firebase Storage,pm-sao-joao-del-rei-mg.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cisalp-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cisalp-lgpdweb,Firebase Storage,cisalp-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,pm-coromandel-mg-lgpdweb,Firestore,modules,Acesso sem autenticação a caminhos específicos; ver regras
+Alta,pm-coromandel-mg-lgpdweb,Firebase Storage,pm-coromandel-mg-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,cm-estrela-do-sul-lgpdweb,Firestore,modules,Acesso sem autenticação a caminhos específicos; ver regras
+Alta,cm-estrela-do-sul-lgpdweb,Firebase Storage,cm-estrela-do-sul-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cm-campo-florido-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cm-campo-florido-lgpdweb,Firebase Storage,cm-campo-florido-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camaraconceicaoalagoaslgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camaraconceicaoalagoaslgpdweb,Firebase Storage,camaraconceicaoalagoaslgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-pedrinopolis-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-pedrinopolis-lgpdweb,Firebase Storage,pm-pedrinopolis-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,prefeituraituiutabalgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,prefeituraituiutabalgpdweb,Firebase Storage,gestaodedados-pmituiutaba,Leitura e escrita globais para qualquer usuário autenticado
+Alta,prefeituraituiutabalgpdweb,Firebase Storage,prefeituraituiutabalgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,novapontelgpdweb,Firestore,modules,Acesso sem autenticação a caminhos específicos; ver regras
+Crítica,novapontelgpdweb,Firebase Storage,novapontelgpdweb.firebasestorage.app,Leitura e escrita sem autenticação
+Crítica,prefeituraituiutabalgpdrive,Firebase Storage,prefeituraituiutabalgpdrive.firebasestorage.app,Leitura e escrita sem autenticação
+Alta,saosimaolgpdweb-1a6e5,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,saosimaolgpdweb-1a6e5,Firebase Storage,saosimaolgpdweb-1a6e5.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,prefeiturateresopolislgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,prefeiturateresopolislgpdweb,Firebase Storage,prefeiturateresopolislgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camarateresopolislgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camarateresopolislgpdweb,Firebase Storage,camarateresopolislgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camarateresopolislgpdweb,Firebase Storage,gestaodedados-cmteresopolis,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-machado-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-machado-lgpdweb,Firebase Storage,pm-machado-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cm-araguari-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cm-araguari-lgpdweb,Firebase Storage,cm-araguari-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cm-araguari-lgpdweb,Firebase Storage,gestaodedados-cmaraguari,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pmsgalgpdweb-32cf8,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pmsgalgpdweb-32cf8,Firebase Storage,pmsgalgpdweb-32cf8.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-estreladosul-mg-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-estreladosul-mg-lgpdweb,Firebase Storage,pm-estreladosul-mg-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-montecarmelo-mg-lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pm-montecarmelo-mg-lgpdweb,Firebase Storage,pm-montecarmelo-mg-lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pmdeltamglgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,pmdeltamglgpdweb,Firebase Storage,pmdeltamglgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,cm-cachoeira-dourada-lgpdrive,Firebase Storage,cm-cachoeira-dourada-lgpdrive.firebasestorage.app,Leitura e escrita sem autenticação
+Alta,cachoeiradouradamglgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,cachoeiradouradamglgpdweb,Firebase Storage,cachoeiradouradamglgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camarafrutallgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camarafrutallgpdweb,Firebase Storage,camarafrutallgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,lgpdweb,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,lgpdweb,Firebase Storage,lgpdweb.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camaraituiutabalgpdweb-a1a06,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camaraituiutabalgpdweb-a1a06,Firebase Storage,camaraituiutabalgpdweb-a1a06.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,lgpdwebsaaeituiutaba,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,lgpdwebsaaeituiutaba,Firebase Storage,gestaodedados-saeituiutaba,Leitura e escrita globais para qualquer usuário autenticado
+Alta,lgpdwebsaaeituiutaba,Firebase Storage,lgpdwebsaaeituiutaba.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,frutallgpdweb-3dab8,Firestore,modules,Leitura e escrita globais para qualquer usuário autenticado
+Alta,frutallgpdweb-3dab8,Firebase Storage,frutallgpdweb-3dab8.firebasestorage.app,Leitura e escrita globais para qualquer usuário autenticado
+Alta,camaraituiutabalgpdweb,Firestore,ouvidoria,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,camaraituiutabalgpdweb,Firebase Storage,camaraituiutabalgpdweb.firebasestorage.app,Leitura e escrita sem autenticação
+Alta,camaraituiutabalgpdweb,Firebase Storage,ouvidoriacamaraituiutaba,Leitura e escrita globais para qualquer usuário autenticado
+Crítica,camarasaogoncalodoabaete,Firebase Storage,camarasaogoncalodoabaete.firebasestorage.app,Leitura e escrita sem autenticação
+Crítica,neogov-default,Firestore,gestao-de-dados,Acesso sem autenticação a caminhos específicos; ver regras
+Crítica,neogov-default,Firestore,inventario-dados,Leitura e escrita sem autenticação até 2085-03-30
+Crítica,neogov-default,Firestore,modules,Acesso sem autenticação a caminhos específicos; ver regras
+Crítica,neogov-default,Firebase Storage,gestao-de-dados,Acesso sem autenticação a caminhos específicos; ver regras
+Crítica,neogov-default,Firebase Storage,neogov-default.firebasestorage.app,Leitura e escrita sem autenticação
+Crítica,estreladosullgpdrive,Firestore,(default),Leitura e escrita sem autenticação
+Crítica,lgpdrive-8f2a8,Firestore,(default),Leitura e escrita sem autenticação até 2028-06-14
+Crítica,chequei,Firestore,(default),Leitura e escrita sem autenticação
+Crítica,chequei,Firebase Storage,chequei.appspot.com,Leitura e escrita sem autenticação
+Revisar,neogov-auth-prd,Cloud Run,neogov-auth-prd,IAM de invocação desabilitado; ingress=all; runtime=neogov-auth-runtime@neogov-auth-prd.iam.gserviceaccount.com; URL padrão desabilitada; rota alternativa não testada; autenticação da aplicação não testada
+Revisar,cides-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@cides-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cides-lgpdweb,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@cides-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cides-lgpdweb,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=812458273636-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cides-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@cides-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cides-lgpdweb,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=812458273636-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-itaguai-rj-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-itaguai-rj-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-itaguai-rj-lgpdweb,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@pm-itaguai-rj-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-itaguai-rj-lgpdweb,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=305475240556-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-itaguai-rj-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-itaguai-rj-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-itaguai-rj-lgpdweb,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=305475240556-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-coromandel-mg-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-coromandel-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-coromandel-mg-lgpdweb,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@pm-coromandel-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-coromandel-mg-lgpdweb,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=223930768107-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-coromandel-mg-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-coromandel-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-coromandel-mg-lgpdweb,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=223930768107-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-auth-dev,Cloud Run,neogov-auth-dev,IAM de invocação desabilitado; ingress=all; runtime=neogov-auth-runtime@neogov-auth-dev.iam.gserviceaccount.com; URL padrão desabilitada; rota alternativa não testada; autenticação da aplicação não testada
+Revisar,pm-sao-joao-delrei-lgpdrive-mg,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=495745028868-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-sao-joao-delrei-lgpdrive-mg,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=495745028868-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-sao-joao-del-rei-mg,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-sao-joao-del-rei-mg,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-sao-joao-del-rei-mg,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=971507433447-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-sao-joao-del-rei-mg,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=971507433447-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,app-frota-eefcc,Cloud Run,criarresponsavel,Invocador allUsers; ingress=all; runtime=1052732747069-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,app-frota-eefcc,Cloud Run,definirgestor,Invocador allUsers; ingress=all; runtime=1052732747069-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,app-frota-eefcc,Cloud Run,listarresponsaveis,Invocador allUsers; ingress=all; runtime=1052732747069-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-tupaciguara-mg-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-tupaciguara-mg-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-tupaciguara-mg-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=316815308630-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-tupaciguara-mg-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-tupaciguara-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-tupaciguara-mg-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=316815308630-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,lgpdrive-qa,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=355878296531-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,lgpdrive-qa,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=355878296531-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,treinamento-neogov-prod,Cloud Run,backend-treinamentos,Invocador allUsers; ingress=all; runtime=263715830192-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,treinamento-neogov-dev,Cloud Run,backend-treinamentos-dev,Invocador allUsers; ingress=all; runtime=104377657271-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-neogov-qa-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-neogov-qa-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-neogov-qa-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=115635227737-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-neogov-qa-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-neogov-qa-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-neogov-qa-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=115635227737-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cisalp-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@cisalp-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cisalp-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@cisalp-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cisalp-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=252011168537-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cisalp-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@cisalp-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cisalp-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=252011168537-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-estrela-do-sul-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@cm-estrela-do-sul-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-estrela-do-sul-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=168525941025-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-estrela-do-sul-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=168525941025-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-estrela-do-sul-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=168525941025-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaraconceicaoalagoaslgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@camaraconceicaoalagoaslgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camaraconceicaoalagoaslgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@camaraconceicaoalagoaslgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camaraconceicaoalagoaslgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=152048161192-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaraconceicaoalagoaslgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@camaraconceicaoalagoaslgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camaraconceicaoalagoaslgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=152048161192-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-campo-florido-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@cm-campo-florido-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-campo-florido-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@cm-campo-florido-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-campo-florido-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=223688126013-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-campo-florido-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@cm-campo-florido-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-campo-florido-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=223688126013-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,dashboard-admin-481516,Cloud Run,dashboard-adm-api,Invocador allUsers; ingress=all; runtime=dashboard-api-prod@dashboard-admin-481516.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,dashboard-admin-481516,Cloud Run,dashboard-adm-api-dev,Invocador allUsers; ingress=all; runtime=dashboard-api-dev@dashboard-admin-481516.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,dashboard-admin-481516,Cloud Run,scanning-listener,IAM de invocação desabilitado; ingress=all; runtime=643187744430-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-pedrinopolis-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-pedrinopolis-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-pedrinopolis-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=374975682507-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-pedrinopolis-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-pedrinopolis-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-pedrinopolis-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=374975682507-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,novapontelgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@novapontelgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,novapontelgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@novapontelgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,novapontelgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=878878523707-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,novapontelgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=878878523707-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@prefeituraituiutabalgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@prefeituraituiutabalgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=637181059585-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@prefeituraituiutabalgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=637181059585-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdrive,Cloud Run,lgpdrive-anonimizador,IAM de invocação desabilitado; ingress=all; runtime=defaultacc@prefeituraituiutabalgpdrive.iam.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdrive,Cloud Run,lgpdrive-bucket-trigger,IAM de invocação desabilitado; ingress=all; runtime=492763343577-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=492763343577-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdrive,Cloud Run,lgpdrive-index,IAM de invocação desabilitado; ingress=all; runtime=492763343577-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituraituiutabalgpdrive,Cloud Run,lgpdrive-marca-dagua,IAM de invocação desabilitado; ingress=all; runtime=492763343577-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaranovapontelgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=221834254947-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaranovapontelgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=221834254947-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaranovapontelgpdrive,Cloud Run,sync-files,IAM de invocação desabilitado; ingress=all; runtime=221834254947-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,saosimaolgpdweb-1a6e5,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,saosimaolgpdweb-1a6e5,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,saosimaolgpdweb-1a6e5,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=986593446685-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,saosimaolgpdweb-1a6e5,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@saosimaolgpdweb-1a6e5.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,saosimaolgpdweb-1a6e5,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=986593446685-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,prefeiturateresopolislgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@prefeiturateresopolislgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,prefeiturateresopolislgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@prefeiturateresopolislgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,prefeiturateresopolislgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=578760838874-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeiturateresopolislgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@prefeiturateresopolislgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,prefeiturateresopolislgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=578760838874-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camarateresopolislgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@camarateresopolislgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camarateresopolislgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-auth@camarateresopolislgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camarateresopolislgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=428870652797-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camarateresopolislgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@camarateresopolislgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camarateresopolislgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=428870652797-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=109090160832-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=109090160832-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-machado-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-machado-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-machado-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies@pm-machado-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-machado-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=183509511404-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-machado-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-machado-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-machado-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=183509511404-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@cm-araguari-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@cm-araguari-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=80441081297-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@cm-araguari-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cm-araguari-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=80441081297-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmsgalgpdweb-32cf8,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pmsgalgpdweb-32cf8.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmsgalgpdweb-32cf8,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@pmsgalgpdweb-32cf8.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmsgalgpdweb-32cf8,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=947412222933-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pmsgalgpdweb-32cf8,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pmsgalgpdweb-32cf8.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmsgalgpdweb-32cf8,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=947412222933-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-montecarmelo-mg-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-montecarmelo-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-montecarmelo-mg-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies@pm-montecarmelo-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-montecarmelo-mg-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=932352030577-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-montecarmelo-mg-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-montecarmelo-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-montecarmelo-mg-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=932352030577-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-estreladosul-mg-lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pm-estreladosul-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-estreladosul-mg-lgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies@pm-estreladosul-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-estreladosul-mg-lgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=8425592986-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,pm-estreladosul-mg-lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pm-estreladosul-mg-lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pm-estreladosul-mg-lgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=8425592986-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,pm-teresopolis-lgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=999687726551-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-teresopolis-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=999687726551-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-teresopolis-lgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=414714683938-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-teresopolis-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=414714683938-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-cachoeira-dourada-lgpdrive,Cloud Run,lgpdrive-anonimizador,IAM de invocação desabilitado; ingress=all; runtime=1010517360518-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,cm-cachoeira-dourada-lgpdrive,Cloud Run,lgpdrive-bucket-trigger,IAM de invocação desabilitado; ingress=all; runtime=1010517360518-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,cm-cachoeira-dourada-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=1010517360518-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,cm-cachoeira-dourada-lgpdrive,Cloud Run,lgpdrive-index,IAM de invocação desabilitado; ingress=all; runtime=1010517360518-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,cm-cachoeira-dourada-lgpdrive,Cloud Run,lgpdrive-marca-dagua,IAM de invocação desabilitado; ingress=all; runtime=firebase-adminsdk-fbsvc@cm-cachoeira-dourada-lgpdrive.iam.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-cachoeira-dourada-lgpdrive,Cloud Run,lgpdrive-trigger-delete-file,IAM de invocação desabilitado; ingress=all; runtime=1010517360518-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,pmdeltamglgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@pmdeltamglgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmdeltamglgpdweb,Cloud Run,cookies-api-delta,IAM de invocação desabilitado; ingress=all; runtime=cookies-api-delta@pmdeltamglgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmdeltamglgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=363128949229-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pmdeltamglgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@pmdeltamglgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,pmdeltamglgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=363128949229-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cachoeiradouradamglgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@cachoeiradouradamglgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cachoeiradouradamglgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies@cachoeiradouradamglgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cachoeiradouradamglgpdweb,Cloud Run,crypto-gestao,IAM de invocação desabilitado; ingress=all; runtime=949172226134-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,cachoeiradouradamglgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@cachoeiradouradamglgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,cachoeiradouradamglgpdweb,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=949172226134-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,sae-ituiutaba-lgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=821936758553-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,sae-ituiutaba-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=821936758553-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-frutal-lgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=747185096415-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,cm-frutal-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=747185096415-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-frutal-lgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=505845824333-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,pm-frutal-lgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=505845824333-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,lgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdweb,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdweb,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=824046366491-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,lgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@lgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdweb,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=824046366491-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camarafrutallgpdweb,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@camarafrutallgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camarafrutallgpdweb,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@camarafrutallgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camarafrutallgpdweb,Cloud Run,cookies-api-frutal,Invocador allUsers; ingress=all; runtime=253187335391-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camarafrutallgpdweb,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@camarafrutallgpdweb.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camarafrutallgpdweb,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=253187335391-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaraituiutabalgpdweb-a1a06,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camaraituiutabalgpdweb-a1a06,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camaraituiutabalgpdweb-a1a06,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=955512464223-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaraituiutabalgpdweb-a1a06,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@camaraituiutabalgpdweb-a1a06.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,camaraituiutabalgpdweb-a1a06,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=955512464223-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,lgpdwebsaaeituiutaba,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@lgpdwebsaaeituiutaba.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdwebsaaeituiutaba,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies@lgpdwebsaaeituiutaba.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdwebsaaeituiutaba,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=917044735941-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,lgpdwebsaaeituiutaba,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@lgpdwebsaaeituiutaba.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdwebsaaeituiutaba,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=917044735941-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,frutallgpdweb-3dab8,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@frutallgpdweb-3dab8.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,frutallgpdweb-3dab8,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=cookies-api@frutallgpdweb-3dab8.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,frutallgpdweb-3dab8,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=722099604113-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,frutallgpdweb-3dab8,Cloud Run,gestao-de-dados-api,IAM de invocação desabilitado; ingress=all; runtime=gestao-de-dados-api-runtime@frutallgpdweb-3dab8.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,frutallgpdweb-3dab8,Cloud Run,pdf-inventario,Invocador allUsers; ingress=all; runtime=722099604113-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaraituiutabalgpdweb,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=969877508692-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,modulocookies,Cloud Run,cookies-api,Invocador allUsers; ingress=all; runtime=1012628815211-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,prefeituramontecarmelomg,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=978950516084-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,prefeituramontecarmelomg,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=978950516084-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,prefeituramontecarmelomg,Cloud Run,nest-panel-api,IAM de invocação desabilitado; ingress=all; runtime=978950516084-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,anonimizacao,IAM de invocação desabilitado; ingress=all; runtime=anonimizacao@neogov-default.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,cookies-api,IAM de invocação desabilitado; ingress=all; runtime=cookies-api@neogov-default.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,cookies-api-dev,IAM de invocação desabilitado; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,crypto-gestao-teste,Invocador allUsers; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,lgpdrive-trigger-delete-file,IAM de invocação desabilitado; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,lgpdrive-trigger-delete-file-dev,IAM de invocação desabilitado; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,pdf-inventario,IAM de invocação desabilitado; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,relatorio-diario,Invocador allUsers; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,trigger-dashboard,Invocador allUsers; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,neogov-default,Cloud Run,trigger-rclone-cloudrun,IAM de invocação desabilitado; ingress=all; runtime=656076548598-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,machadomglgpdrive,Cloud Run,crypto-gestao,Invocador allUsers; ingress=all; runtime=336966460270-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,machadomglgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=336966460270-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,machadomglgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=336966460270-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=1034832224065-compute@developer.gserviceaccount.com; runtime com roles/owner; autenticação da aplicação não testada
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=1034832224065-compute@developer.gserviceaccount.com; runtime com roles/owner; autenticação da aplicação não testada
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Cloud Run,trigger-rclone,Invocador allUsers; ingress=all; runtime=1034832224065-compute@developer.gserviceaccount.com; runtime com roles/owner; autenticação da aplicação não testada
+Revisar,camaraestreladosul,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=1067038054029-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,camaraestreladosul,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=1067038054029-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,saosimaolgpdrive,Cloud Run,lgpdrive-api-poc,Invocador allUsers; ingress=all; runtime=36071575745-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,saosimaolgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=36071575745-compute@developer.gserviceaccount.com; runtime com roles/editor; autenticação da aplicação não testada
+Revisar,estreladosullgpdrive,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=954933032468-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,estreladosullgpdrive,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=954933032468-compute@developer.gserviceaccount.com; runtime com roles/editor;roles/owner; autenticação da aplicação não testada
+Revisar,lgpdrive-8f2a8,Cloud Run,lgpdrive-api,Invocador allUsers; ingress=all; runtime=48220459614-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,lgpdrive-8f2a8,Cloud Run,lgpdrive-file-utils,IAM de invocação desabilitado; ingress=all; runtime=48220459614-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,chequei,Cloud Run,dash-scanning-data-listener,IAM de invocação desabilitado; ingress=all; runtime=chequei@chequei.iam.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,chequei,Cloud Run,function-index,Invocador allUsers; ingress=all; runtime=493578038860-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,chequei,Cloud Run,indexador-estrela,Invocador allUsers; ingress=all; runtime=493578038860-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,chequei,Cloud Run,pdf-ext,Invocador allUsers; ingress=all; runtime=493578038860-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,chequei,Cloud Run,pdf-lister,Invocador allUsers; ingress=all; runtime=493578038860-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,chequei,Cloud Run,pdf-processor,Invocador allUsers; ingress=all; runtime=493578038860-compute@developer.gserviceaccount.com; autenticação da aplicação não testada
+Revisar,neogov-default,Bucket IAM,cdn-banner,roles/storage.objectViewer para allUsers; finalidade pública não confirmada
+Revisar,lgpdrive-8f2a8,Bucket IAM,entidades-png,roles/composer.environmentAndStorageObjectViewer para allUsers; finalidade pública não confirmada
+Revisar,chequei,Bucket IAM,neogov,roles/storage.objectViewer para allUsers; finalidade pública não confirmada
+Revisar,chequei,Bucket IAM,neogov-public-images,roles/storage.objectViewer para allUsers; finalidade pública não confirmada
+Revisar,chequei,Bucket IAM,public-files-media,roles/storage.objectViewer para allUsers; finalidade pública não confirmada
+Revisar,chequei,Cloud Functions HTTP,list_pdfs,roles/cloudfunctions.invoker para allUsers; finalidade pública não confirmada
+Revisar,chequei,Cloud Functions HTTP,driveshare,roles/cloudfunctions.invoker para allUsers; finalidade pública não confirmada
+Revisar,chequei,Cloud Functions HTTP,file-api,roles/cloudfunctions.invoker para allUsers; finalidade pública não confirmada
+Revisar,chequei,Cloud Functions HTTP,fetch_table_names_and_texts,roles/cloudfunctions.invoker para allUsers; finalidade pública não confirmada
+Média,pm-sao-joao-delrei-lgpdrive-mg,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-sao-joao-delrei-lgpdrive-mg,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-sao-joao-delrei-lgpdrive-mg,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-tupaciguara-mg-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-tupaciguara-mg-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-tupaciguara-mg-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdrive-qa,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdrive-qa,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdrive-qa,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,treinamento-neogov-prod,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,treinamento-neogov-prod,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,treinamento-neogov-prod,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,treinamento-neogov-dev,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,treinamento-neogov-dev,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,treinamento-neogov-dev,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cisalp-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cisalp-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cisalp-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-estrela-do-sul-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-estrela-do-sul-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-estrela-do-sul-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraconceicaoalagoaslgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraconceicaoalagoaslgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraconceicaoalagoaslgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-campo-florido-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-campo-florido-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-campo-florido-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,dashboard-admin-481516,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,dashboard-admin-481516,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,dashboard-admin-481516,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-pedrinopolis-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-pedrinopolis-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-pedrinopolis-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,novapontelgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,novapontelgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,novapontelgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeituraituiutabalgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeituraituiutabalgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeituraituiutabalgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaranovapontelgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaranovapontelgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaranovapontelgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saosimaolgpdweb-1a6e5,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saosimaolgpdweb-1a6e5,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saosimaolgpdweb-1a6e5,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeiturateresopolislgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeiturateresopolislgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeiturateresopolislgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camarateresopolislgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camarateresopolislgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camarateresopolislgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-araguari-lgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-araguari-lgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-araguari-lgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-machado-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-machado-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-machado-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-araguari-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-araguari-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-araguari-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pmsgalgpdweb-32cf8,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pmsgalgpdweb-32cf8,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pmsgalgpdweb-32cf8,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-montecarmelo-mg-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-montecarmelo-mg-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-montecarmelo-mg-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-estreladosul-mg-lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-estreladosul-mg-lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-estreladosul-mg-lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-teresopolis-lgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-teresopolis-lgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-teresopolis-lgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-teresopolis-lgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-teresopolis-lgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-teresopolis-lgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pmdeltamglgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pmdeltamglgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pmdeltamglgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cachoeiradouradamglgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cachoeiradouradamglgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cachoeiradouradamglgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,sae-ituiutaba-lgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,sae-ituiutaba-lgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,sae-ituiutaba-lgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-frutal-lgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-frutal-lgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,cm-frutal-lgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-frutal-lgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-frutal-lgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-frutal-lgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camarafrutallgpdweb,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camarafrutallgpdweb,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camarafrutallgpdweb,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraituiutabalgpdweb-a1a06,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraituiutabalgpdweb-a1a06,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraituiutabalgpdweb-a1a06,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdwebsaaeituiutaba,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdwebsaaeituiutaba,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdwebsaaeituiutaba,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,frutallgpdweb-3dab8,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,frutallgpdweb-3dab8,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,frutallgpdweb-3dab8,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeituramontecarmelomg,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeituramontecarmelomg,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,prefeituramontecarmelomg,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,neogov-default,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,neogov-default,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,neogov-default,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,machadomglgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,machadomglgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,machadomglgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saogoncalodoabaetelgpdri-ac3d0,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saogoncalodoabaetelgpdri-ac3d0,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saogoncalodoabaetelgpdri-ac3d0,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraestreladosul,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraestreladosul,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,camaraestreladosul,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saosimaolgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saosimaolgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,saosimaolgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,estreladosullgpdrive,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,estreladosullgpdrive,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,estreladosullgpdrive,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdrive-8f2a8,Firewall,default-allow-icmp,"Origem internet; [{""IPProtocol"": ""icmp""}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdrive-8f2a8,Firewall,default-allow-rdp,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""3389""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,lgpdrive-8f2a8,Firewall,default-allow-ssh,"Origem internet; [{""IPProtocol"": ""tcp"", ""ports"": [""22""]}]; nenhuma VM encontrada; avaliar antes de provisionar"
+Média,pm-sao-joao-delrei-lgpdrive-mg,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,lgpdrive-qa,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,treinamento-neogov-prod,Cloud SQL,treinamento-db,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; IP público sem authorizedNetworks retornadas; não prova acesso irrestrito; backups automáticos desabilitados
+Média,treinamento-neogov-dev,Cloud SQL,treinamento-db,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; IP público sem authorizedNetworks retornadas; não prova acesso irrestrito; backups automáticos desabilitados
+Média,camaranovapontelgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,cm-araguari-lgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,pm-teresopolis-lgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,cm-teresopolis-lgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,sae-ituiutaba-lgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,cm-frutal-lgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,pm-frutal-lgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,prefeituramontecarmelomg,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,machadomglgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,saogoncalodoabaetelgpdri-ac3d0,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,camaraestreladosul,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,saosimaolgpdrive,Cloud SQL,lgpdrive-poc,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,estreladosullgpdrive,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,lgpdrive-8f2a8,Cloud SQL,lgpdrive,sslMode=ALLOW_UNENCRYPTED_AND_ENCRYPTED; somente IP privado
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-coromandel-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-coromandel-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-itaguai-rj-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-itaguai-rj-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cides-lgpdweb,Cloud Functions HTTP/TLS,projects/cides-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-registros-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-registros-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-registros-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-sao-joao-del-rei-mg,Cloud Functions HTTP/TLS,projects/pm-sao-joao-del-rei-mg/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-audit-logs-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-registros-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-tupaciguara-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-tupaciguara-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-hobp-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-danu-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-danu-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-hobp-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-danu-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cisalp-lgpdweb,Cloud Functions HTTP/TLS,projects/cisalp-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-hobp-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-mkxq-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-1ff1-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-1ff1-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-mkxq-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-mkxq-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-1ff1-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-estrela-do-sul-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-estrela-do-sul-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-3mwx-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-xgrm-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-xgrm-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-3mwx-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-3mwx-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-xgrm-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraconceicaoalagoaslgpdweb,Cloud Functions HTTP/TLS,projects/camaraconceicaoalagoaslgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-wj4t-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-hspp-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-wj4t-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-hspp-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-hspp-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-wj4t-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-campo-florido-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-campo-florido-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-p9bv-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-d960-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-d960-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-d960-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-p9bv-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-p9bv-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-pedrinopolis-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-pedrinopolis-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-pp0j-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-mvse-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-mvse-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-pp0j-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-mvse-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-pp0j-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeituraituiutabalgpdweb,Cloud Functions HTTP/TLS,projects/prefeituraituiutabalgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-1rqp-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-5skz-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-5skz-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-1rqp-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-1rqp-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-5skz-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,novapontelgpdweb,Cloud Functions HTTP/TLS,projects/novapontelgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-k3el-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-aj4i-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-k3el-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-aj4i-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-aj4i-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-k3el-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,saosimaolgpdweb-1a6e5,Cloud Functions HTTP/TLS,projects/saosimaolgpdweb-1a6e5/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-v6uh-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-fldp-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-v6uh-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-v6uh-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-fldp-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,prefeiturateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/prefeiturateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-fldp-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-wt27-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-wt27-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-2sfj-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-2sfj-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-wt27-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-2sfj-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarateresopolislgpdweb,Cloud Functions HTTP/TLS,projects/camarateresopolislgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ydp0-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ig0o-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ydp0-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-d0ai-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ig0o-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-d0ai-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-d0ai-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ydp0-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-machado-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-machado-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ig0o-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-xosm-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-pbkx-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-xosm-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-pbkx-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-xosm-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-pbkx-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cm-araguari-lgpdweb,Cloud Functions HTTP/TLS,projects/cm-araguari-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-e897-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-e897-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-77nt-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-77nt-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-e897-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-77nt-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmsgalgpdweb-32cf8,Cloud Functions HTTP/TLS,projects/pmsgalgpdweb-32cf8/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-3yc5-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-bkif-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-cg3n-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-3yc5-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-3yc5-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-bkif-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-cg3n-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-bkif-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-cg3n-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-montecarmelo-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-montecarmelo-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ntdc-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ntdc-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-66ao-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ntdc-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-66ao-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pm-estreladosul-mg-lgpdweb,Cloud Functions HTTP/TLS,projects/pm-estreladosul-mg-lgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-66ao-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-z24b-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-z24b-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ke4k-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ke4k-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-ke4k-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-z24b-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,pmdeltamglgpdweb,Cloud Functions HTTP/TLS,projects/pmdeltamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-g2k9-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-g2k9-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-fwh8-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-g2k9-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-fwh8-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-fwh8-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,cachoeiradouradamglgpdweb,Cloud Functions HTTP/TLS,projects/cachoeiradouradamglgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-cap8-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-nnna-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-cap8-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-cap8-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-nnna-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-nnna-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camarafrutallgpdweb,Cloud Functions HTTP/TLS,projects/camarafrutallgpdweb/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-p3fr-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-p3fr-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-htum-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-htum-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-htum-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-p3fr-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,camaraituiutabalgpdweb-a1a06,Cloud Functions HTTP/TLS,projects/camaraituiutabalgpdweb-a1a06/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-0arb-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-4yww-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-4yww-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-0arb-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-0arb-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-4yww-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,lgpdwebsaaeituiutaba,Cloud Functions HTTP/TLS,projects/lgpdwebsaaeituiutaba/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-fdhu-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-72u3-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-72u3-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-fdhu-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-fdhu-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-72u3-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,frutallgpdweb-3dab8,Cloud Functions HTTP/TLS,projects/frutallgpdweb-3dab8/locations/us-central1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-export-neogov-default-registros-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-export-neogov-default-registros-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-firestore-bigquery-export-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-firestore-bigquery-export-sfd3-initBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-export-neogov-default-registros-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-firestore-bigquery-export-sfd3-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-firestore-bigquery-export-sfd3-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-firestore-bigquery-export-syncBigQuery,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,neogov-default,Cloud Functions HTTP/TLS,projects/neogov-default/locations/southamerica-east1/functions/ext-firestore-bigquery-export-setupBigQuerySync,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,chequei,Cloud Functions HTTP/TLS,projects/chequei/locations/southamerica-east1/functions/fileApi10,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Média,chequei,Cloud Functions HTTP/TLS,projects/chequei/locations/us-central1/functions/list_pdfs,SECURE_OPTIONAL; não obriga HTTPS; IAM avaliado separadamente
+Revisar,pm-coromandel-mg-lgpdweb,Bucket ACL,pm-coromandel-mg-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-itaguai-rj-lgpdweb,Bucket ACL,pm-itaguai-rj-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cides-lgpdweb,Bucket ACL,cides-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-sao-joao-delrei-lgpdrive-mg,Bucket ACL,pm-sao-joao-delrei-lgpdrive-mg.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-sao-joao-delrei-lgpdrive-mg,Bucket ACL,staging.pm-sao-joao-delrei-lgpdrive-mg.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-sao-joao-del-rei-mg,Bucket ACL,pm-sao-joao-del-rei-mg.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-tupaciguara-mg-lgpdweb,Bucket ACL,pm-tupaciguara-mg-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-qa,Bucket ACL,lgpdrive-qa.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-qa,Bucket ACL,staging.lgpdrive-qa.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,artefatos,Bucket ACL,artefatos_cloudbuild,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,treinamento-neogov-prod,Bucket ACL,treinamento-neogov-prod.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,treinamento-neogov-dev,Bucket ACL,treinamento-neogov-dev.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-neogov-qa-lgpdweb,Bucket ACL,pm-neogov-qa-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cisalp-lgpdweb,Bucket ACL,cisalp-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-estrela-do-sul-lgpdweb,Bucket ACL,cm-estrela-do-sul-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraconceicaoalagoaslgpdweb,Bucket ACL,camaraconceicaoalagoaslgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-campo-florido-lgpdweb,Bucket ACL,cm-campo-florido-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,dashboard-admin-481516,Bucket ACL,dashboard-admin-481516_cloudbuild,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-pedrinopolis-lgpdweb,Bucket ACL,pm-pedrinopolis-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,novapontelgpdweb,Bucket ACL,novapontelgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituraituiutabalgpdweb,Bucket ACL,gestaodedados-pmituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituraituiutabalgpdweb,Bucket ACL,prefeituraituiutabalgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituraituiutabalgpdrive,Bucket ACL,backup-storage-ituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituraituiutabalgpdrive,Bucket ACL,download-pm-ituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituraituiutabalgpdrive,Bucket ACL,pdf-bckp-ituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituraituiutabalgpdrive,Bucket ACL,prefeituraituiutabalgpdrive.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaranovapontelgpdrive,Bucket ACL,backup-cm-nova-ponte-b,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaranovapontelgpdrive,Bucket ACL,backup-pdf-nova-ponte,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaranovapontelgpdrive,Bucket ACL,bckp-sql-nova-ponte,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaranovapontelgpdrive,Bucket ACL,camaranovapontelgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaranovapontelgpdrive,Bucket ACL,download-cm-nova-ponte,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaranovapontelgpdrive,Bucket ACL,staging.camaranovapontelgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdweb-1a6e5,Bucket ACL,saosimaolgpdweb-1a6e5.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeiturateresopolislgpdweb,Bucket ACL,prefeiturateresopolislgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarateresopolislgpdweb,Bucket ACL,camarateresopolislgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarateresopolislgpdweb,Bucket ACL,gestaodedados-cmteresopolis,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-araguari-lgpdrive,Bucket ACL,backup-lgpdrive-araguari,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-araguari-lgpdrive,Bucket ACL,cm-araguari-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-araguari-lgpdrive,Bucket ACL,download-cm-araguari,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-araguari-lgpdrive,Bucket ACL,staging.cm-araguari-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-machado-lgpdweb,Bucket ACL,pm-machado-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-araguari-lgpdweb,Bucket ACL,cm-araguari-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-araguari-lgpdweb,Bucket ACL,gestaodedados-cmaraguari,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pmsgalgpdweb-32cf8,Bucket ACL,pmsgalgpdweb-32cf8.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-montecarmelo-mg-lgpdweb,Bucket ACL,pm-montecarmelo-mg-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-estreladosul-mg-lgpdweb,Bucket ACL,pm-estreladosul-mg-lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-teresopolis-lgpdrive,Bucket ACL,download-pm-teresopolis,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-teresopolis-lgpdrive,Bucket ACL,downloads-pm-teresopolis-lgpd,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-teresopolis-lgpdrive,Bucket ACL,lgpdrive-downloads-pmteresopolis,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-teresopolis-lgpdrive,Bucket ACL,pm-teresopolis-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-teresopolis-lgpdrive,Bucket ACL,staging.pm-teresopolis-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-teresopolis-lgpdrive,Bucket ACL,cm-teresopolis-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-teresopolis-lgpdrive,Bucket ACL,downloads-lgpdrive-cm-teresopolis,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-teresopolis-lgpdrive,Bucket ACL,staging.cm-teresopolis-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pmdeltamglgpdweb,Bucket ACL,pmdeltamglgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-cachoeira-dourada-lgpdrive,Bucket ACL,bucket-rclone-lgpdrive-cm-cachoeira-dourada,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-cachoeira-dourada-lgpdrive,Bucket ACL,cachoeira-dourada-downloads,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-cachoeira-dourada-lgpdrive,Bucket ACL,cm-cachoeira-dourada-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-cachoeira-dourada-lgpdrive,Bucket ACL,cm-cachoeira-dourada-lgpdrive.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-cachoeira-dourada-lgpdrive,Bucket ACL,staging.cm-cachoeira-dourada-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cachoeiradouradamglgpdweb,Bucket ACL,cachoeiradouradamglgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,sae-ituiutaba-lgpdrive,Bucket ACL,bucket-rclone-sae-ituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,sae-ituiutaba-lgpdrive,Bucket ACL,lgpdrive-downloads-saeituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,sae-ituiutaba-lgpdrive,Bucket ACL,sae-ituiutaba-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,sae-ituiutaba-lgpdrive,Bucket ACL,staging.sae-ituiutaba-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-neogov-lgpdrive,Bucket ACL,pm-neogov-lgpdrive.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-frutal-lgpdrive,Bucket ACL,bucket-download-cm-frutal,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-frutal-lgpdrive,Bucket ACL,cm-frutal-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,cm-frutal-lgpdrive,Bucket ACL,staging.cm-frutal-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-frutal-lgpdrive,Bucket ACL,arquivos-locais,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-frutal-lgpdrive,Bucket ACL,download-pm-frutal,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-frutal-lgpdrive,Bucket ACL,pm-frutal-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,pm-frutal-lgpdrive,Bucket ACL,staging.pm-frutal-lgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdweb,Bucket ACL,lgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarafrutallgpdweb,Bucket ACL,camarafrutallgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraituiutabalgpdweb-a1a06,Bucket ACL,camaraituiutabalgpdweb-a1a06.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdwebsaaeituiutaba,Bucket ACL,gestaodedados-saeituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdwebsaaeituiutaba,Bucket ACL,lgpdwebsaaeituiutaba.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,frutallgpdweb-3dab8,Bucket ACL,frutallgpdweb-3dab8.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraituiutabalgpdweb,Bucket ACL,camaraituiutabalgpdweb.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraituiutabalgpdweb,Bucket ACL,ouvidoriacamaraituiutaba,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,uberlandia-prefeitura,Bucket ACL,uberlandia-prefeitura.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,exemplo-c20ee,Bucket ACL,exemplo-c20ee.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituramontecarmelomg,Bucket ACL,arquivos-locais-mc,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituramontecarmelomg,Bucket ACL,lgpdrive-downloads-mc,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituramontecarmelomg,Bucket ACL,prefeituramontecarmelomg.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,prefeituramontecarmelomg,Bucket ACL,staging.prefeituramontecarmelomg.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarasaogoncalodoabaete,Bucket ACL,camarasaogoncalodoabaete.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarasaogoncalodoabaete,Bucket ACL,camarasaogoncalodoabaete.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarasaogoncalodoabaete,Bucket ACL,lgpdrive-conteudo,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarasaogoncalodoabaete,Bucket ACL,lgpdrive-downloads,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarasaogoncalodoabaete,Bucket ACL,lgpdrive-temporario,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camarasaogoncalodoabaete,Bucket ACL,staging.camarasaogoncalodoabaete.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,neogov-default,Bucket ACL,gestao-de-dados,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,neogov-default,Bucket ACL,neogov-default,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,neogov-default,Bucket ACL,neogov-default.firebasestorage.app,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,neogov-default,Bucket ACL,neogov-default_cloudbuild,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,neogov-default,Bucket ACL,neogov-trigger-test,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,neogov-default,Bucket ACL,treinamentos-neogov,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,machadomglgpdrive,Bucket ACL,gestaodedados,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,machadomglgpdrive,Bucket ACL,lgpdrive-downloads-machado,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,machadomglgpdrive,Bucket ACL,machadomg-backup,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,machadomglgpdrive,Bucket ACL,staging.machadomglgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Bucket ACL,arquivos-locais-sga,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Bucket ACL,backup-lgpdrive-saogoncalo,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Bucket ACL,lgpdrive-downloads-sga,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Bucket ACL,saogoncalodoabaetelgpdri-ac3d0.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saogoncalodoabaetelgpdri-ac3d0,Bucket ACL,staging.saogoncalodoabaetelgpdri-ac3d0.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraestreladosul,Bucket ACL,camaraestreladosul_digitalizacao,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraestreladosul,Bucket ACL,lgpdrive-downloads-cames,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,camaraestreladosul,Bucket ACL,staging.camaraestreladosul.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdrive,Bucket ACL,arquivos-locais-ss,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdrive,Bucket ACL,backup-lgpdrive,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdrive,Bucket ACL,bucket-sao-simao-rclone,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdrive,Bucket ACL,lgpdrive-downloads-saosimao,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdrive,Bucket ACL,sao_simao_lgpdrive,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,saosimaolgpdrive,Bucket ACL,staging.saosimaolgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,estreladosullgpdrive,Bucket ACL,arquivos-perdidos-estrela,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,estreladosullgpdrive,Bucket ACL,backup-lgpdrive-estreladosul,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,estreladosullgpdrive,Bucket ACL,estreladosulgestaodedados,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,estreladosullgpdrive,Bucket ACL,lgpdrive-downloads-estreladosul,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,estreladosullgpdrive,Bucket ACL,sdaadaw,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,estreladosullgpdrive,Bucket ACL,staging.estreladosullgpdrive.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,backups-lgpdrive,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,lgpdrive-8f2a8.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,lgpdrive-8f2a8_cloudbuild,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,lgpdrive-apresentacao-decrypted,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,lgpdrive-teste,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,neogovgestaodedados,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,run-sources-lgpdrive-8f2a8-us-central1,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,staging.lgpdrive-8f2a8.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,teste-bucket-detalhado,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,teste-buckets,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,teste_pdf_envio,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,teste_pdf_recebe,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,lgpdrive-8f2a8,Bucket ACL,vitor-local,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,araguari,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,artifacts.chequei.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,chequei.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,chequei_cloudbuild,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,cloud-ai-platform-2c550bc9-09b4-468d-bd88-22384b0ebfeb,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,gestaodedadosneogov,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,staging.chequei.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,teste-reports,ACLs habilitadas; ACLs de objetos individuais não consultadas
+Revisar,chequei,Bucket ACL,us.artifacts.chequei.appspot.com,ACLs habilitadas; ACLs de objetos individuais não consultadas

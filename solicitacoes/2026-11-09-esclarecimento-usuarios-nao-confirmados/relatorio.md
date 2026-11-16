@@ -1,5 +1,7 @@
 # Esclarecimento dos 47 documentos não confirmados
 
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
 Os 47 existem na coleção `modules/user-data`. “Não confirmado” significa que não foi possível corroborar a identidade por e-mail; não significa automaticamente que não há conta Auth.
 
 | Situação observada na coleta anterior | Documentos |

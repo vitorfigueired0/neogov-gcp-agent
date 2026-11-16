@@ -89,3 +89,38 @@ Agentes `service-NUMERO@serverless-robot-prod.iam.gserviceaccount.com` dos 23 pr
 Os 23 serviços têm checagem IAM de invocação desabilitada e ingresso `all`; não depender de uma binding `allUsers` para identificar acesso público. CORS limita o navegador e não substitui autenticação ou IAM. As permissões da conta runtime para Storage e Firestore são diferentes da permissão HTTP de invocar a API.
 
 Esta matriz relata concessões explícitas encontradas nas políticas de projeto, bucket, segredo e conta de serviço. Condições são reproduzidas, não avaliadas em uma operação real. Não inclui IAM herdado de pastas/organização, Deny, grupos, permissões administrativas de todos os usuários, nem prova de mínimo privilégio. Não foram criadas chaves ou alteradas identidades.
+
+## São João del-Rei — consulta de 12/11/2026
+
+A conta runtime `gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com` não consta na listagem de contas do projeto. Não foram consultadas políticas IAM do projeto, herança, buckets ou repositório central nesta etapa; ausência da conta não é auditoria das permissões existentes. Não há segredos listados no projeto. Nenhuma concessão foi criada ou alterada.
+
+O plano propõe Firestore restrito ao novo banco por condição, criação/leitura de objetos somente no novo bucket, assinatura na própria conta runtime e acesso somente aos segredos do vínculo desta instalação. A leitura da imagem pelo agente gerenciado exigirá verificar dependência em `artefatos`, fora do projeto alvo, antes de qualquer alteração nesse escopo. [Evidências e plano](../../solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/relatorio.md).
+
+## Concessões executadas — São João del-Rei, 12/11/2026
+
+Principal: `serviceAccount:gestao-de-dados-api-runtime@pm-sao-joao-del-rei-mg.iam.gserviceaccount.com`. Estado consultado em 2026-11-12T09:59:10.373973-03:00.
+
+| Recurso/escopo | Papel | Condição/finalidade |
+| --- | --- | --- |
+| Projeto `pm-sao-joao-del-rei-mg` | `roles/datastore.user` | `resource.name=="projects/pm-sao-joao-del-rei-mg/databases/gestao-de-dados"`; apenas o novo banco na concessão |
+| Bucket `gestao-de-dados-pm-sao-joao-del-rei-mg` | `roles/storage.objectCreator` | Criar objetos; sem condição |
+| Mesmo bucket | `roles/storage.objectViewer` | Ler objetos/metadados; sem condição |
+| Própria runtime | `roles/iam.serviceAccountTokenCreator` | Assinar URLs/signBlob; sem condição |
+| Secret `NEOGOV_AUTH_API_KEY` | `roles/secretmanager.secretAccessor` | Somente este segredo; ainda sem versões |
+| Secret `NEOGOV_AUTH_ALLOWED_ISSUERS` | `roles/secretmanager.secretAccessor` | Somente este segredo; ainda sem versões |
+
+Comparação das políticas antes/depois: todas as bindings antigas do projeto preservadas, adicionada exatamente uma binding condicional à runtime. No bucket foram preservadas as quatro bindings padrão e adicionadas duas para a runtime. Outras contas têm concessões Firestore amplas no projeto; elas continuam alcançando o novo banco conforme seus papéis. O bucket também mantém bindings padrão para papéis de projeto; prevenção de acesso público não remove esses acessos. Herança, Deny e acesso efetivo via SDK não foram testados. Não se afirma isolamento integral ou auditoria IAM completa.
+
+Invocação/publicação: nenhum serviço Cloud Run criado ou acesso público liberado; nenhuma concessão em `artefatos` executada. Políticas anteriores e roteiro de revogação específica salvos na solicitação. [Relatório de execução e evidências](../../solicitacoes/2026-11-12-plano-implantacao-gestao-dados-sao-joao/execucao-aprovada/relatorio.md).
+
+## Preenchimento dos segredos — São João del-Rei, 12/11/2026
+
+Em 2026-11-12T10:05:48.603568-03:00, adicionadas e verificadas por metadados as versões `NEOGOV_AUTH_API_KEY:1` e `NEOGOV_AUTH_ALLOWED_ISSUERS:1`, ambas ENABLED, no projeto `pm-sao-joao-del-rei-mg`. Chave fornecida pelo usuário sem registro do valor; emissor exato indicado pelo usuário: `https://api.auth.neogov.com.br` (sem barra final). Nenhum payload lido na verificação. Este estado sucede os registros anteriores de segredos sem versões. IAM não alterado; vínculo tenant/sistema e validação funcional ainda não comprovados. Template local atualizado nesta solicitação para referências fixas `:1`, mantendo a imagem pendente; não houve deploy. [Relatório do preenchimento](../../solicitacoes/2026-11-12-preencher-segredos-gestao-dados-sao-joao/relatorio.md).
+
+## Publicação HTTP e imagem — São João del-Rei, 12/11/2026
+
+Em 2026-11-12T10:20:22.124691-03:00, confirmado `roles/artifactregistry.reader` para `serviceAccount:service-971507433447@serverless-robot-prod.iam.gserviceaccount.com` somente no repositório `artefatos/us-central1/gestao-de-dados-api`. A comparação das políticas registra somente esse membro novo; demais membros/papéis preservados. Runtime e permissões de dados/segredos existentes não foram ampliados nesta etapa.
+
+O serviço `pm-sao-joao-del-rei-mg/us-central1/gestao-de-dados-api` tem `run.googleapis.com/invoker-iam-disabled=true`, ingress all e política sem allUsers. O acesso HTTP público foi testado; rotas protegidas recusaram sessões ausentes/inválidas (401). Documentação /docs e /docs-json está acessível sem sessão (200). Não se afirma teste de login válido, controle de todos os tenants, IAM herdado ou escrita real em dados.
+
+Reversão de exposição: reabilitar o invoker IAM check, preservando a política atual; isso interrompe chamadas públicas. A leitura do repositório pode ser revogada somente após verificar consumidores. [Relatório do deploy](../../solicitacoes/2026-11-12-deploy-gestao-dados-sao-joao/relatorio.md).

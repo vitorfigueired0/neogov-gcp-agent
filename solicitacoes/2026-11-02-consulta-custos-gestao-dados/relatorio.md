@@ -1,3 +1,10 @@
+> **Atualização em 13/11/2026:** a nova consulta apurou **R$ 13,748032 associados à Gestão de Dados**, dentro de **R$ 264,817470** no recorte total de 14/10 a 12/11. **R$ 251,069438 permanecem sem atribuição/rateio confirmado.**
+
+> Conservação documental — 13/11/2026: por pedido do usuário, foram mantidos o contexto, o relatório final e as entregas finais. Arquivos auxiliares, evidências separadas, scripts, verificações, diffs e backups locais foram removidos; referências a eles no histórico descrevem a execução original, não arquivos ainda disponíveis. Os resultados não foram reconsultados no GCP durante esta limpeza. Recuperação que dependa dos backups removidos exige outra cópia ou versão disponível no Git.
+
+>
+> Consulte o [relatório atualizado completo](atualizacao-2026-11-13/relatorio.md), com composição, tendência semanal, projetos e evidências. O conteúdo abaixo é o resultado histórico de 02/11, preservado.
+
 # Relatório — consulta de custos da Gestão de Dados
 
 ## Resultado
@@ -12,14 +19,14 @@ O custo associado é dominado por Cloud Run (R$ 2,902018) e Secret Manager (R$ 2
 2. Confirmada a existência da tabela de exportação detalhada de Billing no dataset `lgpdweb.finops_billing`.
 3. Localizado o job concluído `job_gfpL8VVNiw7a6vvWdVxKVAzaMyx_`, com SQL correspondente à consulta local de custos preservada.
 4. Lidos e agregados localmente os resultados materializados do job. Nenhuma nova consulta SQL foi enviada, evitando cobrança duplicada.
-5. Produzido o resumo técnico em [evidencias/resumo-resultados.md](evidencias/resumo-resultados.md).
+5. Produzido o resumo técnico em evidencias/resumo-resultados.md (auxiliar removido; resultado consolidado neste relatório).
 
 ## Verificações e evidências
 
 - O job estava em estado `DONE` e registrou 416.661.140 bytes processados e 417.333.248 bytes faturados.
 - A janela retornada foi de 03/10/2026 a 02/11/2026; o dia final pode estar parcial.
 - A comparação de semanas completas mostra R$ 64,486217 (26/10–01/11), 6,74% abaixo de R$ 69,146191 (19/10–25/10). Parte da redução é explicada por créditos de Cloud Run em 01/11.
-- A evidência consolidada, incluindo limites de atribuição e concentrações, está em [evidencias/resumo-resultados.md](evidencias/resumo-resultados.md).
+- A evidência consolidada, incluindo limites de atribuição e concentrações, está em evidencias/resumo-resultados.md (auxiliar removido; resultado consolidado neste relatório).
 
 ## Recursos e arquivos afetados
 
@@ -35,3 +42,8 @@ O custo associado é dominado por Cloud Run (R$ 2,902018) e Secret Manager (R$ 2
 ## Reversão
 
 Não há reversão GCP, porque nada foi alterado. Os registros locais podem ser removidos somente mediante autorização explícita; sua remoção elimina a trilha de auditoria desta solicitação.
+
+
+## Complemento: quantidade de registros e custo da tabela
+
+Em 13/11/2026 às 10:52, a tabela tinha **3.141.203 registros e 2,15 GiB lógicos**. O export disponível de 14/10 a 12/11 mostra **R$ 0,00 de armazenamento para finops_billing** e R$ 0,00 de consultas no projeto lgpdweb. BigQuery na conta inteira soma R$ 31,06, concentrados em outros projetos. Nenhum dado foi apagado; não há justificativa de economia relevante para zerar esta tabela no estado observado. [Análise, limitações e evidências](atualizacao-2026-11-13/relatorio.md).
